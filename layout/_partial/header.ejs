@@ -1,17 +1,9 @@
-<!-- <div id="menu-outer">
-    <div id="menu-inner">
-      <% Object.keys(theme.menu).forEach(key => { %>
-        <a href="<%=theme.menu[key]%>"><%=key%></a>
-      <% }); %>
-    </div>
-</div> -->
 <header class="pure-menu pure-menu-horizontal nav" id="header">
   <div class="gallery">
     <div class="product-name">Sorryfu</div>
     <ul class="pure-menu-list">
       <% Object.keys(theme.menu).forEach(key => { %>
-        <li class="pure-menu-item"><a href="<%=theme.menu[key]%>" class="pure-menu-link"><%=key%></a></li>
-        
+        <li class="pure-menu-item"><a href="<%=url_for(theme.menu[key])%>" class="pure-menu-link"><%=key%></a></li>
       <% }); %>
     </ul>
   </div>

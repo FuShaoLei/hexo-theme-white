@@ -7,4 +7,19 @@ body{
 #menu-outer{
   border-bottom: 1px dashed #333;
 }
-  
+
+.toc>ol,li{
+  list-style:disc;
+}
+
+.page-number{
+display: none;
+}
+.extend{
+  text-decoration: none;
+  color: #333;
+  padding: 8px;
+}
+.extend:hover{
+  background: #EEEEEE;
+}

@@ -1,10 +1,27 @@
 # main menu navigation
 menu:
   Home: /
-  About: /about
   Archives: /archives
+  Page: /page
 
 site_name: Sorryfu #网站的名称
 author: Sorryfu  #文章的默认作者
 
+#联系方式
+contact:
+  Email: 1563250958@qq.com
+  Github: github.com/FuShaoLei
 
+#友链
+link:
+  Typora: typora.io
+  Hexo: hexo.io
+
+
+
+plugins:
+  # 代码高亮
+  highlightjs:
+    js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js
+    css: https://cdn.jsdelivr.net/npm/highlight.js@10.0.3/styles/srcery.css
+    # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles

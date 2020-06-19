@@ -1,9 +1,26 @@
 
-<article id="page">
-  <h1><%=page.title%></h1>
-  <%-page.content%>
-</article>
+  <header class="pure-menu pure-menu-horizontal nav post-title" id="header">
+    <div class="gallery">
+      <ul class="pure-menu-list" style="float: left; margin-left:1em;position: absolute;">
+        <li class="pure-menu-item pure-menu-active"><a href="<%=url_for()%>" class="pure-menu-link" id="title-bar-feature-btn">Back</a>
+        </li>
+      </ul>
+    </div>
+    <h1><%=page.title%></h1>
+    <section class="post-meta">
+    <time datetime="<%=page.date.toJSON()%>"><%=date(page.date,'MM月DD日')%></time>
+    by
+    <span><%= theme.author%></span>
+    </section>
+  </header>
 
-<div id="paginator">
-  <%-paginator()%>
-</div>
+
+  <div id="pagecontainer" class="container">
+    <div id="post-content" class="inner-page">
+      <%- toc(page.content,{class:"toc",list_number:false,max_depth: 3,min_depth: 2}) %>
+      <%-page.content%>
+    </div>
+  </div>
+
+
+
