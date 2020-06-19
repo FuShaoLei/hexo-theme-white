@@ -1,0 +1,16 @@
+<%- partial('_partial/head') %>
+<body>
+  <%if(is_post()===false){%>
+     <%- partial('_partial/header') %>
+  <%}%>
+  
+<%- body %>
+
+<%if(is_post()===true){%>
+  <%- partial('_partial/footer') %>
+<%}%>
+
+
+<%- partial('_partial/after-footer') %>
+</body>
+</html>

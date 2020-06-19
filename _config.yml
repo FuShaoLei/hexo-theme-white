@@ -1,0 +1,10 @@
+# main menu navigation
+menu:
+  Home: /
+  About: /about
+  Archives: /archives
+
+site_name: Sorryfu #网站的名称
+author: Sorryfu  #文章的默认作者
+
+

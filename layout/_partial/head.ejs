@@ -1,0 +1,22 @@
+
+<%
+var pageTitle = page.title || config.subtitle || '';
+if (is_archive()) pageTitle = 'Archives';
+if (is_tag()) pageTitle = 'Tag: ' + page.tag;
+if (is_category()) pageTitle = 'Category: ' + page.category;
+if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
+if (is_year()) pageTitle += ': ' + page.year;
+pageTitle += ' [ ' + config.title + ' ]';
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%=pageTitle%></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%- css('css/white.css','css/pure-min.css','css/syntax.css','css/typora-wiki.css') %>
+  <%if(is_post()===true){%>
+    <%- css('css/post') %>
+  <%}%>
+</head>
