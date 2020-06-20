@@ -1,5 +1,5 @@
 
-    body {
+    .posss {
         font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
         font-weight: 300;
       }
@@ -66,10 +66,10 @@
         margin-top: 2em;
       }
   
-      .pure-menu-active>.pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus {
+      /* .pure-menu-active>.pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus {
           background-color: initial;
           border: #777 solid 1px;
-      }
+      } */
   
       .post-meta {
         font-style: italic;

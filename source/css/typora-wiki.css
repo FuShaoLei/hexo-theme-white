@@ -63,6 +63,15 @@
     padding-top: 15px;
 }
 
+.nav2{
+  position: relative;
+  width: 100%;
+  top: 0px;
+  border-bottom: 1px dashed #999999;
+  min-height: 80px;
+  padding-top: 15px;
+}
+
 .gallery {
   display: flex;
   justify-content: space-between;

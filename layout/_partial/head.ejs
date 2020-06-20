@@ -15,6 +15,7 @@ pageTitle += ' [ ' + config.title + ' ]';
   <meta charset="UTF-8">
   <title><%=pageTitle%></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="<%-theme.icon%>" type="image/x-icon">
   <%- css('css/white.css','css/pure-min.css','css/syntax.css','css/typora-wiki.css') %>
   <% if (config.highlight.enable != true) { %>
     <% if (theme.plugins.highlightjs && theme.plugins.highlightjs.css) { %>

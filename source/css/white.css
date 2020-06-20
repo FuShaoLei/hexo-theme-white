@@ -2,6 +2,10 @@
 body{
   margin: 0;
 }
+/* 设置滚动条 */
+::-webkit-scrollbar{
+  width: 0px;
+}
   
 
 #menu-outer{

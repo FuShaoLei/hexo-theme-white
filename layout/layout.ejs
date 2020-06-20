@@ -1,14 +1,14 @@
 <%- partial('_partial/head') %>
 <body>
-  <%if(is_post()===false&&is_page()===false){%>
+
      <%- partial('_partial/header') %>
-  <%}%>
+
   
 <%- body %>
 
-<%if(is_post()===true||is_page()===true){%>
-  <%- partial('_partial/footer') %>
-<%}%>
+
+<%- partial('_partial/footer') %>
+
 
 
 <%- partial('_partial/after-footer') %>
