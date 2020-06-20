@@ -17,7 +17,16 @@ link:
   Typora: typora.io
   Hexo: hexo.io
 
-
+# Valine评论系统
+valine:
+  open: true # true | false 是否打开，默认false
+  appid: HBismw2vU6hg56PslAF2APW1-gzGzoHsz  #Leancloud应用的AppID
+  appkey: k41e2BJYdNbojyHuMnKT5LBK  #Leancloud应用的AppKey
+  verify: false #验证码
+  notify: true #评论回复提醒
+  avatar: robohash #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
+  #头像类型可见： https://valine.js.org/avatar.html
+  placeholder: 留下你来过的痕迹~ #评论框占位符
 
 plugins:
   # 代码高亮
