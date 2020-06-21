@@ -13,12 +13,9 @@
     <div id="post-content" class="inner-page">
       <%- toc(page.content,{class:"toc",list_number:false,max_depth: 3,min_depth: 2}) %>
       <%-page.content%>
-        <% if ( theme.valine.open){ %>
-          <div style="text-align: center;">
-            <h2>评论</h2>
-          </div>
+        <% if ( theme.valine.open === true && page.comments === true){ %>
           <% if (theme.valine && theme.valine.appid && theme.valine.appkey){ %>
-            <section id="comments" class="comments">
+            <section id="comments" class="comments" style="margin-top: 50px;">
               <style>
                 .comments{margin:30px;padding:10px;background:#fff}
                 @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}

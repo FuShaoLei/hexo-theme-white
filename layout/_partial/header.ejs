@@ -1,6 +1,6 @@
 <header class="pure-menu pure-menu-horizontal nav2" >
   <div class="gallery">
-    <div class="product-name">Sorryfu</div>
+    <div class="product-name"><%=theme.site_name%></div>
     <ul class="pure-menu-list">
       <% Object.keys(theme.menu).forEach(key => { %>
         <li class="pure-menu-item"><a href="<%=url_for(theme.menu[key])%>" class="pure-menu-link"><%=key%></a></li>

@@ -1,8 +1,12 @@
 # main menu navigation
 menu:
-  Home: /
-  Archives: /archives
-  Page: /page
+  主页: /
+  归档: /archives
+  项目: /project
+  关于: /about
+  留言: /message
+  说说: /saysay
+  开往: https://travellings.now.sh/
 
 site_name: Sorryfu #网站的名称
 author: Sorryfu  #文章的默认作者
@@ -11,12 +15,17 @@ icon: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #标签页图
 #联系方式
 contact:
   Email: 1563250958@qq.com
-  Github: github.com/FuShaoLei
+  Github: https://github.com/FuShaoLei
 
 #友链
 link:
-  Typora: typora.io
-  Hexo: hexo.io
+  Typora: https://typora.io
+  Hexo: https://hexo.io
+  城南破事: https://www.ronce.cc/
+  竹青虫の窝: https://1940879828.github.io/
+  CtrlCV博客: https://www.hack-er.cn/
+  两小无猜: https://www.cnblogs.com/charlottepl/
+  策策的小黑屋: https://www.cnblogs.com/occlive/
 
 # Valine评论系统
 valine:
