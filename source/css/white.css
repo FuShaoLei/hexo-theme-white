@@ -27,3 +27,14 @@ display: none;
 .extend:hover{
   background: #EEEEEE;
 }
+.display-me{
+  display: none!important;
+}
+@media (max-width: 800px){
+  .gone-me{
+    display: none!important;
+  }
+  .display-me{
+     display: block !important;
+  }
+}

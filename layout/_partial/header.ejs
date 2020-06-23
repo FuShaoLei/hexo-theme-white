@@ -3,8 +3,16 @@
     <div class="product-name"><%=theme.site_name%></div>
     <ul class="pure-menu-list">
       <% Object.keys(theme.menu).forEach(key => { %>
-        <li class="pure-menu-item"><a href="<%=url_for(theme.menu[key])%>" class="pure-menu-link"><%=key%></a></li>
+        <li class="pure-menu-item gone-me"><a href="<%=url_for(theme.menu[key])%>" class="pure-menu-link"><%=key%></a></li>
       <% }); %>
+      <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover display-me">
+        <div class="pure-menu-link">Menu</div>
+        <ul class="pure-menu-children">
+            <% Object.keys(theme.menu).forEach(key => { %>
+              <li class="pure-menu-item"><a href="<%=url_for(theme.menu[key])%>" class="pure-menu-link"><%=key%></a></li>
+            <% }); %>
+        </ul>
+    </li>
     </ul>
   </div>
 </header>

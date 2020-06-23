@@ -2,6 +2,7 @@
 menu:
   主页: /
   归档: /archives
+  体系: /knowledge
   项目: /project
   关于: /about
   留言: /message
@@ -15,12 +16,13 @@ icon: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #标签页图
 #联系方式
 contact:
   Email: 1563250958@qq.com
-  Github: https://github.com/FuShaoLei
+  QQ: 1563250958
 
 #友链
 link:
-  Typora: https://typora.io
+  Github: https://github.com/FuShaoLei
   Hexo: https://hexo.io
+  Typora: https://typora.io
   城南破事: https://www.ronce.cc/
   竹青虫の窝: https://1940879828.github.io/
   CtrlCV博客: https://www.hack-er.cn/
@@ -42,5 +44,5 @@ plugins:
   # 代码高亮
   highlightjs:
     js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js
-    css: https://cdn.jsdelivr.net/npm/highlight.js@10.0.3/styles/srcery.css
+    css: https://cdn.jsdelivr.net/npm/highlight.js@10.1.1/styles/github.css
     # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles

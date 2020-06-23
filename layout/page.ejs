@@ -11,7 +11,10 @@
 
 <div id="pagecontainer" class="container">
   <div id="post-content" class="inner-page">
-    <%- toc(page.content,{class:"toc",list_number:false,max_depth: 3,min_depth: 2}) %>
+    <%if(page.toc!==false){%>
+      <%- toc(page.content,{class:"toc",list_number:false,max_depth: 3,min_depth: 2}) %>
+    <%}%>
+    
     <%-page.content%>
       <% if ( theme.valine.open === true && page.comments === true){ %>
         <% if (theme.valine && theme.valine.appid && theme.valine.appkey){ %>
