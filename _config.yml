@@ -1,10 +1,12 @@
 # main menu navigation
 menu:
   主页: /
-  归档: /archives
-  体系: /knowledge
-  项目: /project
-  关于: /about
+  博客: /posts
+  分类: /archives
+  # 体系: /knowledge
+  # 项目: /project
+  # 关于: /about
+  友链: /friend
   留言: /message
   说说: /saysay
   开往: https://travellings.now.sh/
@@ -12,6 +14,12 @@ menu:
 site_name: Sorryfu #网站的名称
 author: Sorryfu  #文章的默认作者
 icon: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #标签页图标
+
+
+intro:
+  title: Me
+  sub: An android developer.
+  img: https://cdn.jsdelivr.net/gh/fushaolei/img/20200624215641.jpg
 
 #联系方式
 contact:
@@ -28,6 +36,9 @@ link:
   CtrlCV博客: https://www.hack-er.cn/
   两小无猜: https://www.cnblogs.com/charlottepl/
   策策的小黑屋: https://www.cnblogs.com/occlive/
+  Guan FuQing: https://yiki.tech
+  阿瑞: https://wenzia.com
+
 
 # Valine评论系统
 valine:
@@ -44,5 +55,5 @@ plugins:
   # 代码高亮
   highlightjs:
     js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js
-    css: https://cdn.jsdelivr.net/npm/highlight.js@10.1.1/styles/github.css
+    css: https://cdn.jsdelivr.net/npm/highlight.js@10.1.1/styles/vs2015.css
     # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles

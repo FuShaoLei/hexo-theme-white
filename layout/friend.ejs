@@ -1,0 +1,21 @@
+<div id="pagecontainer" class="container">
+    <div id="content">
+    <div id="index">
+      <h3>LINK</h3>
+      <ul class="category basic-posts">
+          <% Object.keys(theme.link).forEach(key => { %>
+            <li>
+              <div class="article">
+                <article class="article" >
+                  <header class="post-header">
+                    <span class="title"><a  href="<%=theme.link[key]%>"><%=key%></a></span>
+                    <time class="date"><%= theme.link[key]%></time>
+                  </header>
+                </article>
+              </div>
+            </li>
+          <% }); %>  
+      </ul>
+    </div>
+  </div>
+  </div>

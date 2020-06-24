@@ -84,6 +84,10 @@
     font-family: 'Century Gothic', sans-serif;
     font-size: 2em;
 }
+.category-year{
+  margin-top: 70px;
+  font-family: 'Century Gothic', sans-serif;
+}
 
 .category {
   width: 90%;
@@ -91,15 +95,11 @@
   margin-left: auto;
   margin-right: auto;
   word-wrap: break-word;
-  margin-bottom: 80px;
+  margin-bottom: 15px;
   padding: 0;
   position: relative;
 }
 
-.category li {
-    margin-bottom: 8px;
-    list-style-type: none;
-}
 
 .category .article {
   text-align: left;
