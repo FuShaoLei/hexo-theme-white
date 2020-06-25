@@ -1,57 +1,10 @@
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Open Sans Regular'),url('https://cdn.jsdelivr.net/gh/fushaolei/static@1.0/github/400.woff') format('woff')
-}
 
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: normal;
-    src: local('Open Sans Italic'),url('https://cdn.jsdelivr.net/gh/fushaolei/static@1.0/github/400i.woff') format('woff')
+body,p,div,span{
+  font-family: 'Century Gothic';
 }
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Open Sans Bold'),url('https://cdn.jsdelivr.net/gh/fushaolei/static@1.0/github/700.woff') format('woff')
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: bold;
-    src: local('Open Sans Bold Italic'),url('https://cdn.jsdelivr.net/gh/fushaolei/static@1.0/github/700i.woff') format('woff')
-}
-
-@font-face {
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Merriweather Light'),url('https://cdn.jsdelivr.net/gh/fushaolei/static@1.0/Merriweather/Merriweather-Light.ttf') format('truetype')
-}
-
-@font-face {
-    font-family: 'Merriweather';
-    font-style: italic;
-    font-weight: normal;
-    src: local('Merriweather Light Italic'),url('https://cdn.jsdelivr.net/gh/fushaolei/static@1.0/Merriweather/Merriweather-LightItalic.ttf') format('truetype')
-}
-
-@font-face {
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Merriweather Regular'),url('https://cdn.jsdelivr.net/gh/fushaolei/static@1.0/Merriweather/Merriweather-Regular.ttf') format('truetype')
-}
-
-@font-face {
-    font-family: 'Merriweather';
-    font-style: italic;
-    font-weight: bold;
-    src: local('Merriweather Italic'),url('https://cdn.jsdelivr.net/gh/fushaolei/static@1.0/Merriweather/Merriweather-Italic.ttf') format('truetype')
+blockquote{
+  margin: 0;
+  padding: 0;
 }
 
 .nav {
@@ -81,12 +34,10 @@
 
 .product-name,
 .product-name a {
-    font-family: 'Century Gothic', sans-serif;
     font-size: 2em;
 }
 .category-year{
   margin-top: 70px;
-  font-family: 'Century Gothic', sans-serif;
 }
 
 .category {
@@ -103,7 +54,6 @@
 
 .category .article {
   text-align: left;
-  font-family: 'Merriweather','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
   font-weight: 300;
 }
 
@@ -167,7 +117,6 @@
 #post-footer,
 #post-footer a {
     color: #eee;
-    font-family: 'open sans',arial,sans-serif;
     letter-spacing: .1em;
     font-weight: 300;
 }
@@ -175,7 +124,21 @@
 #post-footer a {
     text-decoration: underline;
 }
+code,kbd,pre,samp{
+  font-size:1em
+}
+code{ 
+  /* 待考虑 */
+  color: #990000;
+  font-size: 1em;
+  font-weight: normal;
+  font-family: 'Century Gothic';
+}
 
+pre>code{
+  background: none;
+  font-size: 1em;
+}
 .highlight code {
     display: block;
 }
@@ -189,11 +152,13 @@ code.highlighter-rouge * {
 }
 
 blockquote {
-  padding: 1.33em;
-  font-style: italic;
-  border-left: 5px solid #7a7a7a;
+  padding: 1em;
+  border-left: 5px solid #7A7A7A;
+  background: #F7F7F7;
 }
-
+.hljs{
+  overflow: scroll;
+}
 img {
 	width: auto;
   max-width: 90%;
@@ -237,7 +202,6 @@ video {
 }
 
 #search-results p {
-  font-family: sans-serif;
   line-height: 22px;
   font-size: 15px;
   margin: 0;

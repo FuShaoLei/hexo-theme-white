@@ -3,9 +3,21 @@ body{
   margin: 0;
 }
 /* 设置滚动条 */
-::-webkit-scrollbar{
-  width: 0px;
-}
+/*定义滚动条高宽及背景
+ 高宽分别对应横竖滚动条的尺寸*/
+ ::-webkit-scrollbar
+ {
+     width:5px;
+     height:5px;
+     background-color:#ffffff;
+ }
+ /*定义滑块
+  内阴影+圆角*/
+ ::-webkit-scrollbar-thumb
+ {
+     -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+     background-color:#2E2E2E;
+ }
   
 
 #menu-outer{
@@ -43,7 +55,6 @@ display: none;
   margin-bottom: 50px;
 }
 .text-content{
-  font-family: 'Century Gothic', sans-serif;
   padding: 90px;
   padding-top: 100px;
   padding-left: 120px;
@@ -74,7 +85,6 @@ display: none;
     padding:70px;
   }
   .text-content{
-    font-family: 'Century Gothic', sans-serif;
     padding: 90px;
   }
 }

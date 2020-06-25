@@ -28,6 +28,7 @@ contact:
 
 #友链
 link:
+  BlogWe: https://blogwe.com/
   Github: https://github.com/FuShaoLei
   Hexo: https://hexo.io
   Typora: https://typora.io
@@ -38,7 +39,7 @@ link:
   策策的小黑屋: https://www.cnblogs.com/occlive/
   Guan FuQing: https://yiki.tech
   阿瑞: https://wenzia.com
-
+  依尘: https://yichen.online
 
 # Valine评论系统
 valine:

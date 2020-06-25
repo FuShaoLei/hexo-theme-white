@@ -1,13 +1,11 @@
 
     .posss {
-        font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
         font-weight: 450;
       }
   
       h1, h2, h3, h4, h5, h6 {
         color: #2E2E2E;
         line-height: 1.15em;
-        font-family: 'Open Sans','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
         text-rendering: geometricPrecision;
       }
   
@@ -72,7 +70,6 @@
       } */
   
       .post-meta {
-        font-style: italic;
         text-align: center;
         color: #7a7a7a;
       }
@@ -81,7 +78,6 @@
         padding: 8px;
         border: 1px #777 solid;
         line-height: 1.2rem;
-        font-family: Menlo, Monaco, "Courier New", monospace;
       }
   
       div.highlighter-rouge pre{

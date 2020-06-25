@@ -29,7 +29,7 @@ arraylist=categoriesList1.split(",");
                         <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
                           <header class="post-header">
                             <span class="title"><a itemprop="name" href="<%=url_for(pos.path)%>" title="<%=pos.title%>"><%=pos.title%></a></span>
-                            <time class="date" datetime="<%=pos.date.toJSON()%>"><%=date(pos.date,'MM-DD')%></time>
+                            <time class="date" datetime="<%=pos.date.toJSON()%>"><%=date(pos.date,'YYYY-MM-DD')%></time>
                           </header>
                         </article>
                       </div>
