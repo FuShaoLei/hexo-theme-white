@@ -2,9 +2,7 @@
     <header class="pure-menu pure-menu-horizontal nav post-title" id="header">
     <h1><%=page.title%></h1>
     <section class="post-meta">
-    <time datetime="<%=page.date.toJSON()%>"><%=date(page.date,'YYYY年MM月DD日')%></time>
-    by
-    <span><%= theme.author%></span>
+    <time datetime="<%=page.date.toJSON()%>"><%=date(page.date,'YYYY年MM月DD日')%></time> by <span><%if(page.author){%><%= page.author%><%} else {%><%= theme.author%><%}%></span>
     </section>
   </header>
 

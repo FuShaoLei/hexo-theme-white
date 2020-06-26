@@ -1,12 +1,12 @@
 
 <%
 var pageTitle = page.title ||  '首页';
-if (is_archive()) pageTitle = 'Archives';
+if (is_archive()) pageTitle = '归类';
 if (is_tag()) pageTitle = 'Tag: ' + page.tag;
 if (is_category()) pageTitle = 'Category: ' + page.category;
 if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
 if (is_year()) pageTitle += ': ' + page.year;
-pageTitle += ' | ' + theme.author ;
+pageTitle += ' | ' + theme.site_name ;
 %>
 
 <!DOCTYPE html>
