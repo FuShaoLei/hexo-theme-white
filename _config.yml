@@ -15,23 +15,24 @@ site_name: Sorryfu #网站的名称
 author: Sorryfu  #文章的默认作者
 icon: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #标签页图标
 
-
+#自我介绍
 intro:
-  title: Me
-  sub: An android developer.
+  title: Introduction
+  sub: Sorryfu，大三在读，Java与智能设备开发方向，喜欢金庸的小说，这是我的个人博客，欢迎参观😘
   img: https://cdn.jsdelivr.net/gh/fushaolei/img/20200624215641.jpg
 
-#联系方式
+#联系方式  更多图标：https://remixicon.com/
 contact:
-  Email: 1563250958@qq.com
-  QQ: 1563250958
+  Email: 
+    - mailto:1563250958@qq.com
+    - ri-mail-line
+  Github:
+    - https://github.com/FuShaoLei
+    - ri-github-line
 
 #友链
 link:
   BlogWe: https://blogwe.com/
-  Github: https://github.com/FuShaoLei
-  Hexo: https://hexo.io
-  Typora: https://typora.io
   城南破事: https://www.ronce.cc/
   竹青虫の窝: https://1940879828.github.io/
   CtrlCV博客: https://www.hack-er.cn/

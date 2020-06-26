@@ -59,13 +59,21 @@ display: none;
   padding-top: 100px;
   padding-left: 120px;
 }
+
 .intro-content{
   font-size: 2.4em;
 }
+.intro-content,a{
+  color: #2E2E2E;
+  text-decoration: none;
+}
+.intro-contact{
+  font-size: 1.3em;
+}
 .img-content{
   padding-bottom: 70px;
-  padding-top: 70px;
-  padding-right: 120px;
+  padding-top: 100px;
+  padding-right: 150px;
 }
 .img-detail{
   max-width: 100%;

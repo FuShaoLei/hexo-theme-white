@@ -7,7 +7,16 @@
 				<p class="sub-content">
 					<%=theme.intro.sub%>
 				</p>
+				<p class="intro-contact">
+					<% for(var y in theme.contact){ %>
+						<a href="<%=theme.contact[y][0]%>" target="_blank">
+							<i class="<%=theme.contact[y][1]%>"></i>
+						</a>
+						
+					<% } %>
+				</p>
 			</div>
+
 		</div>
 		<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-1-2"  >
             <div class="img-content"  >
@@ -15,4 +24,5 @@
 			</div>
 		</div>
     </div>
-    <!-- <hr class="divider"> -->
+	<!-- <hr class="divider"> -->
+	
