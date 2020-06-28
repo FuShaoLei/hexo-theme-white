@@ -1,28 +1,28 @@
-	<div class="pure-g m-content">
-		<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-2" >
+<section id="intro-section">
+		<div class="pure-g m-content">
+		<div class="pure-u-1 " >
 			<div class="text-content" >
-				<p class="intro-content">
+				<p class="home-title">
 					<%=theme.intro.title%>
                 </p>
 				<p class="sub-content">
-					<%=theme.intro.sub%>
+					<a href="/posts">Blog</a> /  <a href="https://travellings.now.sh/" target="_blank">Travellings</a>
 				</p>
 				<p class="intro-contact">
 					<% for(var y in theme.contact){ %>
 						<a href="<%=theme.contact[y][0]%>" target="_blank">
 							<i class="<%=theme.contact[y][1]%>"></i>
 						</a>
-						
 					<% } %>
 				</p>
 			</div>
 
 		</div>
-		<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-1-2"  >
+		<!-- <div class="pure-u-1 pure-u-md-2-3 pure-u-lg-1-2"  >
             <div class="img-content"  >
                 <img src="<%=theme.intro.img%>"  class="img-detail">
 			</div>
-		</div>
+		</div> -->
     </div>
-	<!-- <hr class="divider"> -->
+</section>
 	

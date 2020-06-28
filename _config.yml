@@ -17,12 +17,19 @@ icon: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #标签页图
 
 #自我介绍
 intro:
-  title: Introduction
-  sub: 大三在读，Java与智能设备开发方向，喜欢金庸的小说，这是我的个人博客，欢迎参观😘
+  title: Hi.I'm Sorryfu.
   img: https://cdn.jsdelivr.net/gh/fushaolei/img/20200624215641.jpg
+
+
 
 #联系方式  更多图标：https://remixicon.com/
 contact:
+  Music:
+    - https://music.163.com/#/user/home?id=559125633
+    - ri-disc-line
+  Bilibili:
+    - https://space.bilibili.com/286672419
+    - ri-bilibili-line
   Email: 
     - mailto:1563250958@qq.com
     - ri-mail-line

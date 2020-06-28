@@ -114,16 +114,7 @@ blockquote{
     text-align: center;
 }
 
-#post-footer,
-#post-footer a {
-    color: #eee;
-    letter-spacing: .1em;
-    font-weight: 300;
-}
 
-#post-footer a {
-    text-decoration: underline;
-}
 code,kbd,pre,samp{
   font-size:1em
 }
