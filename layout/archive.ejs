@@ -18,13 +18,28 @@ arraylist=categoriesList1.split(",");
   <div id="content">
       <% if (site.categories.length>0) { %>
           <div id="index">
+            <h3 class="category-year">Fragment</h3>
+            <% site.posts.sort('date',-1).each(pos => {%>  
+              <%if(!pos.categories.data.length){%>
+                <div class="category basic-posts">  
+                  <div class="article">
+                    <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                      <header class="post-header">
+                        <span class="title"><a itemprop="name" href="<%=url_for(pos.path)%>" title="<%=pos.title%>"><%=pos.title%></a></span>
+                        <time class="date" datetime="<%=pos.date.toJSON()%>"><%=date(pos.date,'YYYY-MM-DD')%></time>
+                      </header>
+                    </article>
+                  </div>
+                
+                </div>
+              <%}%>
+            <% }); %>
             <%for(var j=0;j<arraylist.length;j++){ %>
               <h3 class="category-year"><%-trim(strip_html(arraylist[j]))%></h3> 
               <% site.posts.each(pos => {%>
                 <%if(pos.categories.data.length>0){%>
                   <%if(pos.categories.data[0].name===trim(strip_html(arraylist[j]))){%>
-                    <div class="category basic-posts">
-               
+                    <div class="category basic-posts">  
                       <div class="article">
                         <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
                           <header class="post-header">

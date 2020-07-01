@@ -1,8 +1,8 @@
 # main menu navigation
 menu:
   主页: /
-  博客: /posts
-  归类: /archives
+  # 博客: /posts
+  博文: /archives
   # 体系: /knowledge
   # 项目: /project
   # 关于: /about
