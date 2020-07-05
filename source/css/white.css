@@ -149,3 +149,13 @@ display: none;
     padding: 90px;
   }
 }
+
+
+@media (max-width: 700px){
+ .home-title{
+   font-size: 3em;
+ }
+ .text-content{
+  padding: 75px;
+  }
+}

@@ -6,7 +6,15 @@
 					<%=theme.intro.title%>
                 </p>
 				<p class="sub-content">
-					<a href="/archives">Blog</a> /  <a href="https://travellings.now.sh/" target="_blank">Travellings</a>
+					<%
+					var current=0;
+					%>
+					<% Object.keys(theme.home).forEach(key => { %>
+						<%if(current!==0){%> / <%}%> <a href="<%=url_for(theme.home[key])%>" ><%=key%></a>
+						<%
+						current=current+1;
+						%>
+					  <% }); %>
 				</p>
 				<p class="intro-contact">
 					<% for(var y in theme.contact){ %>
@@ -18,11 +26,6 @@
 			</div>
 
 		</div>
-		<!-- <div class="pure-u-1 pure-u-md-2-3 pure-u-lg-1-2"  >
-            <div class="img-content"  >
-                <img src="<%=theme.intro.img%>"  class="img-detail">
-			</div>
-		</div> -->
     </div>
 </section>
 	

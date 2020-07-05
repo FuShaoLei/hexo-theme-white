@@ -1,11 +1,8 @@
+
 # main menu navigation
 menu:
   主页: /
-  # 博客: /posts
   博文: /archives
-  # 体系: /knowledge
-  # 项目: /project
-  # 关于: /about
   友链: /friend
   留言: /message
   说说: /saysay
@@ -18,11 +15,15 @@ icon: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #标签页图
 #自我介绍
 intro:
   title: Hi.I'm Sorryfu.
-  img: https://cdn.jsdelivr.net/gh/fushaolei/img/20200624215641.jpg
 
 
+#主页的按钮，默认是不跳转的连接，如有需要可去home.ejs里修改
+home:
+  Blog: /archives
+  Travellings: https://travellings.now.sh/
 
-#联系方式  更多图标：https://remixicon.com/
+#联系方式  
+#更多图标：https://remixicon.com/
 contact:
   Music:
     - https://music.163.com/#/user/home?id=559125633
@@ -64,7 +65,7 @@ valine:
   placeholder: 留下你来过的痕迹~ #评论框占位符
 
 plugins:
-  # 代码高亮
+  # 代码高亮，想要使用代码高亮，得先把根目录的_config.yml里的highlight的enable置成false
   highlightjs:
     js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js
     css: https://cdn.jsdelivr.net/npm/highlight.js@10.1.1/styles/vs2015.css
