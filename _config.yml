@@ -14,12 +14,19 @@ icon: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #标签页图
 
 #自我介绍
 intro:
-  title: Hi.I'm Sorryfu.
+  title: Sorryfu.
+  sub: #个性签名，可选填
+
+#文章toc索引栏设置
+toc:
+  max: 3 #最大
+  min: 2 #最小
 
 
 #主页的按钮，默认是不跳转的连接，如有需要可去home.ejs里修改
 home:
   Blog: /archives
+  Wiki: https://sorryfu.top/wiki
   Travellings: https://travellings.now.sh/
 
 #联系方式  
@@ -51,12 +58,16 @@ link:
   依尘: https://yichen.online
   TMaize Blog: https://blog.tmaize.net/
   猫鱼的小站: http://catfish6.net/
-
+  M E S : https://rain.moimo.me
+  弥枳: https://blog.coor.top
+  明心: https://subrige.xyz/
+  饿龙不是龙哩: https://liuyifei.club
+  YOYLING.: https://yoyling.com
 
 # Valine评论系统
 valine:
   open: true # true | false 是否打开，默认false
-  appid: HBismw2vU6hg56PslAF2APW1-gzGzoHsz  #Leancloud应用的AppID
+  appid: HBismw2vU6hg56PslAF2APW1-gzGzoHsz  #Leancloud应用的AppID  这里和下面的要换成你自己的啊QAQ
   appkey: k41e2BJYdNbojyHuMnKT5LBK  #Leancloud应用的AppKey
   verify: false #验证码
   notify: true #评论回复提醒

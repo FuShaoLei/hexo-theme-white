@@ -5,9 +5,6 @@
 
 ## 配置
 
-<details>
-  <summary>_config.yml</summary>
-  
 ```yml
 
 # main menu navigation
@@ -25,12 +22,19 @@ icon: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #标签页图
 
 #自我介绍
 intro:
-  title: Hi.I'm Sorryfu.
+  title: Sorryfu.
+  sub:  #个性签名，可选填
+
+#文章toc索引栏设置
+toc:
+  max: 3 #最大
+  min: 2 #最小
 
 
 #主页的按钮，默认是不跳转的连接，如有需要可去home.ejs里修改
 home:
   Blog: /archives
+  Wiki: https://sorryfu.top/wiki
   Travellings: https://travellings.now.sh/
 
 #联系方式  
@@ -62,12 +66,16 @@ link:
   依尘: https://yichen.online
   TMaize Blog: https://blog.tmaize.net/
   猫鱼的小站: http://catfish6.net/
-
+  M E S : https://rain.moimo.me
+  弥枳: https://blog.coor.top
+  明心: https://subrige.xyz/
+  饿龙不是龙哩: https://liuyifei.club
+  YOYLING.: https://yoyling.com
 
 # Valine评论系统
 valine:
   open: true # true | false 是否打开，默认false
-  appid: HBismw2vU6hg56PslAF2APW1-gzGzoHsz  #Leancloud应用的AppID
+  appid: HBismw2vU6hg56PslAF2APW1-gzGzoHsz  #Leancloud应用的AppID  这里和下面的要换成你自己的啊QAQ
   appkey: k41e2BJYdNbojyHuMnKT5LBK  #Leancloud应用的AppKey
   verify: false #验证码
   notify: true #评论回复提醒
@@ -82,9 +90,6 @@ plugins:
     css: https://cdn.jsdelivr.net/npm/highlight.js@10.1.1/styles/vs2015.css
     # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
 ```
-
-
-</details>
 
 ### Front-matter可选配置
 
@@ -137,12 +142,20 @@ layout: friend
 - 可配置主页的按钮了(￣▽￣)"
 - 主页的大字会根据屏幕大小变换啦（还在考虑中）
 
+### 2020/07/14
+> 感谢 @isunjn 的建议
+
+- 主页的按钮稍微调大了些，弄明显了一些
+- 可以配置签名了（会显示到主页上）
+- 可自定义文章的索引的深度
+
 ## REFERENCE
 本主题在开发过程中或多或少的借鉴前人的一些作品，
 
 - [Typora的更新文档](http://support.typora.io/)：我见过很多简约的主题，但是没见过如此简约的主题，再配上好看的字体，简直了，那一刻开始我就马上找到了它的源码，并下手开发hexo版的主题
 - [TMaize Blog](https://blog.tmaize.net/)：同样也是简约布局，但是它的归档页是分类的，就是分类名后面跟着文章，再加上之前入坑就是因为想要自己弄一个可以分类后跟文章名的主题，所以就用上了
 - [群狼动力](https://volf.club/)：travelling的发起者，原模版是html5up上的，这是我首页的启发（其实我就是照搬的，不过没有抄代码嘻嘻嘻）
+- [Geekplux](https://geekplux.com/)：借鉴了他那个好看的hover
 
 ## CONTACT
 - 1563250958@qq.com

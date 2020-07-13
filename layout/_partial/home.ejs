@@ -4,13 +4,16 @@
 			<div class="text-content" >
 				<p class="home-title">
 					<%=theme.intro.title%>
-                </p>
+				</p>
+				<p class="sub">
+					<%=theme.intro.sub%>
+				</p>
 				<p class="sub-content">
 					<%
 					var current=0;
 					%>
 					<% Object.keys(theme.home).forEach(key => { %>
-						<%if(current!==0){%> / <%}%> <a href="<%=url_for(theme.home[key])%>" ><%=key%></a>
+						<%if(current!==0){%> / <%}%> <a href="<%=url_for(theme.home[key])%>"  class="hover-link"><%=key%></a>
 						<%
 						current=current+1;
 						%>
