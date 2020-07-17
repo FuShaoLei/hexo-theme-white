@@ -26,6 +26,18 @@ body{
 
 .toc>ol,li{
   list-style:disc;
+  color: #333;
+}
+.toc{
+  font-weight: 1000;
+}
+.toc>a,.toc-link{
+  color: #333;
+  text-decoration: none;
+}
+.toc-link:hover{
+  color:#0366D6 ;
+  text-decoration: underline #0366D6;
 }
 
 .page-number{
@@ -164,9 +176,9 @@ display: none;
 }
 
 /* 搜索 */
-.search-section>ul,li,ol{
+/* .search-section>ul,li,ol{
   list-style: none;
-}
+} */
 /* 自适应 */
 @media (max-width: 1115px){
   .gone-me{

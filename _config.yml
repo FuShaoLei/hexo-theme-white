@@ -8,7 +8,7 @@ menu:
   说说: /saysay
   开往: https://travellings.now.sh/
 
-site_name: Sorryfu #网站的名称
+site_name: Sorryfu Blog #网站的名称
 author: Sorryfu  #文章的默认作者
 icon: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #标签页图标
 
@@ -63,6 +63,7 @@ link:
   明心: https://subrige.xyz/
   饿龙不是龙哩: https://liuyifei.club
   YOYLING.: https://yoyling.com
+  優萌初華: https://shoka.lostyu.me
 
 # Valine评论系统
 valine:

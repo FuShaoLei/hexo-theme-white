@@ -21,20 +21,20 @@ blockquote{
   width: 100%;
   top: 0px;
   border-bottom: 1px dashed #999999;
-  min-height: 80px;
-  padding-top: 15px;
+  min-height: 70px;
+  padding-top: 8px;
 }
 
 .gallery {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px 0 30px;
+  padding: 7px 35px 0 35px;
 }
 
 .product-name,
 .product-name a {
-    font-size: 2em;
+    font-size: 1.6em;
 }
 .category-year{
   margin-top: 70px;
@@ -120,8 +120,10 @@ code,kbd,pre,samp{
 }
 code{ 
   /* 待考虑 */
-  color: #990000;
-  font-size: 1em;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #F3F4F4;
+  font-size: 0.9em;
   font-weight: normal;
   font-family: 'Century Gothic';
 }
@@ -143,9 +145,9 @@ code.highlighter-rouge * {
 }
 
 blockquote {
-  padding: 1em;
-  border-left: 5px solid #7A7A7A;
-  background: #F7F7F7;
+  padding: .1em 1em;
+  border-left: 5px solid #DFE2E5;
+  color: #2F363D;
 }
 .hljs{
   overflow: scroll;
