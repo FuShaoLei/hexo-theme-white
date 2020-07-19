@@ -12,6 +12,7 @@ a{
   text-decoration: none;
   color: #333;
 }
+
 body,p,div,span{
   font-family: 'Century Gothic';
 }
@@ -32,7 +33,7 @@ body,p,div,span{
 }
 .menu-site-name{
   font-weight: 1000;
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 .menu-ul{
   list-style: none;
@@ -41,8 +42,24 @@ body,p,div,span{
   float: left;
   margin-right: 20px;
   font-weight: 1000;
+  font-size: 1.05em;
 }
-
+.active-link li{
+  position: relative;
+}
+.active-link li:after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: -.2em ;
+  transition: all .3s;
+  background-color: #333;
+}
+.active-link li:hover:after{
+  right: 50%;
+}
 
 /* body */
 .body-outer{
@@ -75,7 +92,27 @@ body,p,div,span{
   line-height: 1.8em;
   margin-left: 5px;
 }
+.intro-sub a{
+  display: inline-block;
+  position: relative;
+}
+.intro-sub a:after{
+  content: "";
+  position: absolute;
+  top: 96%;
+  left: 0;
+  right: 0;
+  bottom: -.1em ;
+  transition: all .3s;
+  background-color: #333;
+}
+.intro-sub a:hover:after{
+  right: 50%;
+}
+
+
 .intro-contact{
+  margin-top: 3px;
   font-size: 1.4em;
   line-height: 1.8em;
 

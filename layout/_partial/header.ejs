@@ -1,6 +1,6 @@
 <div class="menu-outer">
     <div class="menu-inner">
-      <div class="menu-site-name">
+      <div class="menu-site-name  animate__animated  animate__fadeInUp">
         <a href="<%=url_for()%>">
           <%=theme.site_name%>
         </a>
@@ -9,8 +9,8 @@
       <div class="menu-group">
         <ul class="menu-ul">
         <% Object.keys(theme.menu).forEach(key => { %>
-          <a href="<%=theme.menu[key]%>">
-            <li class="menu-li hover-link">
+          <a href="<%=theme.menu[key]%>" class="nav-link">
+            <li class="menu-li  animate__animated  animate__fadeInUp">
               <%=key%>
             </li>
           </a>
