@@ -1,0 +1,87 @@
+/* 全局样式 */
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  height: 100%;
+  width: 100%;
+  /* background-color: #333; */
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+body,p,div,span{
+  font-family: 'Century Gothic';
+}
+/* menu */
+.menu-outer{
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.menu-inner{
+  width: 1125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.menu-site-name{
+  font-weight: 1000;
+  font-size: 1.5em;
+}
+.menu-ul{
+  list-style: none;
+}
+.menu-li{
+  float: left;
+  margin-right: 20px;
+  font-weight: 1000;
+}
+
+
+/* body */
+.body-outer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.body-inner{
+  width: 1125px;
+  height: 1000px;
+  background-color: #fff;
+}
+
+/* home */
+.intro-content{
+  margin-top: 150px;
+  width: 70%;
+}
+.intro-title{
+  font-size: 4.5em;
+  font-weight: 1000;
+  margin: 0;
+  padding: 0;
+}
+.intro-sub{
+  margin-top: 30px;
+  font-size: 1.2em;
+  font-weight: 1000;
+  line-height: 1.8em;
+  margin-left: 5px;
+}
+.intro-contact{
+  font-size: 1.4em;
+  line-height: 1.8em;
+
+  margin-left: 5px;
+}
+.intro-content,a{
+  color: #2E2E2E;
+  text-decoration: none;
+}

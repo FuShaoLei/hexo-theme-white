@@ -1,0 +1,23 @@
+<div class="menu-outer">
+    <div class="menu-inner">
+      <div class="menu-site-name">
+        <a href="<%=url_for()%>">
+          <%=theme.site_name%>
+        </a>
+        
+      </div>
+      <div class="menu-group">
+        <ul class="menu-ul">
+        <% Object.keys(theme.menu).forEach(key => { %>
+          <a href="<%=theme.menu[key]%>">
+            <li class="menu-li hover-link">
+              <%=key%>
+            </li>
+          </a>
+        <% }); %>
+        </ul>
+
+      </div>
+
+    </div>
+</div>

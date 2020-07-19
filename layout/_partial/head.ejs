@@ -1,0 +1,24 @@
+<%
+var pageTitle = page.title || config.subtitle || '';
+if (is_archive()) pageTitle = 'Archives';
+if (is_tag()) pageTitle = 'Tag: ' + page.tag;
+if (is_category()) pageTitle = 'Category: ' + page.category;
+if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
+if (is_year()) pageTitle += ': ' + page.year;
+pageTitle += ' [ ' + config.title + ' ]';
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%=pageTitle%></title>
+  <!-- 标签页图标 -->
+  <%if(theme.icon!=undefined){%>
+  <link rel="shortcut icon" href="<%-theme.icon%>" type="image/x-icon">
+  <%}%>
+    <!-- 图标库 -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- 全部css文件 -->
+  <%- css('css/white') %>
+</head>
