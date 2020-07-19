@@ -1,41 +1,9 @@
-<div class="posss">
-  <header class="pure-menu pure-menu-horizontal nav post-title" id="header">
+
+<article id="page">
   <h1><%=page.title%></h1>
-  <section class="post-meta">
-  <time datetime="<%=page.date.toJSON()%>"><%=date(page.date,'YYYY年MM月DD日')%></time>
-  by
-  <span><%= theme.author%></span>
-  </section>
-</header>
+  <%-page.content%>
+</article>
 
-
-<div id="pagecontainer" class="container">
-  <div id="post-content" class="inner-page">
-    <%if(page.toc!==false){%>
-      <%- toc(page.content,{class:"toc",list_number:false,max_depth: 3,min_depth: 2}) %>
-    <%}%>
-    
-    <%-page.content%>
-      <% if ( theme.valine.open === true && page.comments === true){ %>
-        <% if (theme.valine && theme.valine.appid && theme.valine.appkey){ %>
-          <section id="comments" class="comments" style="margin-top: 50px;" >
-            <style>
-              .comments{margin:30px;padding:10px;background:#fff}
-              @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-            </style>
-            <%- partial('_partial/valine', {
-              key: page.slug,
-              title: page.title,
-              url: config.url+url_for(page.path)
-              }) %>
-        </section>
-      <% } %>
-      <% } %>
-    
-  </div>
-</div>
-
-
-
-
+<div id="paginator">
+  <%-paginator()%>
 </div>

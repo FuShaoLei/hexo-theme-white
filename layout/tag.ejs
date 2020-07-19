@@ -1,33 +1,18 @@
-<div id="pagecontainer" class="container">
-  <div id="content">
-    <% if (page.posts.length > 0) { %>
-      <div id="recent-posts">
-        <h3><%=page.tag%></h3>
-        <ul class="category basic-posts">
-           <% page.posts.sort('date', -1).limit(10).each(post => { %>      
-          <li>
-            <div class="article">
-              <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
-                <header class="post-header">
-                  <span class="title"><a itemprop="name" href="<%=url_for(post.path)%>" title="<%=post.title%>"><%=post.title%></a></span>
-                  <time class="date" datetime="<%=post.date.toJSON()%>"><%=date(post.date,'YYYY-MM-DD')%></time>
-                </header>
-              </article>
-            </div>
-          </li>
-        <% }); %>
-        </ul>
-      </div>
-      <% if (page.total > 1){ %>
-        <nav id="paginator">
-          <% var prev_text =  __('上一页');var next_text = __('下一页') %>
-          <%- paginator({
-            prev_text: prev_text,
-            next_text: next_text
-          }) %>
-        </nav>
-      <% } %>
-    <% } %>
-  </div>
+
+<div id="tag">
+  <h1><%=page.tag%></h1>
+  <% page.posts.each(article => { %>
+    <div class="tag-item">
+      <a href="<%=url_for(article.path)%>">
+        <%=article.title%>
+      </a>
+      <time datetime="<%=date_xml(article.date)%>">
+        <%=date(article.date)%>
+      </time>
+    </div>
+  <% }) %>
 </div>
 
+<div id="paginator">
+  <%-paginator()%>
+</div>

@@ -1,67 +1,70 @@
+
 <%
-function rl(a)
-{
-  if (a.categories.data.length>0){
-    return a.categories.data[0].name;
-  }
-  return 'fuck';
-}
-function unique(arr){
-  return Array.from(new Set(arr));
-}
-var categoriesList1 = list_categories({ show_count: false,depth:1, style: ""});
-<!--分割字符串-->
-var arraylist=[];
-arraylist=categoriesList1.split(",");
+const categoriesList = list_categories({ show_count: false });
+const tagsList = list_tags({ show_count: false });
+const archivesList = list_archives({ show_count: false });
 %>
-<div id="pagecontainer" class="container">
-  <div id="content">
-      <% if (site.categories.length>0) { %>
 
+<% if (is_year() === false) { %>
+  <div id="archive">
 
-          <div id="index">
-            <h3 class="category-year">Fragment</h3>
-            <% site.posts.sort('date',-1).each(pos => {%>  
-              <%if(!pos.categories.data.length){%>
-                <div class="category basic-posts">  
-                  <div class="article">
-                    <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
-                      <header class="post-header">
-                        <span class="title"><a itemprop="name" href="<%=url_for(pos.path)%>" title="<%=pos.title%>"><%=pos.title%></a></span>
-                        <time class="date" datetime="<%=pos.date.toJSON()%>"><%=date(pos.date,'YYYY-MM-DD')%></time>
-                      </header>
-                    </article>
-                  </div>
-                
-                </div>
-              <%}%>
-            <% }); %>
-            <%for(var j=0;j<arraylist.length;j++){ %>
-              <h3 class="category-year"><%-trim(strip_html(arraylist[j]))%></h3> 
-              <% site.posts.each(pos => {%>
-                <%if(pos.categories.data.length>0){%>
-                  <%if(pos.categories.data[0].name===trim(strip_html(arraylist[j]))){%>
-                    <div class="category basic-posts">  
-                      <div class="article">
-                        <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
-                          <header class="post-header">
-                            <span class="title"><a itemprop="name" href="<%=url_for(pos.path)%>" title="<%=pos.title%>"><%=pos.title%></a></span>
-                            <time class="date" datetime="<%=pos.date.toJSON()%>"><%=date(pos.date,'YYYY-MM-DD')%></time>
-                          </header>
-                        </article>
-                      </div>
-                    
-                    </div>
-                  <%}%>
-                <%};%>
-              <% }); %>
-            <%};%>
-      
-          </div>
-        <% } %>
+    <h1>Archives</h1>
+
+    <% if (theme.atom !== undefined) { %>
+      <p>
+        The feed is available via
+        <a href="<%=theme.atom%>">atom</a>.
+      </p>
+      <br>
+    <% } %>
+
+    <aside>
+      <h2>Categories</h2>
+      <% if (categoriesList !== "") { %>
+        <%-categoriesList%>
+      <% } else { %>
+        <p>None.</p>
+      <% } %>
+    </aside>
+    <br>
+
+    <aside>
+      <h2>Tags</h2>
+      <% if (tagsList !== "") { %>
+        <%-tagsList%>
+      <% } else { %>
+        <p>None.</p>
+      <% } %>
+    </aside>
+    <br>
+
+    <aside>
+      <h2>Archives</h2>
+      <% if (archivesList !== "") { %>
+        <%-archivesList%>
+      <% } else { %>
+        <p>None.</p>
+      <% } %>
+    </aside>
+
   </div>
-</div>
-<!-- 思路：
-1. 找出所有分类存入一个array中
-2. 循环array，没一次循环包含着一个site.post循环
-3. 输出 -->
+<% } else { %>
+
+  <h1><%=page.month + '/' + page.year%></h1>
+
+  <% page.posts.each(article => { %>
+    <div class="archive-item">
+      <a href="<%=url_for(article.path)%>">
+        <%=article.title%>
+      </a>
+      <time datetime="<%=date_xml(article.date)%>">
+        <%=date(article.date)%>
+      </time>
+    </div>
+  <% }) %>
+
+  <div id="paginator">
+    <%-paginator()%>
+  </div>
+
+<% } %>
