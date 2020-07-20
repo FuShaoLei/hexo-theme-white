@@ -1,0 +1,7 @@
+/* 自适应 */
+@media (max-width: 1000px){
+    .post-content-inner{
+      width: 650px;
+    }
+  
+  }

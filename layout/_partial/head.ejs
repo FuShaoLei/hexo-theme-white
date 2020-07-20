@@ -9,7 +9,7 @@ pageTitle += ' [ ' + config.title + ' ]';
 %>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title><%=pageTitle%></title>
@@ -22,5 +22,11 @@ pageTitle += ' [ ' + config.title + ' ]';
   <!-- 动画库 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <!-- 全部css文件 -->
-  <%- css('css/white') %>
+  <%- css(['css/white','css/white-post.css','css/white-media.css']) %>
+  <!-- 代码高亮 -->
+  <% if (config.highlight.enable != true) { %>
+    <% if (theme.plugins.highlightjs && theme.plugins.highlightjs.css) { %>
+      <%- css(theme.plugins.highlightjs.css) %>
+    <% } %>
+  <% } %>
 </head>

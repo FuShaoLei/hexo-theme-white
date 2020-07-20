@@ -16,9 +16,21 @@ a{
 body,p,div,span{
   font-family: 'Century Gothic';
 }
+/* 滚动条 */
+::-webkit-scrollbar
+{
+  width:5px;
+  height:5px;
+  background-color:#ffffff;
+}
+::-webkit-scrollbar-thumb
+{
+  -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+  background-color:#2E2E2E;
+}
 /* menu */
 .menu-outer{
-  background-color: #fff;
+  /* background-color: #fff; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -70,7 +82,7 @@ body,p,div,span{
 }
 .body-inner{
   width: 1125px;
-  height: 1000px;
+  /* height: 1000px; */
   background-color: #fff;
 }
 
@@ -92,6 +104,7 @@ body,p,div,span{
   line-height: 1.8em;
   margin-left: 5px;
 }
+/* intro-sub中超链接的样式 */
 .intro-sub a{
   display: inline-block;
   position: relative;
@@ -111,6 +124,7 @@ body,p,div,span{
 }
 
 
+
 .intro-contact{
   margin-top: 3px;
   font-size: 1.4em;
@@ -121,4 +135,60 @@ body,p,div,span{
 .intro-content,a{
   color: #2E2E2E;
   text-decoration: none;
+}
+/* archive */
+.archive-inner{
+  margin-bottom: 100px;
+}
+.archive-year-title{
+  font-size: 5em;
+  font-weight: 1000;
+  line-height: 1.7em;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.archive-post{
+  font-weight: 1000;
+  line-height: 1.7em;
+  font-size: 1.2em;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  transition: .4s;
+
+  display: flex;
+
+  
+}
+
+.archive-post-title{
+  font-size: 1.3em;
+  transition: .4s;
+  margin-right: auto;
+}
+
+
+.archive-post-date{
+  font-size: 0.7em;
+  background-color: rgba(26, 152, 255,.15);
+  color: rgb(26, 152, 255);
+  border-radius: 5px;
+  padding: 0px 10px;
+  margin: 0px 10px;
+
+  transition: .4s;
+}
+
+.archive-post:hover{
+  background-color: #007ACC;
+  color: #fff;
+
+}
+.archive-post:hover .archive-post-title{
+  margin-left: 40px;
+  color: #fff;
+}
+.archive-post:hover .archive-post-date{
+  color: #fff;
 }

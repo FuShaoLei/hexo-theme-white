@@ -1,19 +1,22 @@
  
+
 # icon
 icon: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #标签页图标
 #  header
 site_name: Sorryfu.
 
 menu:
-  Home: /
-  Archives: /archives
-  Travellings: https://travellings.now.sh/
+  HOME: /
+  BLOG: /archives
+  TRAVELLINGS: https://travellings.now.sh/
 
 
 # 自我介绍
 intro:
   title: Hey.I am Sorryfu.
   sub: An Android Developer based on China. #此处可以写html代码
+  avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像
+  author: Sorryfu #所有文章的默认作者
 
 #联系方式  
 #更多图标：https://remixicon.com/
@@ -30,3 +33,13 @@ contact:
   Github:
     - https://github.com/FuShaoLei
     - ri-github-line
+
+
+# 文章设置
+
+plugins:
+  # 代码高亮，想要使用代码高亮，得先把根目录的_config.yml里的highlight的enable置成false
+  highlightjs:
+    js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js
+    css: https://cdn.jsdelivr.net/npm/highlight.js@10.1.1/styles/github.css
+    # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles

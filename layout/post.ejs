@@ -1,9 +1,23 @@
 
-<article id="post">
-  <h1><%=page.title%></h1>
-  <%-page.content%>
+<article class="post-inner">
+  <div class="post-content-outer">
+    <div class="post-content-inner">
+      <div class="post-intro">
+        <%if(page.cover){%>
+        <div class="post-cover"><img src="<%=page.cover%>" class="post-cover-img"></div>
+        <%}%>
+        <div class="post-title"><%=page.title%></div>
+        <div class="meta-date"><%=date(page.date, 'YYYY年M月D日') %> by <%=theme.intro.author%></div>
+        <!-- <div class="post-meta">
+          <div class="meta-avator"><img src="<%=theme.intro.avator%>"></div>
+          <div class="meta-author"><%=theme.intro.author%></div>
+          <div class="meta-date"><%=date(page.date, 'YYYY年M月D日') %></div>
+        </div> -->
+      </div>
+
+    <%-page.content%>
+   </div>
+  </div>
+
 </article>
 
-<div id="paginator">
-  <%-paginator()%>
-</div>
