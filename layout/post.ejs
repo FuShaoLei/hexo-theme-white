@@ -1,21 +1,22 @@
 
-<article class="post-inner">
+<article class="post-inner ">
   <div class="post-content-outer">
     <div class="post-content-inner">
       <div class="post-intro">
         <%if(page.cover){%>
         <div class="post-cover"><img src="<%=page.cover%>" class="post-cover-img"></div>
         <%}%>
-        <div class="post-title"><%=page.title%></div>
-        <div class="meta-date"><%=date(page.date, 'YYYY年M月D日') %> by <%=theme.intro.author%></div>
+        <div class="post-title animate__animated  animate__fadeInUp"><%=page.title%></div>
+        <div class="meta-date animate__animated  animate__fadeInUp"><%=date(page.date, 'YYYY年M月D日') %> by <%=theme.intro.author%></div>
         <!-- <div class="post-meta">
           <div class="meta-avator"><img src="<%=theme.intro.avator%>"></div>
           <div class="meta-author"><%=theme.intro.author%></div>
           <div class="meta-date"><%=date(page.date, 'YYYY年M月D日') %></div>
         </div> -->
       </div>
-
-    <%-page.content%>
+      <div class="animate__animated  animate__fadeInUp">
+        <%-page.content%>
+      </div>
    </div>
   </div>
 

@@ -1,24 +1,25 @@
 <section class="archive-outer">
     <section class="archive-inner">
-          <% var last;%>
-          <% site.posts.sort('date', -1).each(function(post, i){ %>
-            <% var year = post.date.year(); %>
-            <% if (last != year){ %>
-            <% if (last != null){ %>
-            <% } %>
-            <% last = year; %>
-          <div class="archive-year-title animate__animated  animate__fadeInUp"><%=  year %></div>
-          <% } %>
+          <% page.posts.sort('date', -1).limit(10).each(post => { %>
           <a  href="<%=url_for(post.path)%>">
           <div class="archive-post animate__animated  animate__fadeInUp">
-            <div class="archive-post-date"><%=date(post.date, 'MM/DD') %></div>
+            <div class="archive-post-date"><%=date(post.date, 'MM月DD日') %></div>
             <div class="archive-post-title"><%=post.title%></div>
-            <div class="archive-post-readmore">READ MORE ▶</div>
+            <!-- <div class="archive-post-readmore">READ MORE ▶</div> -->
           </div>
         </a>
          <% }) %>
+         <% if (page.total > 1){ %>
+          <nav class="paginator">
+            <% var prev_text =  __('上一页');var next_text = __('下一页') %>
+            <%- paginator({
+              prev_text: prev_text,
+              next_text: next_text
+            }) %>
+          </nav>
+        <% } %>
     </section>
-  </section>
+</section>
   
-  
+
   

@@ -11,6 +11,7 @@
     text-align: center;
     font-size: 2.9em;
     font-weight: 1000;
+    margin-bottom: 20px;
 }
 .post-cover-img{
 min-width: 100%;
@@ -85,10 +86,17 @@ margin-bottom: 100px;
 
 /* 引用栏 */
 .post-content-inner blockquote{
-    border-left: 4px solid #E3E3E3;
+    border-left: 4px solid rgb(26, 152, 255);
     padding-left: 17px;
-    color:#ACACAC ;
+    color:#555555 ;
+    font-size: 0.9em;
 }
+/* .post-content-inner blockquote::before{
+    content: '≤';
+    color:rgb(26, 152, 255) ;
+    font-size: 1.2em;
+    font-weight: 1000;
+} */
 
 /* 列表 */
 
@@ -193,8 +201,13 @@ code{
 .post-content-inner{
     line-height: 1.7;
 }
-blockquote{
-    line-height: 1.55;
+.post-content-inner p{
+    line-height: 2;
+}
+.post-content-inner blockquote>p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.65;
 }
 .post-content-inner h5{
     line-height: 3;

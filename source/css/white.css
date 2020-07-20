@@ -137,23 +137,20 @@ body,p,div,span{
   text-decoration: none;
 }
 /* archive */
-.archive-inner{
-  margin-bottom: 100px;
+.archive-outer{
+  display: flex;
+  justify-content: center;
 }
-.archive-year-title{
-  font-size: 5em;
-  font-weight: 1000;
-  line-height: 1.7em;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  text-align: center;
+.archive-inner{
+  width: 800px;
+  margin-bottom: 100px;
 }
 .archive-post{
   font-weight: 1000;
   line-height: 1.7em;
   font-size: 1.2em;
   background-color: #fff;
-  padding: 50px;
+  padding: 20px;
   border-radius: 5px;
   transition: .4s;
 
@@ -163,7 +160,7 @@ body,p,div,span{
 }
 
 .archive-post-title{
-  font-size: 1.3em;
+  font-size: 1.1em;
   transition: .4s;
   margin-right: auto;
 }
@@ -191,4 +188,27 @@ body,p,div,span{
 }
 .archive-post:hover .archive-post-date{
   color: #fff;
+}
+/* 分页 */
+.paginator{
+  margin-top: 50px;
+  text-align: center;
+}
+.paginator .page-number{
+  display: none;
+}
+.paginator .extend{
+  margin: 0 10px;
+  background-color: rgba(26, 152, 255,.15);
+  color: rgb(26, 152, 255);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: 1000;
+
+  transition: all .4s;
+}
+.paginator .extend:hover{
+  color: #fff;
+  background-color:rgb(26, 152, 255) ;
 }
