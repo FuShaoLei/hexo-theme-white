@@ -15,6 +15,28 @@
           <%- toc(page.content,{class:"toc-top",list_number:false,max_depth: theme.toc.max,min_depth: theme.toc.min}) %>
         <%}%>
         <%-page.content%>
+        <!-- 分类文章 -->
+        <% if(page.categories.data.length>0){ %>
+          <div class="post-categoris-bottom">
+            <div class="post-categoris-name"><%=page.categories.data[0].name%></div>
+            <ul>
+            <% site.posts.sort('date',1).each(pos => {%>
+            <%if(pos.categories.data.length>0){%>
+              <%if(pos.categories.data[0].name===page.categories.data[0].name){%>
+                <li class="<%if(pos.title===page.title){%>me base<%}else{%>base<%}%>">
+                  <a  href="<%=url_for(pos.path)%>" class="post-categoris-bottom-link">
+                  <%=pos.title%>
+                </a>
+                </li>
+              
+              <%}%>
+            <%};%>
+            <% }); %>
+            </ul>
+
+          </div>
+
+        <% } %>
         <!-- 评论 -->
         <% if ( theme.comments.valine.open === true && page.comments === true){ %>
           <% if (theme.comments.valine && theme.comments.valine.appid && theme.comments.valine.appkey){ %>

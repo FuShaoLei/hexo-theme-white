@@ -249,11 +249,11 @@ code{
 }
 .toc-top .toc-top-link{
     font-size: 0.9em;
-    transition: all .3s;
+    transition: all .4s;
 }
 .toc-top .toc-top-link:hover{
     text-decoration: none;
-    margin-left: 10px;
+    /* margin-left: 5px; */
 }
 
 /* .toc{
@@ -289,6 +289,23 @@ code{
 }
 .post-content-inner ul,ol,li p{
     line-height: 2;
+}
+
+/* 分类 */
+.post-categoris-bottom{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #E3E3E3;
+    border-radius: 5px;
+    padding: 20px 20px;
+}
+.post-categoris-bottom .post-categoris-bottom-link:hover{
+  text-decoration: none;
+}
+.post-categoris-name{
+    font-size: 1.1em;
+    font-weight: 1000;
+    margin-bottom: 10px;
 }
 
 /* gitalk美化 */
