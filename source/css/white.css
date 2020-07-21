@@ -67,7 +67,7 @@ body,p,div,span{
   right: 0;
   bottom: -.2em ;
   transition: all .3s;
-  background-color: #333;
+  background-color: #1A98FF;
 }
 .active-link li:hover:after{
   right: 50%;
@@ -142,7 +142,7 @@ body,p,div,span{
   justify-content: center;
 }
 .archive-inner{
-  width: 800px;
+  width: 100%;
   margin-bottom: 100px;
 }
 .archive-post{
@@ -178,12 +178,12 @@ body,p,div,span{
 }
 
 .archive-post:hover{
-  background-color: #007ACC;
+  background-color: #1A98FF;
   color: #fff;
 
 }
 .archive-post:hover .archive-post-title{
-  margin-left: 40px;
+  margin-left: 20px;
   color: #fff;
 }
 .archive-post:hover .archive-post-date{

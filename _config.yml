@@ -1,5 +1,4 @@
- 
-
+########## 关于主页的设置 ##########
 # icon
 icon: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #标签页图标
 #  header
@@ -35,11 +34,53 @@ contact:
     - ri-github-line
 
 
-# 文章设置
+########## 关于文章的设置 ##########
 
+# 文章toc索引栏设置
+toc:
+  max: 2 #最大
+  min: 2 #最小
+
+# 插件
 plugins:
   # 代码高亮，想要使用代码高亮，得先把根目录的_config.yml里的highlight的enable置成false
   highlightjs:
     js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js
     css: https://cdn.jsdelivr.net/npm/highlight.js@10.1.1/styles/github.css
     # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
+
+# 评论系统设置
+comments:
+  valine:
+    open: true # true | false 是否打开，默认false
+    appid: HBismw2vU6hg56PslAF2APW1-gzGzoHsz  #Leancloud应用的AppID  这里和下面的要换成你自己的啊QAQ
+    appkey: k41e2BJYdNbojyHuMnKT5LBK  #Leancloud应用的AppKey
+    verify: false #验证码
+    notify: true #评论回复提醒
+    avatar: robohash #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
+    #头像类型可见： https://valine.js.org/avatar.html
+    placeholder: 留下你来过的痕迹~ #评论框占位符
+
+
+
+############## 其他 ##############
+
+#友链
+link:
+  BlogWe: https://blogwe.com/
+  城南破事: https://www.ronce.cc/
+  竹青虫の窝: https://1940879828.github.io/
+  CtrlCV博客: https://www.hack-er.cn/
+  两小无猜: https://www.cnblogs.com/charlottepl/
+  策策的小黑屋: https://www.cnblogs.com/occlive/
+  Guan FuQing: https://yiki.tech
+  阿瑞: https://wenzia.com
+  依尘: https://yichen.online
+  TMaize Blog: https://blog.tmaize.net/
+  猫鱼的小站: http://catfish6.net/
+  M E S : https://rain.moimo.me
+  弥枳: https://blog.coor.top
+  明心: https://subrige.xyz/
+  饿龙不是龙哩: https://liuyifei.club
+  YOYLING.: https://yoyling.com
+  優萌初華: https://shoka.lostyu.me

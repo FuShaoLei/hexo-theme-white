@@ -1,3 +1,5 @@
+
+//下面这一段全部来自于hexo-theme-nexmoe的部分源码，感谢大佬，指路: https://github.com/theme-nexmoe/hexo-theme-nexmoe
 const getRealPath = (pathname, desc = false) => {
     if (!pathname) {
       pathname = window.location.pathname;
@@ -28,4 +30,5 @@ for (let link of links) {
     link.className = "active-link nav-link";
   }
 }
-//上面这一段全部来自于hexo-theme-nexmoe的源码，感谢大佬，指路: https://github.com/theme-nexmoe/hexo-theme-nexmoe
+
+

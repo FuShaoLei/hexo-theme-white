@@ -1,0 +1,88 @@
+.toc {
+    overflow-y: auto;
+    color:#8e8787;
+    font-size: 0.9em;
+    transition: all .3s;
+}
+
+.toc>.toc-list {
+	overflow: hidden;
+	position: relative
+}
+
+.toc>.toc-list li {
+    list-style: none;
+}
+
+.toc-list {
+	margin: 0;
+	padding-left: 12px
+}
+
+a.toc-link {
+	color: currentColor;
+	height: 100%
+}
+
+.is-collapsible {
+	max-height: 1000px;
+	overflow: hidden;
+	transition: all 300ms ease-in-out;
+}
+
+.is-collapsed {
+	max-height: 0
+}
+
+.is-position-fixed {
+	position: fixed !important;
+	top: 0
+}
+.toc-link{
+    transition: all .3s;
+}
+.is-active-link {
+	font-weight: 700;
+}
+
+.toc-link::before {
+	background-color: #E5E5E5;
+	content: '';
+	display: inline-block;
+	left: 0;
+    margin-top: 10%;
+	position: absolute;
+
+    width: 20px;
+    height: 5px;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+.toc-list-item>ul .toc-link::before{
+    width: 15px;
+    height: 5px;
+    
+}
+
+.is-active-link::before {
+    background-color: #8E8787;
+    
+}
+.toc-list-item{
+    color: transparent;
+}
+.toc-list-item .is-active-link{
+    color: #8e8787;
+    font-weight: 1000;
+}
+
+.toc:hover .toc-list-item{
+    color: #8e8787;
+}
+
+
+/*=============== 间距管理 ==============*/
+/* 增加两个li之间的间距 */
+.toc-list-item{
+    line-height: 2;
+}

@@ -1,17 +1,33 @@
 /* 引入字体 */
 @font-face{
-    font-family: hack;
+    font-family: hack-regular;
     src: url(../font/Hack-Regular.ttf);
 }
+@font-face{
+    font-family: hack-italic;
+    src: url(../font/Hack-Italic.ttf);
+}
+@font-face{
+    font-family: hack-bold;
+    src: url(../font/Hack-Bold.ttf);
+}
+@font-face{
+    font-family: hack-bolditalic;
+    src: url(../font/Hack-BoldItalic.ttf);
+}
 /* post */
+.post-inner{
+}
 .post-intro{
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 .post-title{
     text-align: center;
-    font-size: 2.9em;
-    font-weight: 1000;
+    font-size: 2.4em;
     margin-bottom: 20px;
+}
+.post-cover{
+    margin-top: 80px;
 }
 .post-cover-img{
 min-width: 100%;
@@ -33,11 +49,27 @@ object-fit: cover;
     margin-right: auto;
     font-size: 1.1em;
 }
-.meta-date{
+.meta-intro{
     font-size: 1em;
     text-align: center;
-    color: #7A7A7A;
+    color: #333;
 }
+
+
+/* .intro-span{
+    display: inline-block;
+    position: relative;
+}
+.intro-span::after{
+    content: "";
+    position: absolute;
+    top: 105%;
+    left: 3em;
+    right: 3em;
+    bottom: -.3em ;
+    transition: top .2s cubic-bezier(0,.8,.13,1);
+    background-color:  rgb(26, 152, 255);
+} */
 
 .post-content-outer{
 margin-top: 50px;
@@ -51,11 +83,12 @@ margin-bottom: 100px;
 /* 规范各个标题的大小 */
 .post-content-inner h2,h3,h4,h5,h6{
     color: #333;
+    font-weight: normal;/* 待定 */
 }
 .post-content-inner h2{
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 1.9em;
+    font-size: 1.7em;
 }
 .post-content-inner h3{
     margin-top: 20px;
@@ -100,17 +133,8 @@ margin-bottom: 100px;
 
 /* 列表 */
 
-.post-content-inner ul,ol,li{
-    list-style:none;
-    margin-left: 15px;
-}
-.post-content-inner li::before{
-    content: "◆";
-    font-size: 0.8em;
-    margin-left: -1.2rem;
-    margin-top: .1em;
-    color: rgb(187, 187, 187);
-    position: absolute;
+.post-content-inner ul,ol{
+     padding-left: 22px;
 }
 /* 超链接 */
 .post-content-inner a{
@@ -173,11 +197,14 @@ table > tbody + tbody {
 code,kbd,pre,samp{
     font-size:1em;
     font-weight: normal;
-    font-family: 'Century Gothic';
+    font-family: hack-regular,hack-italic,hack-bold,hack-bolditalic;
 }
 .hljs{
-    font-family: hack;
+    font-family: hack-regular,hack-italic,hack-bold,hack-bolditalic;
     overflow: scroll;
+}
+.hljs span{
+    font-family: hack-regular,hack-italic,hack-bold,hack-bolditalic;
 }
 .hljs,code{
     font-weight: normal;
@@ -191,11 +218,33 @@ code{
     border-radius: 5px;
     padding: 4px 6px;
     margin: 0px 4px;
-    font-family: hack;
+    font-family: hack-regular,hack-italic,hack-bold,hack-bolditalic;
 }
 .hljs{
     font-size: 1em;
 }
+/* toc */
+/* 位于文章上方的toc */
+.toc-top{
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    padding: 20px 40px;
+    list-style: disc;
+}
+.toc-top .toc-top-link{
+    font-size: 0.9em;
+}
+.toc-top .toc-top-link:hover{
+    text-decoration: none;
+}
+
+/* .toc{
+    z-index: 9999;
+    position: fixed;
+    top: 270px;
+    right: 120px;
+    overflow: scroll;
+} */
 
 /* 行高管理 */
 .post-content-inner{

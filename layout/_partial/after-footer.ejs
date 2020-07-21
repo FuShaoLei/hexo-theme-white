@@ -5,3 +5,6 @@
       <script>hljs.initHighlightingOnLoad();</script>
     <% } %>
 <% } %>
+<%if(is_post()===true){%>
+  <%- js('js/tocbot.min.js')%>
+<%}%>
