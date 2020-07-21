@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container" style="margin-top: 100px;"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '<%= theme.comments.gitalk.clientID %>',
+        clientSecret: '<%= theme.comments.gitalk.clientSecret %>',
+        id: window.location.pathname,
+        repo: '<%= theme.comments.gitalk.repo %>',
+        owner: '<%= theme.comments.gitalk.owner %>',
+        admin: '<%= theme.comments.gitalk.admin %>'
+    })
+    gitalk.render('gitalk-container')
+</script>

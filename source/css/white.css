@@ -26,7 +26,7 @@ body,p,div,span{
 ::-webkit-scrollbar-thumb
 {
   -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
-  background-color:#2E2E2E;
+  background-color:#1A98FF;
 }
 /* menu */
 .menu-outer{
@@ -112,12 +112,12 @@ body,p,div,span{
 .intro-sub a:after{
   content: "";
   position: absolute;
-  top: 96%;
+  top: 93%;
   left: 0;
   right: 0;
-  bottom: -.1em ;
+  bottom: -.04em ;
   transition: all .3s;
-  background-color: #333;
+  background-color: #1A98FF;
 }
 .intro-sub a:hover:after{
   right: 50%;
@@ -126,7 +126,7 @@ body,p,div,span{
 
 
 .intro-contact{
-  margin-top: 3px;
+  margin-top: 6px;
   font-size: 1.4em;
   line-height: 1.8em;
 
@@ -142,6 +142,7 @@ body,p,div,span{
   justify-content: center;
 }
 .archive-inner{
+  margin-top: 30px;
   width: 100%;
   margin-bottom: 100px;
 }
@@ -151,7 +152,7 @@ body,p,div,span{
   font-size: 1.2em;
   background-color: #fff;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: .4s;
 
   display: flex;
