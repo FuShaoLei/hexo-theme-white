@@ -1,0 +1,16 @@
+<article class="post-inner">
+<div class="post-content-outer">
+    <div class="post-content-inner">
+    <div class="post-intro">
+        <%if(page.cover){%>
+          <div class="post-cover"><img src="<%=page.cover%>" class="post-cover-img"></div>
+        <%}%>
+    </div>
+    <div class="post-content-main gitalk-saysay animate__animated  animate__fadeInUp">
+        <% if(theme.comments.gitalk.open === true){ %>
+        <%- partial('post/comment-gitalk') %>
+        <% } %>
+    </div>
+    </div>
+</div>
+</article>

@@ -294,3 +294,8 @@ body,p,div,span{
 .footer-li:hover i{
   color: #1A98FF;
 }
+
+/* gitalk-saysay优化 */
+.gitalk-saysay>#gitalk-container .gt-counts{
+  display: none;
+}
