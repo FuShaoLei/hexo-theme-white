@@ -13,8 +13,8 @@ menu:
 
 # 自我介绍
 intro:
-  title: Hey.I am Sorryfu.
-  sub: An Android Developer based on <a>China</a>. #此处可以写html代码
+  title: Hi.I'm Sorryfu.
+  sub: '[Android Developer]()' # markdown语法
   avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像
   author: Sorryfu #所有文章的默认作者
 
@@ -75,24 +75,6 @@ comments:
 ############## 其他 ##############
 
 # 页脚
-footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuShaoLei/hexo-theme-white)
+footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuShaoLei/hexo-theme-white) # markdown语法
 
-# 友链
-link:
-  BlogWe: https://blogwe.com/
-  城南破事: https://www.ronce.cc/
-  竹青虫の窝: https://1940879828.github.io/
-  CtrlCV博客: https://www.hack-er.cn/
-  两小无猜: https://www.cnblogs.com/charlottepl/
-  策策的小黑屋: https://www.cnblogs.com/occlive/
-  Guan FuQing: https://yiki.tech
-  阿瑞: https://wenzia.com
-  依尘: https://yichen.online
-  TMaize Blog: https://blog.tmaize.net/
-  猫鱼的小站: http://catfish6.net/
-  M E S : https://rain.moimo.me
-  弥枳: https://blog.coor.top
-  明心: https://subrige.xyz/
-  饿龙不是龙哩: https://liuyifei.club
-  YOYLING.: https://yoyling.com
-  優萌初華: https://shoka.lostyu.me
+

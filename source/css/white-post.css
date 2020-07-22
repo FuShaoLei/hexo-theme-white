@@ -122,6 +122,8 @@ margin-bottom: 100px;
 
 .post-content-inner ul,ol{
      padding-left: 22px;
+     margin-top: 10px;
+     margin-bottom: 10px;
 }
 /* 超链接 */
 .post-content-inner a{
@@ -183,6 +185,8 @@ table > tbody + tbody {
 
 /* 分割线 */
 .post-content-inner hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
     height: 3px;
     border: none;
     background-color: #E3E3E3;

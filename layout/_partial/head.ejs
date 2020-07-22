@@ -1,18 +1,19 @@
 <%
-var pageTitle = page.title || config.subtitle || '';
-if (is_archive()) pageTitle = 'Archives';
-if (is_tag()) pageTitle = 'Tag: ' + page.tag;
-if (is_category()) pageTitle = 'Category: ' + page.category;
-if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
-if (is_year()) pageTitle += ': ' + page.year;
-pageTitle += ' [ ' + config.title + ' ]';
+var title = titlecase(page.title);
+if (is_archive()){
+  title = __('BLOG');   
+} else if (is_category()){
+  title = __('Page.Categories') + ': ' + page.category;
+} else if (is_tag()){
+  title = __('Page.Tags') + ': ' + page.tag;
+}
 %>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title><%=pageTitle%></title>
+  <title><% if (title){ %>  <%= title %> | <% } %>   <%= theme.site_name%></title>
   <!-- 标签页图标 -->
   <%if(theme.icon!=undefined){%>
   <link rel="shortcut icon" href="<%-theme.icon%>" type="image/x-icon">
@@ -34,7 +35,7 @@ pageTitle += ' [ ' + config.title + ' ]';
     <%- css('css/tocbot.css')%>
   <%}%>
   <!-- 声明document.ready函数 -->
-  <script>
+  <!-- <script>
       document.ready = function (callback) {
         ///兼容FF,Google
         if (document.addEventListener) {
@@ -56,5 +57,5 @@ pageTitle += ' [ ' + config.title + ' ]';
           callback();
         }
       }
-  </script>
+  </script> -->
 </head>

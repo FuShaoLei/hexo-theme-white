@@ -21,11 +21,6 @@
   font-family: Gothic;
   src: url(../font/GOTHIC.TTF);
 }
-/* Futura字体 */
-@font-face{
-  font-family: futura;
-  src: url(../font/Futura-Book-2.ttf);
-}
 /* 全局样式 */
 *{
   padding: 0;
@@ -43,7 +38,6 @@ a{
 
 body,p,div,span{
   font-family: Gothic;
-  /* font-family: "Microsoft YaHei"; */
 }
 /* 滚动条 */
 ::-webkit-scrollbar
@@ -54,7 +48,7 @@ body,p,div,span{
 }
 ::-webkit-scrollbar-thumb
 {
-  -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+  /* -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3); */
   background-color:#1A98FF;
 }
 /* menu */
@@ -219,16 +213,16 @@ body,p,div,span{
 }
 
 .archive-post:hover{
-  background-color: #1A98FF;
-  color: #fff;
+  /* background-color: #1A98FF;
+  color: #fff; */
 
 }
 .archive-post:hover .archive-post-title{
   margin-left: 20px;
-  color: #fff;
+  /* color: #fff; */
 }
 .archive-post:hover .archive-post-date{
-  color: #fff;
+  /* color: #fff; */
 }
 /* 分页 */
 .paginator{
@@ -264,9 +258,6 @@ body,p,div,span{
   width: 1125px;
   display: flex;
   justify-content: space-between;
-}
-.footer-text{
-  font-family: "Microsoft YaHei"!important;
 }
 .footer-text{
   color:#898FA0;

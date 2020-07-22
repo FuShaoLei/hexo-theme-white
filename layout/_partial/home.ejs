@@ -1,7 +1,7 @@
 <section class="intro-section">
     <div class="intro-content">
         <div class="intro-title animate__animated  animate__fadeInUp"><%=theme.intro.title%></div>
-        <div class="intro-sub animate__animated  animate__fadeInUp"><%-theme.intro.sub%></div>
+        <div class="intro-sub animate__animated  animate__fadeInUp"><%- markdown(theme.intro.sub) %></div>
         <p class="intro-contact animate__animated  animate__fadeInUp">
             <% for(var y in theme.contact){ %>
                 <a href="<%=theme.contact[y][0]%>" target="_blank">
