@@ -1,0 +1,18 @@
+<div class="footer-outer animate__animated  animate__fadeInUp">
+    <div class="footer-inner">
+    <div class="footer-text">
+    <%- markdown(theme.footer) %>
+    </div>
+    <div class="footer-contact">
+    <ul class="footer-ul">
+        <% for(var y in theme.contact){ %>
+        <li class="footer-li">
+            <a href="<%=theme.contact[y][0]%>" target="_blank">
+                <i class="<%=theme.contact[y][1]%>"></i>
+            </a>
+        </li>
+        <% } %>
+    </ul>
+    </div>
+    </div>
+</div>

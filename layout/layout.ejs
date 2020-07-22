@@ -8,8 +8,10 @@
   <div class="body-inner">
     <%- body %>
   </div>
-  
 </div>
+<% if(is_home()==false){ %>
+  <%- partial('_partial/footer') %>
+<% } %>
 <%- partial('_partial/after-footer') %>
 </body>
 </html>

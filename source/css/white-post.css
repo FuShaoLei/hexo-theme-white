@@ -1,20 +1,3 @@
-/* 引入字体 */
-@font-face{
-    font-family: hack-regular;
-    src: url(../font/Hack-Regular.ttf);
-}
-@font-face{
-    font-family: hack-italic;
-    src: url(../font/Hack-Italic.ttf);
-}
-@font-face{
-    font-family: hack-bold;
-    src: url(../font/Hack-Bold.ttf);
-}
-@font-face{
-    font-family: hack-bolditalic;
-    src: url(../font/Hack-BoldItalic.ttf);
-}
 /* post */
 .post-inner{
 
@@ -328,13 +311,23 @@ code{
     background-color:#1A98FF ;
     color: #fff;
 }
-#gitalk-container .gt-btn-login,.gt-btn-public{
+#gitalk-container .gt-btn-login .gt-btn-public{
     border: 1px solid #1A98FF;
     background-color:#1A98FF ;
     border-radius: 20px;
     transition: all .3s;
 }
-#gitalk-container .gt-btn-login:hover,.gt-btn-public:hover{
+#gitalk-container .gt-btn-login:hover .gt-btn-public:hover{
+    background-color:#fff;
+    color: #1A98FF ;
+}
+#gitalk-container .gt-btn-public{
+    border: 1px solid #1A98FF;
+    background-color:#1A98FF ;
+    border-radius: 20px;
+    transition: all .3s;
+}
+#gitalk-container .gt-btn-public:hover{
     background-color:#fff;
     color: #1A98FF ;
 }

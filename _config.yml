@@ -74,7 +74,10 @@ comments:
 
 ############## 其他 ##############
 
-#友链
+# 页脚
+footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuShaoLei/hexo-theme-white)
+
+# 友链
 link:
   BlogWe: https://blogwe.com/
   城南破事: https://www.ronce.cc/

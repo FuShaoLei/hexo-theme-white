@@ -1,3 +1,31 @@
+/* 字体引入 */
+/* 代码用的hack字体 */
+@font-face{
+  font-family: hack-regular;
+  src: url(../font/Hack-Regular.ttf);
+}
+@font-face{
+  font-family: hack-italic;
+  src: url(../font/Hack-Italic.ttf);
+}
+@font-face{
+  font-family: hack-bold;
+  src: url(../font/Hack-Bold.ttf);
+}
+@font-face{
+  font-family: hack-bolditalic;
+  src: url(../font/Hack-BoldItalic.ttf);
+}
+/* logo用的Century Gothic字体 */
+@font-face{
+  font-family: Gothic;
+  src: url(../font/GOTHIC.TTF);
+}
+/* Futura字体 */
+@font-face{
+  font-family: futura;
+  src: url(../font/Futura-Book-2.ttf);
+}
 /* 全局样式 */
 *{
   padding: 0;
@@ -14,7 +42,8 @@ a{
 }
 
 body,p,div,span{
-  font-family: 'Century Gothic';
+  font-family: Gothic;
+  /* font-family: "Microsoft YaHei"; */
 }
 /* 滚动条 */
 ::-webkit-scrollbar
@@ -44,7 +73,8 @@ body,p,div,span{
   padding-bottom: 30px;
 }
 .menu-site-name{
-  font-weight: 1000;
+  /* font-weight: 1000; */
+  font-family: Gothic;
   font-size: 1.6em;
 }
 .menu-ul{
@@ -52,12 +82,20 @@ body,p,div,span{
 }
 .menu-li{
   float: left;
-  margin-right: 20px;
-  font-weight: 1000;
-  font-size: 1.05em;
+  margin-right: 30px;
+  /* font-weight: 1000; */
+  font-size: 0.9em;
+  color: #898FA0;
+  position: relative;
+  transition: all .3s;
+}
+.menu-li:hover{
+  color: #333;
 }
 .active-link li{
   position: relative;
+  color: #333;
+  
 }
 .active-link li:after{
   content: "";
@@ -92,6 +130,7 @@ body,p,div,span{
   width: 70%;
 }
 .intro-title{
+  font-family: Gothic;
   font-size: 4.5em;
   font-weight: 1000;
   margin: 0;
@@ -147,7 +186,7 @@ body,p,div,span{
   margin-bottom: 100px;
 }
 .archive-post{
-  font-weight: 1000;
+  /* font-weight: 1000; */
   line-height: 1.7em;
   font-size: 1.2em;
   background-color: #fff;
@@ -168,6 +207,7 @@ body,p,div,span{
 
 
 .archive-post-date{
+  font-weight: 1000;
   font-size: 0.7em;
   background-color: rgba(26, 152, 255,.15);
   color: rgb(26, 152, 255);
@@ -175,7 +215,7 @@ body,p,div,span{
   padding: 0px 10px;
   margin: 0px 10px;
 
-  transition: .4s;
+  transition:all .4s;
 }
 
 .archive-post:hover{
@@ -204,7 +244,7 @@ body,p,div,span{
   color: rgb(26, 152, 255);
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 1.2em;
+  font-size: 0.9em;
   font-weight: 1000;
 
   transition: all .4s;
@@ -212,4 +252,54 @@ body,p,div,span{
 .paginator .extend:hover{
   color: #fff;
   background-color:rgb(26, 152, 255) ;
+}
+
+/* footer */
+.footer-outer{
+  display: flex;
+  justify-content: center;
+}
+.footer-inner{
+  padding: 40px 0px;
+  width: 1125px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-text{
+  font-family: "Microsoft YaHei"!important;
+}
+.footer-text{
+  color:#898FA0;
+  font-size: 1em;
+}
+.footer-text a{
+  color:#898FA0;
+  font-size: 1em;
+}
+.footer-text a{
+  transition: all .3s;
+}
+.footer-text a:hover{
+  color: #1A98FF;
+}
+.footer-contact{
+  font-size: 1.2em;
+}
+.footer-ul{
+  list-style: none;
+}
+.footer-li{
+  float: left;
+  margin-right: 10px;
+  transition: all .3s;
+}
+.footer-li i{
+  color:#898FA0;
+  font-size: 1.2em;
+  transition: all .3s;
+  padding: 5px;
+  border-radius: 100%;
+}
+.footer-li:hover i{
+  color: #1A98FF;
 }
