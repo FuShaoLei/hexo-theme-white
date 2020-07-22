@@ -1,7 +1,7 @@
 # <div align="center">White</div>
 
 <p align="center">
-一款在极简和个性之间踱步的Hexo主题
+一款在极简和个性之间徘徊的Hexo主题
 <br>
 <a href="https://sorryfu.top/">Demo</a>  |  <a href="https://github.com/FuShaoLei/hexo-theme-white/issues/3">更新日志</a>  
 </p>
