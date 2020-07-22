@@ -111,6 +111,15 @@ comments: false #关闭文章评论
 cover: #设置文章封面图
 ```
 
+### layout可选配置
+
+#### gitalk-saysay
+```
+layout: gitalk-saysay
+cover: #可选封面
+```
+把相对的issue设置为locked 就只能自己评论啦，相当于一个说说页面
+
 ## 特性
 
 - 内置`valine` 和 `gitalk`评论系统
@@ -121,7 +130,8 @@ cover: #设置文章封面图
 ## 其他
 
 如果你喜欢我的主题，欢迎star⭐和fork
-如果你有什么意见或建议有欢迎给我提issue pr
+
+如果你有什么意见或建议有欢迎[在此留言](https://github.com/FuShaoLei/hexo-theme-white/issues/4)
 
 ## 联系
 
