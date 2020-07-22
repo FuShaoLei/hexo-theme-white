@@ -1,5 +1,10 @@
-# White
-一款基于 [Hexo](https://hexo.io/) 框架的主题模板
+# <div align="center">White</div>
+
+<p align="center">
+一款在极简和个性之间踱步的Hexo主题
+<br>
+<a href="https://sorryfu.top/">Demo</a>  |  <a href="https://github.com/FuShaoLei/hexo-theme-white/issues/3">更新日志</a>  
+</p>
 
 ![](https://cdn.jsdelivr.net/gh/fushaolei/img2/20200722190113.png)
 
@@ -115,7 +120,14 @@ cover: #设置文章封面图
 
 ## 其他
 
-如果你喜欢我的主题，不妨给我一个star⭐，感激不尽
+如果你喜欢我的主题，欢迎star⭐和fork
+如果你有什么意见或建议有欢迎给我提issue pr
+
+## 联系
+
+1563250958@qq.com
+
+
 
 
 
