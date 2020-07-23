@@ -234,6 +234,9 @@ code{
     list-style: disc;
     margin-bottom: 20px;
 }
+.toc-top-child{
+    list-style: disc;
+}
 .toc-top .toc-top-link{
     font-size: 0.9em;
     transition: all .4s;
