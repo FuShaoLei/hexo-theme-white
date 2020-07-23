@@ -9,7 +9,6 @@
 ![](https://cdn.jsdelivr.net/gh/fushaolei/img2/20200722190113.png)
 
 
-
 ## 安装
 
 ```bash
@@ -26,15 +25,6 @@ theme: white
 - 文章内容索引
 - 文章相关内容索引
 
-
-## 联系
-
-1563250958@qq.com
-
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/FuShaoLei/hexo-theme-white.svg)](https://starchart.cc/FuShaoLei/hexo-theme-white)
 
 
 
