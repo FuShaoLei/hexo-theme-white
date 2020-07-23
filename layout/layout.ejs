@@ -1,8 +1,8 @@
 
-<%- partial('_partial/head') %>
+<%- partial('_partial/head',{cache: true}) %>
 
 <body>
-<%- partial('_partial/header') %>
+<%- partial('_partial/header',{cache: true}) %>
 
 <div class="body-outer">
   <div class="body-inner">
@@ -10,8 +10,8 @@
   </div>
 </div>
 <% if(is_home()==false){ %>
-  <%- partial('_partial/footer') %>
+  <%- partial('_partial/footer',{cache: true}) %>
 <% } %>
-<%- partial('_partial/after-footer') %>
+<%- partial('_partial/after-footer',{cache: true}) %>
 </body>
 </html>
