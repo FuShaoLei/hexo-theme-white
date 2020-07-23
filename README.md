@@ -138,7 +138,9 @@ cover: #可选封面
 1563250958@qq.com
 
 
+## Stargazers over time
 
+[![Stargazers over time](https://starchart.cc/FuShaoLei/hexo-theme-white.svg)](https://starchart.cc/FuShaoLei/hexo-theme-white)
 
 
 
