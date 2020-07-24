@@ -19,12 +19,13 @@ git clone https://github.com/FuShaoLei/hexo-theme-white.git themes/white
 theme: white
 ```
 
-## 特性
+## 特点
 
 - 可自定义样式
 - 文章内容索引
 - 文章相关内容索引
 - 内置`valine` 和 `gitalk`评论系统
+- 全局搜索
 
 ## 欢迎star⭐
 
