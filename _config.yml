@@ -1,3 +1,14 @@
+############## style ##############
+style:
+  layout:
+    max-width: "1125px" #最大宽度
+  color:
+    theme-main: "#1A98FF" # 主色调
+    theme-secondary: "#DDF0FF" # 次色调
+    text-main: "#333333" # 文字主色调
+    text-secondary: "#898FA0" # 文字次色调
+
+
 ########## 关于主页的设置 ##########
 # icon
 icon: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #标签页图标

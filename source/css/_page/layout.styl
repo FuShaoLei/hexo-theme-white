@@ -1,0 +1,214 @@
+/* 字体引入 */
+/* 代码用的hack字体 */
+@font-face 
+  font-family hack-regular
+  src url(../font/Hack-Regular.ttf)
+  font-family hack-italic
+  src url(../font/Hack-Italic.ttf)
+  font-family hack-bold
+  src url(../font/Hack-Bold.ttf)
+  font-family hack-bolditalic
+  src url(../font/Hack-BoldItalic.ttf)
+  font-family Gothic
+  src url(../font/GOTHIC.TTF)
+/* logo用的Century Gothic字体 */
+/* 全局样式 */
+* 
+  padding 0
+  margin 0
+body 
+  height 100%
+  width 100%
+a 
+  text-decoration none
+  color $color-text-main
+body,p,div,span 
+  font-family Gothic
+/* 滚动条 */
+::-webkit-scrollbar 
+  width 5px
+  height 5px
+  background-color #ffffff
+::-webkit-scrollbar-thumb 
+  background-color $color-theme-main
+/* menu */
+.menu-outer 
+  width 100%
+  display flex
+  justify-content center
+.menu-inner 
+  width $layout-max-width
+  display flex
+  justify-content space-between
+  align-items center
+  padding-top 40px
+  padding-bottom 30px
+.menu-site-name 
+  font-family Gothic
+  font-size 1.6em
+.menu-ul 
+  list-style none
+.menu-li 
+  float left
+  margin-right 30px
+  font-size 0.9em
+  color $color-text-secondary
+  position relative
+  transition all .3s
+  &:hover 
+    color $color-text-main
+.active-link 
+  li 
+    position relative
+    color $color-text-main
+    &:after 
+      content ""
+      position absolute
+      top 100%
+      left 0
+      right 0
+      bottom -.2em
+      transition all .3s
+      background-color $color-theme-main
+    &:hover 
+      &:after 
+        right 50%
+/* body */
+.body-outer 
+  height 100%
+  width 100%
+  display flex
+  justify-content center
+.body-inner 
+  width $layout-max-width
+  background-color #fff
+/* home */
+.intro-content 
+  margin-top 150px
+  width 70%
+.intro-title 
+  font-family Gothic
+  font-size 4.5em
+  font-weight 1000
+  margin 0
+  padding 0
+.intro-sub 
+  margin-top 30px
+  font-size 1.2em
+  font-weight 1000
+  line-height 1.8em
+  margin-left 5px
+  a 
+    display inline-block
+    position relative
+    &:after 
+      content ""
+      position absolute
+      top 93%
+      left 0
+      right 0
+      bottom -.04em
+      transition all .3s
+      background-color $color-theme-main
+    &:hover 
+      &:after 
+        right 50%
+/* intro-sub中超链接的样式 */
+.intro-contact 
+  margin-top 10px
+  font-size 1.5em
+  line-height 1.8em
+  margin-left 5px
+.intro-content,a 
+  color #2e2e2e
+  text-decoration none
+  margin-right 3px
+/* archive */
+.archive-outer 
+  display flex
+  justify-content center
+.archive-inner 
+  margin-top 30px
+  width 100%
+  margin-bottom 100px
+.archive-post 
+  line-height 1.7em
+  font-size 1.2em
+  background-color #fff
+  padding 20px
+  border-radius 3px
+  transition .4s
+  display flex
+  &:hover 
+    .archive-post-title 
+      margin-left 20px
+.archive-post-title 
+  font-size 1.1em
+  transition .4s
+  margin-right auto
+.archive-post-date 
+  font-weight 1000
+  font-size 0.7em
+  background-color $color-theme-secondary
+  color $color-theme-main
+  border-radius 5px
+  padding 0px 10px
+  margin 0px 10px
+  transition all .4s
+.paginator 
+  margin-top 50px
+  text-align center
+  .page-number 
+    display none
+  .extend 
+    margin 0 10px
+    background-color $color-theme-secondary
+    color $color-theme-main
+    padding 10px 20px
+    border-radius 5px
+    font-size 0.9em
+    font-weight 1000
+    transition all .4s
+    &:hover 
+      color #fff
+      background-color $color-theme-main
+/* footer */
+.footer-outer 
+  display flex
+  justify-content center
+.footer-inner 
+  padding 40px 0px
+  width $layout-max-width
+  display flex
+  justify-content space-between
+.footer-text 
+  color $color-text-secondary
+  font-size 1em
+  a 
+    color $color-text-secondary
+    font-size 1em
+    transition all .3s
+    &:hover 
+      color $color-theme-main
+.footer-contact 
+  font-size 1.2em
+.footer-ul 
+  list-style none
+.footer-li 
+  float left
+  margin-right 10px
+  transition all .3s
+  i 
+    color $color-text-secondary
+    font-size 1.2em
+    transition all .3s
+    padding 5px
+    border-radius 100%
+  &:hover 
+    i 
+      color $color-theme-main
+/* gitalk-saysay优化 */
+.gitalk-saysay 
+  & > #gitalk-container 
+    .gt-counts 
+      display none
