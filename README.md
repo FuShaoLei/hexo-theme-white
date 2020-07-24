@@ -21,11 +21,12 @@ theme: white
 
 ## 特性
 
-- 内置`valine` 和 `gitalk`评论系统
+- 可自定义样式
 - 文章内容索引
 - 文章相关内容索引
+- 内置`valine` 和 `gitalk`评论系统
 
-## 欢迎star⭐ fork pr issue
+## 欢迎star⭐
 
 
 
