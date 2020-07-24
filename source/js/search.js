@@ -67,7 +67,6 @@ var searchFunc = function(path, search_id, content_id) {
                             if(start == 0){
                                 end = 100;
                             }
-
                             if(end > content.length){
                                 end = content.length;
                             }
@@ -77,7 +76,7 @@ var searchFunc = function(path, search_id, content_id) {
                             // highlight all keywords
                             keywords.forEach(function(keyword){
                                 var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<em class=\"search-keyword\">"+keyword+"</em>");
+                                match_content = match_content.replace(regS, "<span class=\"search-keyword\">"+keyword+"</span>");
                             });
                             
                             str += "<p class=\"search-result\">" + match_content +"...</p>"

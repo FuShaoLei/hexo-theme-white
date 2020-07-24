@@ -1,5 +1,5 @@
 .search
-    margin-top 60px
+    margin-top 30px
     margin-bottom 200px
 
 .search-input-outer
@@ -26,3 +26,22 @@
         position absolute
         background $color-theme-main
         color #fff
+
+#local-search-result
+    border-top 1px dashed $color-text-secondary
+    margin-top 40px
+    padding-top 30px
+    li
+        list-style none
+        margin-bottom 40px
+    .search-result-title
+        color #333
+        font-size 1.3em
+        font-weight 700
+        transition all .2s
+        &:hover
+            text-decoration none
+            color $color-theme-main
+    .search-keyword
+        color $color-theme-main
+        font-weight 1000

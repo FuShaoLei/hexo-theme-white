@@ -10,15 +10,17 @@
                         <button type="submit"><i class="ri-search-line"></i></button>
                     </form>
                 </div>
-                <div id="local-search-result"></div>
+                <div id="local-search-result">
+                    <img src="https://cdn.jsdelivr.net/gh/fushaolei/img/20200524012716.jpg">
+                </div>
             </div>
         </div>
      </div>
     </div>
   </article>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-  <%- js('js/search.js') %>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<%- js('js/search.js') %>
 <script type="text/javascript">      
     var search_path = "<%= config.search.path %>";
     if (search_path.length == 0) {
