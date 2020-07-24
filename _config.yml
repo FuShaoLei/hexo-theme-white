@@ -19,6 +19,12 @@ menu:
   HOME: /
   BLOG: /archives
 
+## 本地搜索
+search:
+  open: false # 是否开启
+  page: /search # 在上面页面上（通常命名为search）
+  
+
 
 # 自我介绍
 intro:

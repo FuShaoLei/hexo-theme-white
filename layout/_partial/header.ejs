@@ -9,17 +9,19 @@
       <div class="menu-group">
         <ul class="menu-ul">
         <% Object.keys(theme.menu).forEach(key => { %>
-          <a href="<%=theme.menu[key]%>" class="nav-link">
+          <a href="<%=url_for(theme.menu[key])%>" class="nav-link">
             <li class="menu-li  animate__animated  animate__fadeInUp">
               <%=key%>
             </li>
           </a>
         <% }); %>
-        <a href="#" class="nav-link">
+        <% if(theme.search.open===true) { %>
+        <a href="<%= url_for(theme.search.page) %>">
           <li class="menu-li  animate__animated  animate__fadeInUp">
             <i class="ri-search-line"></i>
           </li>
         </a>
+        <% } %>
         </ul>
 
       </div>

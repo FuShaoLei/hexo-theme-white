@@ -1,4 +1,6 @@
-<%- js('js/white.js') %>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<%- js(['js/white.js','js/search.js']) %>
+
 <% if (config.highlight.enable != true) { %>
     <% if (theme.plugins.highlightjs && theme.plugins.highlightjs.js) { %>
       <%- js(theme.plugins.highlightjs.js) %>

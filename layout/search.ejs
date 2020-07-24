@@ -1,0 +1,30 @@
+
+<article class="post-inner">
+    <div class="post-content-outer">
+      <div class="post-content-inner">
+        <div class="post-content-main animate__animated  animate__fadeInUp">
+            <div class="search">
+                <div class="search-input-outer">
+                    <form>
+                        <input type="text" placeholder="想要搜些什么呢..." id="local-search-input" name="q" results="0">
+                        <button type="submit"><i class="ri-search-line"></i></button>
+                    </form>
+                </div>
+                <div id="local-search-result"></div>
+            </div>
+        </div>
+     </div>
+    </div>
+  </article>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <%- js('js/search.js') %>
+<script type="text/javascript">      
+    var search_path = "<%= config.search.path %>";
+    if (search_path.length == 0) {
+        search_path = "search.xml";
+    }
+    var path = "<%= config.root %>" + search_path;
+    searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
+  
