@@ -54,11 +54,12 @@
         <% } %>
         <% }else{ %>
          <% if(theme.comments.gitalk.open === true && page.comments === true){ %>
+          <% if (theme.comments.gitalk && theme.comments.gitalk.clientID && theme.comments.gitalk.clientSecret ){ %>
           <%- partial('post/comment-gitalk') %>
+          <% } %>
          <% } %>
         <% } %>
       </div>
    </div>
   </div>
 </article>
-

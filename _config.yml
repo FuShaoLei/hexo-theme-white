@@ -11,39 +11,27 @@ style:
 
 ########## 关于主页的设置 ##########
 # icon
-icon: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #标签页图标
+icon:  #标签页图标
 #  header
-site_name: Sorryfu.
+site_name: white.
 
 menu:
   HOME: /
   BLOG: /archives
-  LINK: /friend
-  MOOD: /gitalk-saysay
-  TRAVELLINGS: https://travellings.now.sh/
 
 
 # 自我介绍
 intro:
-  title: Hi.I'm Sorryfu.
+  title: Hi.I'm White.
   sub: '[Android Developer]()' # markdown语法
-  avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像
-  author: Sorryfu #所有文章的默认作者
+  avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像 暂时还没用到
+  author: white #所有文章的默认作者
 
 #联系方式  
 #更多图标：https://remixicon.com/
 contact:
-  Music:
-    - https://music.163.com/#/user/home?id=559125633
-    - ri-netease-cloud-music-line
-  Bilibili:
-    - https://space.bilibili.com/286672419
-    - ri-bilibili-line
-  Email: 
-    - mailto:1563250958@qq.com
-    - ri-mail-line
   Github:
-    - https://github.com/FuShaoLei
+    - https://github.com/FuShaoLei/hexo-theme-white
     - ri-github-line
 
 
@@ -74,12 +62,12 @@ comments:
     #头像类型可见： https://valine.js.org/avatar.html
     placeholder: 留下你来过的痕迹~ #评论框占位符
   gitalk:
-    open: true # true | false 是否打开
-    owner: FuShaoLei #Github 用户名,
-    repo: comments-gitalk #储存评论issue的github仓库名
-    admin: FuShaoLei #Github 用户名
-    clientID: d3d54f9798d9c688a117 #`Github Application clientID`
-    clientSecret: 66081235dc903be07045ceae6d467072e526b6cc #`Github Application clientSecret`
+    open: false # true | false 是否打开
+    owner:  #Github 用户名,
+    repo:  #储存评论issue的github仓库名
+    admin:  #Github 用户名
+    clientID:  #`Github Application clientID`
+    clientSecret: #`Github Application clientSecret`
   
 
 
