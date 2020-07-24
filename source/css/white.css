@@ -159,8 +159,8 @@ body,p,div,span{
 
 
 .intro-contact{
-  margin-top: 6px;
-  font-size: 1.4em;
+  margin-top: 10px;
+  font-size: 1.5em;
   line-height: 1.8em;
 
   margin-left: 5px;
@@ -168,6 +168,7 @@ body,p,div,span{
 .intro-content,a{
   color: #2E2E2E;
   text-decoration: none;
+  margin-right: 3px;
 }
 /* archive */
 .archive-outer{
