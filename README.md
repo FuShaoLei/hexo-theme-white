@@ -9,6 +9,7 @@
 ![](https://cdn.jsdelivr.net/gh/fushaolei/img2/20200722190113.png)
 
 
+
 ## 安装
 
 ```bash
@@ -18,6 +19,10 @@ git clone https://github.com/FuShaoLei/hexo-theme-white.git themes/white
 ```yml
 theme: white
 ```
+
+## 示例
+- [Sorryfu](https://sorryfu.top/)
+- [YangYang](http://www.yangyang.host)
 
 ## 特点
 
