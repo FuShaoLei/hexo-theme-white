@@ -35,12 +35,24 @@
     </div>
 </div>
 <div id="mobile-main" class="animate__animated  animate__fadeIn">
+  <div class="mobile-menu-inner">
+    <div class="mobile-menu-site-name  animate__animated  animate__fadeInUp">
+      <a href="<%=url_for()%>">
+        <%=theme.site_name%>
+      </a>
+    </div>
+    <div class="mobile-menu-group" id="mobile-close">
+      <i class="ri-close-line"></i>
+    </div>
+
+  </div>
 
   <div class="mobile-menu-div">
+
   <% Object.keys(theme.menu).forEach(key => { %>
-    <a href="<%=url_for(theme.menu[key])%>">
+    <a href="<%=url_for(theme.menu[key])%>" class="mobile-nav-link">
       <div class="mobile-menu-child animate__animated  animate__fadeInUp">
-        <%=key%>
+        <span><%=key%></span>
       </div>
     </a>
   <% }); %>

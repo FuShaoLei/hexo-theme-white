@@ -22,6 +22,7 @@ const getRealPath = (pathname, desc = false) => {
     }
     return "/";
   };
+
 let links = document.querySelectorAll(".nav-link");
 let rootRealPath = getRealPath(window.location.pathname, true);
 for (let link of links) {
@@ -30,12 +31,25 @@ for (let link of links) {
     link.className = "active-link nav-link";
   }
 }
+// mobile-nav-link
+let mlinks = document.querySelectorAll(".mobile-nav-link");
+let mrootRealPath = getRealPath(window.location.pathname, true);
+for (let mlink of mlinks) {
+  let mlinkPath = mlink.getAttribute("href");
+  if (mlinkPath && getRealPath(mlinkPath, true) === mrootRealPath) {
+    mlink.className = "moibile-active-link mobile-nav-link";
+  }
+}
 
 //设置收起的menu点击的效果
 var mmenu =document.getElementById("mobile-menu");
 var mmain=document.getElementById("mobile-main");
+var mclose=document.getElementById("mobile-close");
 
 mmenu.onclick=function(){
   mmain.style.display="block";
+}
+mclose.onclick=function(){
+  mmain.style.display="none";
 }
 

@@ -4,11 +4,12 @@
     height 100%
     position: fixed
     z-index 9999
+    transition: all .3s
     top 0
     left 0
     display none
     .mobile-menu-div
-        margin-top 60px
+        margin-top 20px
         display flex
         flex-direction column
         text-align center
@@ -17,12 +18,27 @@
             font-size 2.2em
             font-weight: 1000
 
+.mobile-menu-inner
+    display flex
+    justify-content space-between
+    padding 40px 40px
+    .mobile-menu-site-name
+        font-size 1.5em
+        font-weight 1000
+    .mobile-menu-group
+        font-size 2em
+        cursor pointer
+
     
+.moibile-active-link
+    span
+        box-shadow inset 0 -0.2em 0 $color-theme-main
 
 
 #mobile-menu
     display none
     cursor pointer
+    font-size 1.7em
 
 /* 自适应 */
 @media $desktop-m
@@ -36,7 +52,19 @@
         margin-left 23px
 
 @media $desktop-s
+    .post-content-inner
+        width 550px
     .menu-li
         display none
     #mobile-menu
         display block
+
+@media $mobile-m
+    .post-content-inner
+        width 400px
+    .archive-post-date
+        display none
+
+@media $mobile-s
+    .post-content-inner
+        width 350px
