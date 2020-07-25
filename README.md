@@ -27,7 +27,6 @@ theme: white
 - 内置`valine` 和 `gitalk`评论系统
 - 全局搜索
 
-## 欢迎star⭐
 
 
 
