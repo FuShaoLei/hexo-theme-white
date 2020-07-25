@@ -31,7 +31,7 @@ theme: white
 - 文章相关内容索引
 - 内置`valine` 和 `gitalk`评论系统
 - 全局搜索
-
+- 移动端适配
 
 
 
