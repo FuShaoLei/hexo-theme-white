@@ -31,4 +31,11 @@ for (let link of links) {
   }
 }
 
+//设置收起的menu点击的效果
+var mmenu =document.getElementById("mobile-menu");
+var mmain=document.getElementById("mobile-main");
+
+mmenu.onclick=function(){
+  mmain.style.display="block";
+}
 

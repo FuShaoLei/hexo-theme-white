@@ -22,9 +22,29 @@
           </li>
         </a>
         <% } %>
+        
+       
+          <li class="menu-li animate__animated  animate__fadeInUp" id="mobile-menu">
+            <i class="ri-menu-line"></i>
+          </li>
+        
         </ul>
 
       </div>
 
     </div>
+</div>
+<div id="mobile-main" class="animate__animated  animate__fadeIn">
+
+  <div class="mobile-menu-div">
+  <% Object.keys(theme.menu).forEach(key => { %>
+    <a href="<%=url_for(theme.menu[key])%>">
+      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
+        <%=key%>
+      </div>
+    </a>
+  <% }); %>
+  </div>
+
+
 </div>

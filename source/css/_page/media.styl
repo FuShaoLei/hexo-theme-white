@@ -1,3 +1,29 @@
+#mobile-main
+    background #fff
+    width: 100%
+    height 100%
+    position: fixed
+    z-index 9999
+    top 0
+    left 0
+    display none
+    .mobile-menu-div
+        margin-top 60px
+        display flex
+        flex-direction column
+        text-align center
+        .mobile-menu-child
+            margin-top 50px
+            font-size 2.2em
+            font-weight: 1000
+
+    
+
+
+#mobile-menu
+    display none
+    cursor pointer
+
 /* 自适应 */
 @media $desktop-m
     .post-content-inner
@@ -8,3 +34,9 @@
         margin-left 23px
     .intro-content 
         margin-left 23px
+
+@media $desktop-s
+    .menu-li
+        display none
+    #mobile-menu
+        display block
