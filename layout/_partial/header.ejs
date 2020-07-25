@@ -48,7 +48,6 @@
   </div>
 
   <div class="mobile-menu-div">
-
   <% Object.keys(theme.menu).forEach(key => { %>
     <a href="<%=url_for(theme.menu[key])%>" class="mobile-nav-link">
       <div class="mobile-menu-child animate__animated  animate__fadeInUp">
@@ -56,6 +55,13 @@
       </div>
     </a>
   <% }); %>
+  <% if(theme.search.open===true) { %>
+    <a href="<%= url_for(theme.search.page) %>">  
+      <div class="mobile-menu-child  animate__animated  animate__fadeInUp">
+        <i class="ri-search-line"></i>
+      </div>
+    </a>
+    <% } %>
   </div>
 
 

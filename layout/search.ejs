@@ -7,11 +7,13 @@
                 <div class="search-input-outer">
                     <form>
                         <input type="text" placeholder="想要搜些什么呢..." id="local-search-input" name="q" results="0">
-                        <!-- <button type="submit"><i class="ri-search-line"></i></button> -->
+                        <button type="submit"><i class="ri-search-line"></i></button>
                     </form>
                 </div>
                 <div id="local-search-result">
-                    <img src="https://cdn.jsdelivr.net/gh/fushaolei/img/20200524012716.jpg">
+                    <% if(page.cover) { %>
+                    <img src="<%= page.cover%>">
+                    <% } %>
                 </div>
             </div>
         </div>
