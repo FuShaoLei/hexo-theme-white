@@ -3,7 +3,7 @@
 <p align="center">
 一款在极简和个性之间徘徊的Hexo主题
 <br>
-<a href="https://sorryfu.top/">Demo</a>  |  <a href="https://github.com/FuShaoLei/hexo-theme-white/issues/3">更新日志</a>  | <a href="https://github.com/FuShaoLei/hexo-theme-white/wiki/0.-%E5%89%8D%E8%A8%80">使用说明</a> | <a href="https://github.com/FuShaoLei/hexo-theme-white/issues/4">提意见或留言点此</a>
+ <a href="https://github.com/FuShaoLei/hexo-theme-white/issues/3">更新日志</a>  | <a href="https://github.com/FuShaoLei/hexo-theme-white/wiki/0.-%E5%89%8D%E8%A8%80">使用说明</a> | <a href="https://github.com/FuShaoLei/hexo-theme-white/issues/4">提意见或留言点此</a>
 </p>
 
 ![](https://cdn.jsdelivr.net/gh/fushaolei/img2/20200726101450.png)
