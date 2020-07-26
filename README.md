@@ -22,7 +22,6 @@ theme: white
 
 ## 示例
 - [Sorryfu](https://sorryfu.top/)
-- [YangYang](http://www.yangyang.host)
 
 ## 特点
 
