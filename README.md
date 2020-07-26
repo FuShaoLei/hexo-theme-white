@@ -6,7 +6,8 @@
 
 ![](https://cdn.jsdelivr.net/gh/fushaolei/img2/20200726101450.png)
 
-
+![Github stars](https://img.shields.io/github/stars/FuShaoLei/hexo-theme-white.svg)
+![Github stars](https://img.shields.io/github/forks/FuShaoLei/hexo-theme-white.svg)
 ## [👉点此查看使用文档](https://github.com/FuShaoLei/hexo-theme-white/wiki/0.-%E5%89%8D%E8%A8%80)
 
 ## 示例
