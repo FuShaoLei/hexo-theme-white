@@ -1,11 +1,11 @@
 <%
 var title = titlecase(page.title);
 if (is_archive()){
-  title = __('BLOG');   
+  title = 'blog';   
 } else if (is_category()){
-  title = __('Page.Categories') + ': ' + page.category;
+  title =   page.category;
 } else if (is_tag()){
-  title = __('Page.Tags') + ': ' + page.tag;
+  title =   page.tag;
 }
 %>
 

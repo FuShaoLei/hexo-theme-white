@@ -1,3 +1,6 @@
+<%
+const categoriesList = list_categories({ show_count: false });
+%>
 <div class="menu-outer">
     <div class="menu-inner">
       <div class="menu-site-name  animate__animated  animate__fadeInUp">
@@ -15,6 +18,14 @@
             </li>
           </a>
         <% }); %>
+        <% if(site.categories) { %>
+          <li class="menu-li animate__animated  animate__fadeInUp" id="sort">
+             SORT
+             <div class="categories-outer animate__animated  animate__fadeIn" id="sort-div">
+               <%-categoriesList%>
+             </div>
+          </li>
+        <% } %>
         <% if(theme.search.open===true) { %>
         <a href="<%= url_for(theme.search.page) %>">
           <li class="menu-li  animate__animated  animate__fadeInUp">
@@ -22,8 +33,6 @@
           </li>
         </a>
         <% } %>
-        
-       
           <li class="menu-li animate__animated  animate__fadeInUp" id="mobile-menu">
             <i class="ri-menu-line"></i>
           </li>
