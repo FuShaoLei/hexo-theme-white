@@ -24,10 +24,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 <%- js('js/search.js') %>
 <script type="text/javascript">      
-    var search_path = "<%= config.search.path %>";
-    if (search_path.length == 0) {
-        search_path = "search.xml";
-    }
+    var search_path = "search.xml";
     var path = "<%= config.root %>" + search_path;
     searchFunc(path, 'local-search-input', 'local-search-result');
 </script>
