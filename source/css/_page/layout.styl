@@ -78,9 +78,12 @@ body,p,div,span
 /* sort */
 #sort
   cursor pointer
+  z-index: 99999
   .categories-outer
     display: none
-    width: 100px
+    z-index: 99999
+    background: #fff
+    min-width: 100px
     border 1px solid $color-theme-main
     position absolute
     left -30px
@@ -155,22 +158,23 @@ body,p,div,span
   justify-content center
 .archive-inner 
   margin-top 30px
-  width 70%
+  width 95%
   margin-bottom 100px
 .archive-name
-  font-size: 2.3em
+  font-size: 2em
   margin: 20px 0px 50px 0px
   text-align: center
 .archive-post 
-  line-height 2em
+  line-height 1.7em
   font-size 1.2em
   background-color #fff
   border-radius 3px
+  padding: 20px
   transition .4s
   display flex
-  &:hover 
+  &:hover
     .archive-post-title 
-      margin-left 15px
+      margin-left 20px
       color: $color-theme-main
 
 .archive-post-title 
@@ -178,8 +182,10 @@ body,p,div,span
   transition .4s
   margin-right auto
 .archive-post-date 
-  color $color-text-secondary
-  font-size: 0.8em
+  color $color-theme-main
+  font-weight: 1000
+  background-color $color-theme-secondary
+  font-size: 0.7em
   border-radius 5px
   padding 0px 10px
   margin 0px 10px
