@@ -3,14 +3,21 @@
 @font-face 
   font-family hack-regular
   src url(../font/Hack-Regular.ttf)
+@font-face 
   font-family hack-italic
   src url(../font/Hack-Italic.ttf)
+@font-face 
   font-family hack-bold
   src url(../font/Hack-Bold.ttf)
+@font-face 
   font-family hack-bolditalic
   src url(../font/Hack-BoldItalic.ttf)
+@font-face 
   font-family Gothic
   src url(../font/GOTHIC.TTF)
+@font-face 
+  font-family: Merriweather
+  src: url(../font/Merriweather-Regular-9.ttf)
 /* logo用的Century Gothic字体 */
 /* 全局样式 */
 * 
@@ -88,7 +95,7 @@ body,p,div,span
     border 1px solid $color-theme-main
     position absolute
     left -30px
-    top 19px
+    top 30px
     ul
       list-style none
       text-align: center
@@ -98,9 +105,6 @@ body,p,div,span
           color: $color-text-secondary
           &:hover
             color $color-text-main
-  &:hover
-    .categories-outer
-      display block
 
 
 /* body */
@@ -159,37 +163,37 @@ body,p,div,span
   justify-content center
 .archive-inner 
   margin-top 30px
-  width 95%
+  width 80%
   margin-bottom 100px
 .archive-name
   font-size: 2em
-  margin: 20px 0px 50px 0px
-  text-align: center
+  margin: 40px 0px 30px 0px
+  font-family: Merriweather
 .archive-post 
-  line-height 1.7em
-  font-size 1.2em
+  line-height 1.5em
+  font-size 1em
   background-color #fff
   border-radius 3px
-  padding: 20px
   transition .4s
   display flex
+  margin: 5px 0px
   &:hover
-    .archive-post-title 
-      margin-left 20px
+    .archive-post-title
+      margin-left: 13px
       color: $color-theme-main
 
 .archive-post-title 
-  font-size 1.1em
+  font-size 1.15em
   transition .4s
   margin-right auto
 .archive-post-date 
+  font-family: Merriweather
   color $color-theme-main
   font-weight: 1000
   background-color $color-theme-secondary
-  font-size: 0.7em
+  font-size: 0.8em
   border-radius 5px
   padding 0px 10px
-  margin 0px 10px
   transition all .4s
 .paginator 
   margin-top 50px

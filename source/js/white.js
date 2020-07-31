@@ -54,14 +54,17 @@ mclose.onclick=function(){
 }
 
 //设置sort的子目录隐藏显示效果
-// var sort=document.getElementById("sort");
-// var sortdiv=document.getElementById("sort-div");
+var sort=document.getElementById("sort");
+var sortdiv=document.getElementById("sort-div");
 
-// sort.onmouseover=function(){
-//   sortdiv.style.display="block";
-// }
-// sort.onmouseout=function(){
-//   setTimeout(function(){
-//     sortdiv.style.display="none";
-//   },1000);
-// }
+sort.onmouseover=function(){
+  sortdiv.style.display="block";
+}
+sort.onmouseout=function(){
+sortdiv.onmouseover=function(){
+  console.log("wuhu");
+}
+sortdiv.onmouseout=function(){
+    sortdiv.style.display="none";
+}
+}
