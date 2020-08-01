@@ -19,11 +19,13 @@ if (is_archive()){
   <%if(theme.icon!=undefined){%>
   <link rel="shortcut icon" href="<%-theme.icon%>" type="image/x-icon">
   <%}%>
+
   <!-- 图标库 -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
   <!-- 动画库 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/css/animate.css"/>
   <!-- css文件 -->
+
   <%- css('css/white') %>
   <!-- 代码高亮 -->
   <% if (config.highlight.enable != true) { %>
@@ -31,32 +33,4 @@ if (is_archive()){
       <%- css(theme.plugins.highlightjs.css) %>
     <% } %>
   <% } %>
-  <!-- tocbot -->
-  <!-- <%if(is_post()===true){%>
-    <%- css('css/tocbot.css')%>
-  <%}%> -->
-  <!-- 声明document.ready函数 -->
-  <!-- <script>
-      document.ready = function (callback) {
-        ///兼容FF,Google
-        if (document.addEventListener) {
-          document.addEventListener('DOMContentLoaded', function () {
-            document.removeEventListener('DOMContentLoaded', arguments.callee, false);
-            callback();
-          }, false)
-        }
-        //兼容IE
-        else if (document.attachEvent) {
-          document.attachEvent('onreadystatechange', function () {
-            if (document.readyState == "complete") {
-              document.detachEvent("onreadystatechange", arguments.callee);
-              callback();
-            }
-          })
-        }
-        else if (document.lastChild == document.body) {
-          callback();
-        }
-      }
-  </script> -->
 </head>
