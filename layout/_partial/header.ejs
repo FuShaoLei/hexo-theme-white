@@ -18,9 +18,9 @@ const categoriesList = list_categories({ show_count: false });
             </li>
           </a>
         <% }); %>
-        <% if(site.categories) { %>
+        <% if(site.categories.length>0) { %>
           <li class="menu-li animate__animated  animate__fadeInUp" id="sort">
-             SORT
+             <%= theme.menu_categories%>
              <div class="categories-outer " id="sort-div">
                <%-categoriesList%>
              </div>
