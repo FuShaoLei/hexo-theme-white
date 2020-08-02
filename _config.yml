@@ -86,4 +86,7 @@ footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuS
 #有分类时可设置分类item的名字
 menu_categories: 分类
 
+#可自定义归档标签页名字 
+archive_tab_name: Blog
+
 

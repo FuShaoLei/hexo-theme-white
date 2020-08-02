@@ -1,7 +1,7 @@
 <%
 var title = titlecase(page.title);
 if (is_archive()){
-  title = 'blog';   
+  title = theme.archive_tab_name ;   
 } else if (is_category()){
   title =   page.category;
 } else if (is_tag()){
@@ -25,7 +25,6 @@ if (is_archive()){
   <!-- 动画库 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/css/animate.css"/>
   <!-- css文件 -->
-
   <%- css('css/white') %>
   <!-- 代码高亮 -->
   <% if (config.highlight.enable != true) { %>
