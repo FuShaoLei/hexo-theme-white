@@ -12,6 +12,8 @@
 ![Github stars](https://img.shields.io/github/stars/FuShaoLei/hexo-theme-white.svg)
 ![Github forks](https://img.shields.io/github/forks/FuShaoLei/hexo-theme-white.svg)
 
+欢迎加入qq群：932539659 和我交流
+
 ## 示例
 - [Sorryfu](https://sorryfu.top/)
 
@@ -26,8 +28,9 @@
 - 分类页面
 
 ## 其他
+如果你很喜欢这款主题的话，不妨给我一个star😊，或者请我喝杯奶茶😘，感激不尽！
+> 打赏请备注网址和名称
 
-如果你有什么想交流的，欢迎加入qq群：932539659
-
-本人的闲暇之作，非前端专业，如果你有什么上的建议或意见，欢迎留下你的issue
-如果你很喜欢这款主题的话，不妨给我一个star😊，感激不尽！
+微信 | 支付宝
+--|--
+![](https://cdn.jsdelivr.net/gh/fushaolei/img2/20200802125911.png) | ![](https://cdn.jsdelivr.net/gh/fushaolei/img2/20200802130035.jpg)
