@@ -9,7 +9,9 @@
     <%- body %>
   </div>
 </div>
-<% if(is_home()==false){ %>
+<% if(theme.home.open==true && is_home()==false){ %>
+  <%- partial('_partial/footer',{cache: true}) %>
+<% } else if(theme.home.open!==true){%>
   <%- partial('_partial/footer',{cache: true}) %>
 <% } %>
 <%- partial('_partial/after-footer',{cache: true}) %>

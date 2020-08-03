@@ -1,8 +1,8 @@
 <section class="intro-section">
     <div class="intro-content">
-        <div class="intro-title animate__animated  animate__fadeInUp"><%=theme.intro.title%></div>
-        <div class="intro-sub animate__animated  animate__fadeInUp"><%- markdown(theme.intro.sub) %></div>
-        <p class="intro-contact animate__animated  animate__fadeInUp">
+        <div class="intro-title <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>"><%=theme.intro.title%></div>
+        <div class="intro-sub <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>"><%- markdown(theme.intro.sub) %></div>
+        <p class="intro-contact <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>">
             <% for(var y in theme.contact){ %>
                 <a href="<%=theme.contact[y][0]%>" target="_blank">
                     <i class="<%=theme.contact[y][1]%>"></i>

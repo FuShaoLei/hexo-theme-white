@@ -1,6 +1,5 @@
-
+<% if(theme.home.open==true){%>
 <%-partial('_partial/home')%>
-
-<!-- <div id="paginator">
-  <%-paginator()%>
-</div> -->
+<% } else{%>
+<%- partial('_partial/archive2') %>
+<% } %>

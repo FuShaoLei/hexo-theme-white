@@ -7,9 +7,14 @@ style:
     theme-secondary: "#DDF0FF" # 次色调
     text-main: "#333333" # 文字主色调
     text-secondary: "#898FA0" # 文字次色调
+  animation:
+    open: true # 是否开启动画
 
 
 ########## 关于主页的设置 ##########
+home:
+  open: true # 是否开启主页，如果不开启的话主页将同archive页一样
+
 # icon
 icon:  #标签页图标
 #  header
@@ -18,6 +23,8 @@ site_name: white.
 menu:
   HOME: /
   BLOG: /archives
+
+
 
 ## 本地搜索
 search:
@@ -83,8 +90,10 @@ comments:
 # 页脚
 footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuShaoLei/hexo-theme-white) # markdown语法
 
-#有分类时可设置分类item的名字
-menu_categories: 分类
+#有分类时是否开启menu分类页和自定义名字
+menu_categories:
+  open: true
+  name: 分类
 
 #可自定义归档标签页名字 
 archive_tab_name: Blog

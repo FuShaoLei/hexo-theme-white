@@ -9,8 +9,8 @@ body
 a 
   text-decoration none
   color $color-text-main
-body,p,div,span 
-  font-family Gothic
+// body,p,div,span 
+//   font-family: Merriweather
 /* 滚动条 */
 ::-webkit-scrollbar 
   width 5px
@@ -19,7 +19,8 @@ body,p,div,span
 ::-webkit-scrollbar-thumb 
   background-color $color-theme-main
 /* menu */
-.menu-outer 
+.menu-outer
+  font-family Gothic 
   width 100%
   display flex
   justify-content center
@@ -107,6 +108,7 @@ body,p,div,span
   margin 0
   padding 0
 .intro-sub 
+  font-family Gothic
   margin-top 30px
   font-size 1.2em
   font-weight 1000
@@ -114,6 +116,7 @@ body,p,div,span
   margin-left 5px
   a 
     display inline-block
+    font-family Gothic
     position relative
     &:after 
       content ""
@@ -149,6 +152,7 @@ body,p,div,span
   font-size: 2em
   margin: 40px 0px 30px 0px
   font-family: Merriweather
+  text-align: center
 .archive-post 
   line-height 1.5em
   font-size 1em
@@ -158,13 +162,13 @@ body,p,div,span
   display flex
   margin: 7px 0px
   &:hover
-    .archive-post-title
-      margin-left: 13px
+    .archive-post-title 
       color: $color-theme-main
 
 .archive-post-title 
-  font-size 1.2em
+  font-size 1.1em
   transition .4s
+  font-family Gothic
   margin-right auto
 .archive-post-date 
   font-family: Merriweather
@@ -198,6 +202,7 @@ body,p,div,span
 .footer-outer 
   display flex
   justify-content center
+  font-family Gothic
 .footer-inner 
   padding 40px 0px
   width $layout-max-width
