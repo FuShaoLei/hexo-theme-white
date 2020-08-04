@@ -38,8 +38,9 @@
 
         <% } %>
         <!-- 评论 -->
-        <% if ( theme.comments.valine.open === true && page.comments === true){ %>
-          <% if (theme.comments.valine && theme.comments.valine.appid && theme.comments.valine.appkey){ %>
+        <% if (page.comments === true){ %>
+          <!-- valine -->
+          <% if ( theme.comments.valine.open === true && theme.comments.valine && theme.comments.valine.appid && theme.comments.valine.appkey){ %>
             <section id="comments" class="comments" style="margin-top: 150px;">
               <style>
                 .comments{background:#fff}
@@ -50,14 +51,17 @@
                 title: page.title,
                 url: config.url+url_for(page.path)
                 }) %>
-          </section>
-        <% } %>
-        <% }else{ %>
-         <% if(theme.comments.gitalk.open === true && page.comments === true){ %>
-          <% if (theme.comments.gitalk && theme.comments.gitalk.clientID && theme.comments.gitalk.clientSecret ){ %>
-          <%- partial('post/comment-gitalk') %>
+            </section>
           <% } %>
-         <% } %>
+          <!-- Gitalk -->
+          <% if ( theme.comments.gitalk.open === true && theme.comments.gitalk && theme.comments.gitalk.clientID && theme.comments.gitalk.clientSecret ){ %>
+            <%- partial('post/comment-gitalk') %>
+          <% } %>
+          <!-- livere -->
+          <% if ( theme.comments.livere.open === true && theme.comments.livere && theme.comments.livere.dataId && theme.comments.livere.dataUid ){ %>
+            <%- partial('post/comment-livere') %>
+          <% } %>
+
         <% } %>
       </div>
    </div>
