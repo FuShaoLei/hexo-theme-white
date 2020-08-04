@@ -16,7 +16,6 @@
 
 ## 示例
 - [Sorryfu](https://sorryfu.top/)
-- [Yangyang](https://www.yangyang.host/)
 - [清风徐来](https://www.txca.ga/)
 
 ## 特点
