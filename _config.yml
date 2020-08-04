@@ -81,6 +81,10 @@ comments:
     admin:  #Github 用户名
     clientID:  #`Github Application clientID`
     clientSecret: #`Github Application clientSecret`
+  livere: # 前往 http://livere.com/ 申请账号
+    open: false # true | false 是否打开
+    dataId: city #免费版本city
+    dataUid: #安装代码中 data-uid 后面数据
   
 
 
