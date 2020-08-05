@@ -15,6 +15,10 @@ style:
 home:
   open: true # 是否开启主页，如果不开启的话主页将同archive页一样
 
+archive_img_mode:
+  open: true # archive（存疑）页图片模式
+  default_cover: https://cdn.jsdelivr.net/gh/fushaolei/img/20200516201354.jpg #默认的cover
+
 # icon
 icon:  #标签页图标
 #  header
@@ -25,11 +29,10 @@ menu:
   BLOG: /archives
 
 
-
 ## 本地搜索
 search:
   open: false # 是否开启
-  page: /search # 在上面页面上（通常命名为search）
+  page: /search # 页面路径（通常命名为search）
   
 
 

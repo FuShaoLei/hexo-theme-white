@@ -54,6 +54,7 @@ mclose.onclick=function(){
 }
 
 //设置sort的子目录隐藏显示效果
+if(document.getElementById("sort")){
 var sort=document.getElementById("sort");
 var sortdiv=document.getElementById("sort-div");
 
@@ -66,5 +67,6 @@ sortdiv.onmouseover=function(){
 }
 sortdiv.onmouseout=function(){
     sortdiv.style.display="none";
+}
 }
 }

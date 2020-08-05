@@ -3,13 +3,13 @@
   <div class="post-content-outer">
     <div class="post-content-inner ">
       <%if(page.cover){%><div class="post-intro"><%}else{%><div class="post-intro-no-cover"><%}%>
-        <div class="post-title <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>"><%=page.title%></div>
-        <div class="meta-intro <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>"><span class="intro-span"><%=date(page.date, 'YYYY年M月D日') %> by <%=theme.intro.author%></span></div>
+        <div class="post-title animate__animated  animate__fadeInUp"><%=page.title%></div>
+        <div class="meta-intro animate__animated  animate__fadeInUp"><span class="intro-span"><%=date(page.date, 'YYYY年M月D日') %> by <%=theme.intro.author%></span></div>
         <%if(page.cover){%>
-          <div class="post-cover <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>"><img src="<%=page.cover%>" class="post-cover-img"></div>
+          <div class="post-cover animate__animated  animate__fadeInUp"><img src="<%=page.cover%>" class="post-cover-img"></div>
         <%}%>
       </div>
-      <div class="post-content-main <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>">
+      <div class="post-content-main animate__animated  animate__fadeInUp">
         <!-- 目录 -->
         <%if(page.toc!==false && toc(page.content).length!==0){%>
           <%- toc(page.content,{class:"toc-top",list_number:false,max_depth: theme.toc.max,min_depth: theme.toc.min}) %>

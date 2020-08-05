@@ -1,0 +1,18 @@
+<section class="img-show-outer">
+    <section class="img-show-inner">
+          <% site.posts.sort('date', -1).limit(10).each(post => { %>
+          <div class="img-show-post">
+            <div class="img-show-post-cover">
+              <img src="<%if(post.cover){ %>  <%= post.cover%> <%}else {%> <%= theme.archive_img_mode.default_cover%> <% } %>" class="img-show-post-cover-class">
+            </div>
+            <a  href="<%=url_for(post.path)%>">
+            <div class="img-show-post-title"><%=post.title%></div>
+            </a>
+            <div class="img-show-post-date"><%=date(post.date, 'MM-DD') %></div>
+          </div>
+         <% }) %>
+    </section>
+</section>
+  
+
+  
