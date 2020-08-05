@@ -65,8 +65,10 @@ plugins:
 
 # 评论系统设置
 comments:
+  open: false #是否开启评论系统
+  system: gitalk #选择评论系统 可选 valine gitalk livere
+  # Valine
   valine:
-    open: false # true | false 是否打开
     appid: #Leancloud应用的AppID  这里和下面的要换成你自己的啊QAQ
     appkey: #Leancloud应用的AppKey
     verify: false #验证码
@@ -74,15 +76,15 @@ comments:
     avatar: robohash #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
     #头像类型可见： https://valine.js.org/avatar.html
     placeholder: 留下你来过的痕迹~ #评论框占位符
+  # Gitalk
   gitalk:
-    open: false # true | false 是否打开
     owner:  #Github 用户名,
     repo:  #储存评论issue的github仓库名
     admin:  #Github 用户名
     clientID:  #`Github Application clientID`
     clientSecret: #`Github Application clientSecret`
+  #livere
   livere: # 前往 http://livere.com/ 申请账号
-    open: false # true | false 是否打开
     dataId: city #免费版本city
     dataUid: #安装代码中 data-uid 后面数据
   

@@ -16,9 +16,9 @@
         <%}%>
         <%-page.content%>
         <!-- 评论 -->
-        <% if (page.comments === true){ %>
+        <% if (page.comments !== false && theme.comments.open === true){ %>
           <!-- valine -->
-          <% if ( theme.comments.valine.open === true && theme.comments.valine && theme.comments.valine.appid && theme.comments.valine.appkey){ %>
+          <% if ( theme.comments.system ==='valine' && theme.comments.valine && theme.comments.valine.appid && theme.comments.valine.appkey){ %>
             <section id="comments" class="comments" style="margin-top: 150px;">
               <style>
                 .comments{background:#fff}
@@ -32,11 +32,11 @@
             </section>
           <% } %>
           <!-- Gitalk -->
-          <% if ( theme.comments.gitalk.open === true && theme.comments.gitalk && theme.comments.gitalk.clientID && theme.comments.gitalk.clientSecret ){ %>
+          <% if ( theme.comments.system ==='gitalk' && theme.comments.gitalk && theme.comments.gitalk.clientID && theme.comments.gitalk.clientSecret ){ %>
             <%- partial('post/comment-gitalk') %>
           <% } %>
           <!-- livere -->
-          <% if ( theme.comments.livere.open === true && theme.comments.livere && theme.comments.livere.dataId && theme.comments.livere.dataUid ){ %>
+          <% if ( theme.comments.system ==='livere' && theme.comments.livere && theme.comments.livere.dataId && theme.comments.livere.dataUid ){ %>
             <%- partial('post/comment-livere') %>
           <% } %>
 
