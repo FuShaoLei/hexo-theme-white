@@ -1,15 +1,30 @@
 <section class="img-show-outer">
     <section class="img-show-inner">
-          <% site.posts.sort('date', -1).limit(10).each(post => { %>
+          <% var nums=0; %>
+          <% site.posts.sort('date', -1).each(post => { %>
           <div class="img-show-post">
             <div class="img-show-post-cover">
-              <img src="<%if(post.cover){ %>  <%= post.cover%> <%}else {%> <%= theme.archive_img_mode.default_cover%> <% } %>" class="img-show-post-cover-class">
+              <a  href="<%=url_for(post.path)%>">
+              <% if(post.cover){ %>  
+              <img data-src="<%= post.cover%>" class="img-show-post-cover-class">
+              <% }else { %>
+                <%
+                var coverimg='';
+                var defalutcovers=theme.archive_img_mode.default_cover;
+                coverimg=defalutcovers[nums % defalutcovers.length]
+                %>
+                <img data-src="<%= coverimg%>" class="img-show-post-cover-class">
+              <% } %>
+              </a>
             </div>
-            <a  href="<%=url_for(post.path)%>">
+            <div class="img-show-post-intro">
+             <a  href="<%=url_for(post.path)%>">
             <div class="img-show-post-title"><%=post.title%></div>
             </a>
-            <div class="img-show-post-date"><%=date(post.date, 'MM-DD') %></div>
+            <div class="img-show-post-date"><%=full_date(post.date,'MMM DD YYYY') %> </div>
+            </div>
           </div>
+          <% nums=nums+1; %>
          <% }) %>
     </section>
 </section>

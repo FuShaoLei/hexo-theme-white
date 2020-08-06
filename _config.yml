@@ -17,7 +17,13 @@ home:
 
 archive_img_mode:
   open: true # archive（存疑）页图片模式
-  default_cover: https://cdn.jsdelivr.net/gh/fushaolei/img/20200516201354.jpg #默认的cover
+  default_cover: #默认的cover
+    - https://cdn.jsdelivr.net/gh/fushaolei/img/20200516201354.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/img/20200507024646.png
+    - https://cdn.jsdelivr.net/gh/fushaolei/img/20200524012730.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/img/20200524012716.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/img/20200524090459.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/img/20200524110844.jpg
 
 # icon
 icon:  #标签页图标
@@ -108,3 +114,8 @@ menu_categories:
 archive_tab_name: Blog
 
 
+#图片懒加载
+lazyload:
+  open: true #是否开启
+  js: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
+  placeholder: https://cdn.jsdelivr.net/gh/fushaolei/img/20200806163357.gif #占位图片
