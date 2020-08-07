@@ -4,6 +4,7 @@
           <% site.posts.sort('date', -1).each(post => { %>
           <div class="img-show-post">
             <div class="img-show-post-cover">
+              <span class="lazyload-img-span">
               <a  href="<%=url_for(post.path)%>">
               <% if(post.cover){ %>  
               <img data-src="<%= post.cover%>" class="img-show-post-cover-class">
@@ -16,6 +17,7 @@
                 <img data-src="<%= coverimg%>" class="img-show-post-cover-class">
               <% } %>
               </a>
+              </span>
             </div>
             <div class="img-show-post-intro">
              <a  href="<%=url_for(post.path)%>">

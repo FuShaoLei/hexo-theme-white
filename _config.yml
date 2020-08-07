@@ -117,5 +117,3 @@ archive_tab_name: Blog
 #图片懒加载
 lazyload:
   open: true #是否开启
-  js: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
-  placeholder: https://cdn.jsdelivr.net/gh/fushaolei/img/20200806163357.gif #占位图片
