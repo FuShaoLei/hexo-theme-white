@@ -61,8 +61,10 @@ contact:
 
 # 文章toc索引栏设置
 toc:
-  max: 2 #最大
-  min: 2 #最小
+  open: true # 是否开启
+  side: true  # 可填true 或者 flase
+  max: 2 #最大深度
+  min: 2 #最小深度
 
 # 插件
 plugins:

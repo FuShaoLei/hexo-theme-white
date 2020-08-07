@@ -1,11 +1,9 @@
 /* post */
 .post-intro 
   margin-bottom 30px
-.post-intro-no-cover 
-  margin-bottom 70px
 .post-title 
   text-align center
-  font-size 2.4em
+  font-size 2.15em
   margin-bottom 20px
   font-family Gothic
 .post-cover 
@@ -28,31 +26,32 @@
   margin-right auto
   font-size 1.1em
 .meta-intro 
-  font-size 1em
+  font-size .8em
+  text-transform : uppercase
+  letter-spacing: 1.5px
   text-align center
   font-family Gothic
   color $color-text-main
-/* .intro-span{
-    display: inline-block;
-    position: relative;
-}
-.intro-span::after{
-    content: "";
-    position: absolute;
-    top: 105%;
-    left: 3em;
-    right: 3em;
-    bottom: -.3em ;
-    transition: top .2s cubic-bezier(0,.8,.13,1);
-    background-color:  rgb(26, 152, 255);
-} */
+  line-height: 3.3
+  position: relative
+  &:after 
+      content ""
+      position absolute
+      top 0
+      left 48%
+      right 48%
+      bottom 98%
+      transition all .3s
+      background-color $color-theme-main
 .post-content-outer 
   margin-top 50px
   display flex
   justify-content center
+  flex-direction: column
 .post-content-inner 
-  width 800px
   margin-bottom 100px
+  display flex
+  justify-content center
   letter-spacing: .6px
   line-height 1.7
   h2 
@@ -114,6 +113,10 @@
     margin-top 10px
     margin-bottom 10px
     line-height 1.6
+
+.post-content-main
+  width: 800px
+
 /* 规范各个标题的大小 */
 .post-content-inner h2,h3,h4,h5,h6 
   color $color-text-main
