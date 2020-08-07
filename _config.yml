@@ -18,13 +18,21 @@ home:
 archive_img_mode:
   open: true # archive（存疑）页图片模式
   default_cover: #默认的cover
-    - https://cdn.jsdelivr.net/gh/fushaolei/img/20200516201354.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/img/20200507024646.png
-    - https://cdn.jsdelivr.net/gh/fushaolei/img/20200524012730.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/img/20200524012716.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/img/20200524090459.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/img/20200524110844.jpg
-
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/01.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/02.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/03.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/04.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/05.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/06.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/07.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/08.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/09.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/10.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/11.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/12.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/13.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/14.jpg
+    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/15.jpg
 # icon
 icon:  #标签页图标
 #  header

@@ -53,6 +53,9 @@ mclose.onclick=function(){
   mmain.style.display="none";
 }
 
+
+///////////////////////////////////////////////////////////////////////////////////
+
 //设置sort的子目录隐藏显示效果
 if(document.getElementById("sort")){
 var sort=document.getElementById("sort");
@@ -75,13 +78,15 @@ sortdiv.onmouseout=function(){
 var imgs = document.querySelectorAll('img');
 var imgdivs = document.querySelectorAll('.lazyload-img-span');
 
-function hasClass( elements,cName ){
-return !!elements.className.match( new RegExp( "(\\s|^)" + cName + "(\\s|$)") ); // ( \\s|^ ) 判断前面是否有空格 （\\s | $ ）判断后面是否有空格 两个感叹号为转换为布尔值 以方便做判断
+//判断是否有这个class
+function hasClass(elements,cName){
+return !!elements.className.match( new RegExp( "(\\s|^)" + cName + "(\\s|$)") ); 
 };
 
-function addClass( elements,cName ){
-if( !hasClass(elements,cName ) ){
-    setTimeout(function() { elements.className += " " + cName; }, 500);
+function addClass(elements,cName){
+if( !hasClass(elements,cName)){
+  //应该先判断图片是否加载完成，然后才开始赋class值
+    setTimeout(function() { elements.className += " " + cName; }, 600);
 };
 };
 
