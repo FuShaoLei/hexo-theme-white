@@ -13,8 +13,8 @@
 
       </div>
       <div class="post-content-main animate__animated  animate__fadeInUp">
-        <!-- 目录 -->
-        <%if(page.toc!==false && theme.toc.open !==false && toc(page.content).length!==0){%>
+        <!-- top型目录 -->
+        <%if(page.toc!==false && theme.toc.open === true && toc(page.content).length!==0 && theme.toc.side !== true){%>
           <%- toc(page.content,{class:"toc-top",list_number:false,max_depth: theme.toc.max,min_depth: theme.toc.min}) %>
         <%}%>
         <%-page.content%>
@@ -68,9 +68,11 @@
         <% } %>
       </div>
       <div class="post-content-inner-space">
-         <div class="space-toc-main">
-          <%- toc(page.content,{class:"space-toc",list_number:false,max_depth: theme.toc.max,min_depth: theme.toc.min}) %>
-         </div>
+        <%if(page.toc!==false && theme.toc.open === true && toc(page.content).length!==0 && theme.toc.side === true){%>
+          <div class="space-toc-main animate__animated  animate__fadeInUp">
+            <%- toc(page.content,{class:"space-toc",list_number:false,max_depth: theme.toc.max,min_depth: theme.toc.min}) %>
+           </div>
+        <%}%>
       </div>
    </div>
   </div>

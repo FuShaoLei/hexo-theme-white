@@ -31,8 +31,8 @@
   letter-spacing: 1.5px
   text-align center
   font-family Gothic
-  color $color-text-main
-  line-height: 3.3
+  color $color-text-secondary
+  line-height: 4
   position: relative
   &:after 
       content ""
@@ -94,7 +94,7 @@
   img 
     width auto
     max-width 100%
-    margin 1.1em auto
+    margin 10px auto
     display block
   p 
     line-height 2
@@ -194,18 +194,30 @@ code
 /* 位于文章上方的toc */
 .toc-top 
   border 1px solid #e3e3e3
-  border-radius 4px
-  padding 20px 40px
-  list-style disc
+  border-radius 2px
+  padding 10px 20px
+  list-style none
+  counter-reset: li
   margin-bottom 20px
-  .toc-top-link 
-    font-size 0.9em
-    color: #333
-    transition all .4s
-    &:hover 
-      text-decoration none
-.toc-top-child 
-  list-style disc
+  li
+    line-height: 1.2
+    margin: 7px 0px
+    counter-increment: li
+    a
+      color $color-text-secondary
+      font-size: .8em
+    &::before
+      content: counter(li)
+      font-size: .8em
+      font-family: Merriweather
+      color: $color-text-secondary
+      margin-right: 0.5em
+      text-align: right
+      transition: all .3s
+    &:hover
+      a
+        text-decoration: none
+
 /* .toc{
     z-index: 9999;
     position: fixed;
@@ -267,9 +279,12 @@ code
   flex-direction row
   justify-content row
   .post-content-main
-    flex-basis: 800px
+    flex-basis: $post-max-width
+    background: red
+    max-width: $post-max-width
   .post-content-inner-space
-    flex-basis: 165px
+    flex-basis: $side-toc-width 
+    background: green
     .space-toc-main
       position: sticky
       top 30px

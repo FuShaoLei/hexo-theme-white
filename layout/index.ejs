@@ -1,5 +1,9 @@
-<% if(theme.home.open==true){%>
-<%-partial('_partial/home')%>
-<% }else {%>
-    <%- partial('_partial/img-show') %>
+<% if(theme.home.type === 'home') { %>
+    <%- partial('_partial/mode-home') %>
+<% } %>
+<% if(theme.home.type === 'img') { %>
+    <%- partial('_partial/mode-img') %>
+<% } %>
+<% if(theme.home.type === 'simple') { %>
+    <%- partial('_partial/mode-simple') %>
 <% } %>

@@ -1,7 +1,8 @@
 ############## style ##############
 style:
   layout:
-    max-width: "1125px" #最大宽度
+    max-width: 1130px #总体宽度
+    post-max-width: 800px #文章内容宽度
   color:
     theme-main: "#1A98FF" # 主色调
     theme-secondary: "#DDF0FF" # 次色调
@@ -13,10 +14,9 @@ style:
 
 ########## 关于主页的设置 ##########
 home:
-  open: true # 是否开启主页，如果不开启的话主页将同archive页一样
+  type: "img" # 主页的类型，可选 home | img | simple
 
 archive_img_mode:
-  open: true # archive（存疑）页图片模式
   default_cover: #默认的cover
     - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/01.jpg
     - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/02.jpg
@@ -63,6 +63,9 @@ contact:
   Github:
     - https://github.com/FuShaoLei/hexo-theme-white
     - ri-github-line
+  Email: 
+    - mailto:1563250958@qq.com
+    - ri-mail-line
 
 
 ########## 关于文章的设置 ##########
@@ -70,7 +73,7 @@ contact:
 # 文章toc索引栏设置
 toc:
   open: true # 是否开启
-  side: true  # 可填true 或者 flase
+  side: true  # 选择toc的位置，填true的话toc将会显示在文章的侧边，填false的话 toc将出现在文章的开头
   max: 2 #最大深度
   min: 2 #最小深度
 

@@ -6,7 +6,11 @@ $color-text-secondary = theme-config("style.color.text-secondary","#898FA0")
 
 
 //最大宽度
-$layout-max-width = theme-config("style.layout.max-width","1125px")
+$layout-max-width = convert(theme-config("style.layout.max-width",1125px))
+//文章内容宽度
+$post-max-width = convert(theme-config("style.layout.post-max-width",800px))
+//side形式的toc的宽度
+$side-toc-width =( $layout-max-width - $post-max-width) / 2
 
 // 自适应
 $desktop-m = "screen and (max-width:1000px)"
