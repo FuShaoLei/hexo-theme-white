@@ -1,17 +1,20 @@
 
 <article class="post-inner">
   <div class="post-content-outer">
+    <div class="post-intro">
+      <div class="post-title animate__animated  animate__fadeInUp"><%=page.title%></div>
+      <div class="meta-intro animate__animated  animate__fadeInUp"><%=full_date(page.date,'MMM DD YYYY') %></div>
+      <%if(page.cover){%>
+        <div class="post-cover"><span class="lazyload-img-span"><img data-src="<%=page.cover%>" class="post-cover-img"></span></div>
+      <%}%>
+    </div>
     <div class="post-content-inner">
-      <div class="post-intro">
-        <div class="post-title <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>"><%=page.title%></div>
-        <div class="meta-intro <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>"><span class="intro-span"><%=date(page.date, 'YYYY年M月D日') %> by <%=theme.intro.author%></span></div>
-        <%if(page.cover){%>
-          <div class="post-cover <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>"><img src="<%=page.cover%>" class="post-cover-img"></div>
-          <%}%>
+      <div class="post-content-inner-space">
+
       </div>
-      <div class="post-content-main <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>">
+      <div class="post-content-main animate__animated  animate__fadeInUp">
         <!-- 目录 -->
-        <%if(page.toc!==false && toc(page.content).length!==0){%>
+        <%if(page.toc!==false && theme.toc.open !==false && toc(page.content).length!==0){%>
           <%- toc(page.content,{class:"toc-top",list_number:false,max_depth: theme.toc.max,min_depth: theme.toc.min}) %>
         <%}%>
         <%-page.content%>
@@ -42,7 +45,11 @@
 
         <% } %>
       </div>
+      <div class="post-content-inner-space">
+         <div class="space-toc-main">
+          <%- toc(page.content,{class:"space-toc",list_number:false,max_depth: theme.toc.max,min_depth: theme.toc.min}) %>
+         </div>
+      </div>
    </div>
   </div>
 </article>
-

@@ -264,20 +264,42 @@ code
 
 .post-content-inner
   display flex
-  background: red
   flex-direction row
   justify-content row
   .post-content-main
     flex-basis: 800px
-    background: yellow
   .post-content-inner-space
-    background: green
     flex-basis: 165px
     .space-toc-main
-      background: pink 
       position: sticky
-      top 0px
-
+      top 30px
+      padding-left: 10px
+      a 
+        color: $color-text-secondary
+        transition: all .3s
+        font-size: .8em
+      ol
+        list-style: none
+        counter-reset: li
+      li
+        line-height: 1.2
+        margin: 9px 0px
+        counter-increment: li
+        &::before
+          content: counter(li)
+          font-size: .8em
+          font-family: Merriweather
+          color: $color-text-secondary
+          margin-right: 0.5em
+          text-align: right
+          transition: all .3s
+        &:hover
+          a
+            color: $color-theme-main
+            text-decoration: none
+          &::before
+            color: $color-theme-main
+      
 
 
   // .top-toc-test
