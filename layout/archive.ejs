@@ -1,1 +1,9 @@
-<%- partial('_partial/mode-simple') %>
+<% if(theme.archive.type === 'home') { %>
+    <%- partial('_partial/mode-home') %>
+<% } %>
+<% if(theme.archive.type === 'img') { %>
+    <%- partial('_partial/mode-img') %>
+<% } %>
+<% if(theme.archive.type === 'simple') { %>
+    <%- partial('_partial/mode-simple') %>
+<% } %>

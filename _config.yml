@@ -13,7 +13,12 @@ style:
 
 
 ########## 关于主页的设置 ##########
+# home页可选类型
 home:
+  type: "home" # 主页的类型，可选 home | img | simple
+
+# archive页可选类型
+archive:
   type: "img" # 主页的类型，可选 home | img | simple
 
 archive_img_mode:
