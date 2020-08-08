@@ -50,8 +50,6 @@
   flex-direction: column
 .post-content-inner 
   margin-bottom 100px
-  display flex
-  justify-content center
   letter-spacing: .6px
   line-height 1.7
   h2 
@@ -114,8 +112,6 @@
     margin-bottom 10px
     line-height 1.6
 
-.post-content-main
-  width: 800px
 
 /* 规范各个标题的大小 */
 .post-content-inner h2,h3,h4,h5,h6 
@@ -266,3 +262,30 @@ code
       background-color #fff
       color $color-theme-main
 
+.post-content-inner
+  display flex
+  background: red
+  flex-direction row
+  justify-content row
+  .post-content-main
+    flex-basis: 800px
+    background: yellow
+  .post-content-inner-space
+    background: green
+    flex-basis: 165px
+    .space-toc-main
+      background: pink 
+      position: sticky
+      top 0px
+
+
+
+  // .top-toc-test
+  //     padding 20px
+  //     flex-basis 100px
+  //     height 100%
+  //     background: green
+  //     flex-shrink 0
+  //     position: sticky
+  //     top 0px
+  //     margin-bottom 30px
