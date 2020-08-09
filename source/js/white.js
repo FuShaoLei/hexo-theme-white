@@ -78,18 +78,6 @@ sortdiv.onmouseout=function(){
 var imgs = document.querySelectorAll('img');
 var imgdivs = document.querySelectorAll('.lazyload-img-span');
 
-//判断是否有这个class
-function hasClass(elements,cName){
-return !!elements.className.match( new RegExp( "(\\s|^)" + cName + "(\\s|$)") ); 
-};
-
-function addClass(elements,cName){
-if( !hasClass(elements,cName)){
-  //应该先判断图片是否加载完成，然后才开始赋class值
-    setTimeout(function() { elements.className += " " + cName; }, 600);
-};
-};
-
 
 //用来判断bound.top<=clientHeight的函数，返回一个bool值
 function isIn(el) {
@@ -99,16 +87,19 @@ function isIn(el) {
 } 
 //检查图片是否在可视区内，如果在，则加载
 function check() {
-    Array.from(imgs).forEach(function(el){
-        if(isIn(el)){
-            loadImg(el);
+  for(let p=0 ; p<imgs.length;p++){
+    if(isIn(imgs[p])){
+        loadImg(imgs[p]);
+        imgs[p].onload = function(){
+            let y=Number(p);
+            changeClass(y);
         }
-    });
-    Array.from(imgdivs).forEach(function(el){
-        if(isIn(el)){     
-            addClass(el,"img-masks");
-        }
-    });
+    }
+}
+}
+function changeClass(num){
+  let tempse=Number(num);
+  imgdivs[tempse].className = "lazyload-img-span img-masks";
 }
 function loadImg(el) {
     if(!el.src){

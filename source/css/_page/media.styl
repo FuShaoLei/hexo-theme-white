@@ -48,8 +48,13 @@
         margin-left 23px
     .intro-content 
         margin-left 23px
-    .space-toc-main
-        display none
+    .post-content-inner
+        justify-content: center
+        .post-content-main
+            flex-basis: 730px
+            max-width: 730px
+        .post-content-inner-space
+            display: none
     .img-show-inner
         justify-content: space-around
     .img-show-post
@@ -70,6 +75,10 @@
         .img-show-post
             margin-left: 30px
             margin-right: 30px
+    .post-content-inner
+        .post-content-main
+            flex-basis: 570px
+            max-width: 570px
 
 @media $mobile-m
     .archive-post-date
@@ -78,7 +87,13 @@
         display none
     .footer-inner
         justify-content center
+    .post-content-inner
+        .post-content-main
+            flex-basis: 470px
+            max-width: 470px
 
-// @media $mobile-s
-//     .post-content-inner
-//         width 350px
+@media $mobile-s
+    .post-content-inner
+        .post-content-main
+            flex-basis: 350px
+            max-width: 350px
