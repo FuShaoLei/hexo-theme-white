@@ -18,32 +18,6 @@
           <%- toc(page.content,{class:"toc-top",list_number:false,max_depth: theme.toc.max,min_depth: theme.toc.min}) %>
         <%}%>
         <%-page.content%>
-        <!-- 评论 -->
-        <% if (page.comments !== false && theme.comments.open === true){ %>
-          <!-- valine -->
-          <% if ( theme.comments.system ==='valine' && theme.comments.valine && theme.comments.valine.appid && theme.comments.valine.appkey){ %>
-            <section id="comments" class="comments" style="margin-top: 150px;">
-              <style>
-                .comments{background:#fff}
-                @media screen and (max-width:900px){.comments{margin:auto;padding:10px;background:#fff}}
-              </style>
-              <%- partial('post/comment-valine', {
-                key: page.slug,
-                title: page.title,
-                url: config.url+url_for(page.path)
-                }) %>
-            </section>
-          <% } %>
-          <!-- Gitalk -->
-          <% if ( theme.comments.system ==='gitalk' && theme.comments.gitalk && theme.comments.gitalk.clientID && theme.comments.gitalk.clientSecret ){ %>
-            <%- partial('post/comment-gitalk') %>
-          <% } %>
-          <!-- livere -->
-          <% if ( theme.comments.system ==='livere' && theme.comments.livere && theme.comments.livere.dataId && theme.comments.livere.dataUid ){ %>
-            <%- partial('post/comment-livere') %>
-          <% } %>
-
-        <% } %>
       </div>
       <div class="post-content-inner-space">
         <%if(page.toc!==false && theme.toc.open === true && toc(page.content).length!==0 && theme.toc.side === true){%>
@@ -53,5 +27,34 @@
         <%}%>
       </div>
    </div>
+    <!-- 评论 -->
+    <% if (page.comments !== false && theme.comments.open === true){ %>
+    <div class="bottom-comments-outer">
+      <div class="bottom-comments-inner">
+        <!-- valine -->
+        <% if ( theme.comments.system ==='valine' && theme.comments.valine && theme.comments.valine.appid && theme.comments.valine.appkey){ %>
+          <section id="comments" class="comments" style="margin-top: 150px;">
+            <style>
+              .comments{background:#fff}
+              @media screen and (max-width:900px){.comments{margin:auto;padding:10px;background:#fff}}
+            </style>
+            <%- partial('post/comment-valine', {
+              key: page.slug,
+              title: page.title,
+              url: config.url+url_for(page.path)
+              }) %>
+          </section>
+        <% } %>
+        <!-- Gitalk -->
+        <% if ( theme.comments.system ==='gitalk' && theme.comments.gitalk && theme.comments.gitalk.clientID && theme.comments.gitalk.clientSecret ){ %>
+          <%- partial('post/comment-gitalk') %>
+        <% } %>
+        <!-- livere -->
+        <% if ( theme.comments.system ==='livere' && theme.comments.livere && theme.comments.livere.dataId && theme.comments.livere.dataUid ){ %>
+          <%- partial('post/comment-livere') %>
+        <% } %>
+        </div>
+      </div>
+    <% } %>
   </div>
 </article>
