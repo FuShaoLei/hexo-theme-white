@@ -9,7 +9,7 @@ style:
     text-main: "#333333" # 文字主色调
     text-secondary: "#898FA0" # 文字次色调
   animation:
-    open: true # 是否开启动画
+    open: true # 如果开启动画的话会引入animation.css
 
 
 ########## 关于主页的设置 ##########
@@ -38,6 +38,7 @@ archive_img_mode:
     - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/13.jpg
     - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/14.jpg
     - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/15.jpg
+
 # icon
 icon:  #标签页图标
 #  header

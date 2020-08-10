@@ -1,7 +1,14 @@
 
+
 <article class="post-inner">
     <div class="post-content-outer">
+      <div class="post-intro">
+
+      </div>
       <div class="post-content-inner">
+        <div class="post-content-inner-space">
+  
+        </div>
         <div class="post-content-main animate__animated  animate__fadeInUp">
             <div class="search">
                 <div class="search-input-outer">
@@ -16,16 +23,18 @@
                     <% } %>
                 </div>
             </div>
+
+        </div>
+        <div class="post-content-inner-space">
         </div>
      </div>
     </div>
   </article>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 <%- js('js/search.js') %>
 <script type="text/javascript">      
     var search_path = "search.xml";
     var path = "<%= config.root %>" + search_path;
     searchFunc(path, 'local-search-input', 'local-search-result');
 </script>
-  
