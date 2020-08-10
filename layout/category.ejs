@@ -1,16 +1,8 @@
-<section class="archive-outer">
-  <section class="archive-inner">
-    <div class="archive-name <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>"><%=page.category%></div>
-      <% page.posts.sort('date', -1).each(post=> { %>
-        <a  href="<%=url_for(post.path)%>">
-        <div class="archive-post <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>">
-          <div class="archive-post-title"><%=post.title%></div>
-          <div class="archive-post-date"><%=date(post.date, 'MM-DD') %></div>
-        </div>
-        </a>
-      <% }) %>
-  </section>
-</section>
-
+<% if(theme.categories.type === 'img') { %>
+  <%- partial('_partial/mode-img') %>
+<% } %>
+<% if(theme.categories.type === 'simple') { %>
+  <%- partial('_partial/mode-simple') %>
+<% } %>
 
 

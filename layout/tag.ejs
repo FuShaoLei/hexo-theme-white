@@ -1,18 +1,6 @@
-
-<div id="tag">
-  <h1><%=page.tag%></h1>
-  <% page.posts.each(article => { %>
-    <div class="tag-item">
-      <a href="<%=url_for(article.path)%>">
-        <%=article.title%>
-      </a>
-      <time datetime="<%=date_xml(article.date)%>">
-        <%=date(article.date)%>
-      </time>
-    </div>
-  <% }) %>
-</div>
-
-<div id="paginator">
-  <%-paginator()%>
-</div>
+<% if(theme.tags.type === 'img') { %>
+  <%- partial('_partial/mode-img') %>
+<% } %>
+<% if(theme.tags.type === 'simple') { %>
+  <%- partial('_partial/mode-simple') %>
+<% } %>

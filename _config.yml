@@ -21,6 +21,12 @@ home:
 archive:
   type: "simple" # archive的类型，可选 img | simple
 
+categories:
+  type: "img" # archive的类型，可选 img | simple
+
+tags:
+  type: "img" # archive的类型，可选 img | simple
+
 archive_img_mode:
   default_cover: #默认的cover
     - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/01.jpg
