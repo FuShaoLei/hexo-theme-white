@@ -1,5 +1,6 @@
 <%
 var title = titlecase(page.title);
+if(page.title_name) title=titlecase(page.title_name)
 if (is_archive()){
   title = theme.archive_tab_name ;   
 } else if (is_category()){

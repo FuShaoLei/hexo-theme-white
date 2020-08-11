@@ -159,36 +159,34 @@
 /* 图片 */
 /* 表格 */
 table 
-  width 100%
-  border 1px solid #e3e3e3
-  border-collapse collapse
-  overflow: hidden
-  border-spacing 0
-  & > thead 
-    & > tr 
-      & > th 
-        vertical-align bottom
-        border-bottom 3px solid #e3e3e3
-  & > tbody 
-    & + tbody 
-      border-top 2px solid #e3e3e3
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td,
-table > tfoot > tr > th,
-table > tfoot > tr > td 
-  padding 12px
-  line-height 1.2
-  vertical-align top
-  border-top 1px solid #e3e3e3
-table > caption + thead > tr:first-child > th,
-table > caption + thead > tr:first-child > td,
-table > colgroup + thead > tr:first-child > th,
-table > colgroup + thead > tr:first-child > td,
-table > thead:first-child > tr:first-child > th,
-table > thead:first-child > tr:first-child > td 
-  border-top 0
+  border-collapse: collapse
+  margin: 30px 0px
+  width: 100%
+  border-width: 2px
+  border-style: solid
+  border-color: rgb(238, 238, 238)
+  border-image: initial
+  border-spacing: 0px
+  display: table
+  thead
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 8px 0px
+    display: table-header-group
+    vertical-align: middle
+    border-color: inherit
+  th,td
+    padding: .9rem
+    border-width: 0.5px
+    border-style: solid
+    border-color: rgb(248, 248, 248)
+    border-image: initial
+  tbody
+    display: table-row-group
+    vertical-align: middle
+    border-color: inherit
+    tr
+      display: table-row
+      vertical-align: inherit
+      border-color: inherit
 /* 加粗 */
 /* 分割线 */
 /* 代码高亮 */
