@@ -19,6 +19,8 @@
 
 - [清风徐来](https://www.txca.ga/)
 
+### [👉点此申请加入示例](https://github.com/FuShaoLei/hexo-theme-white/issues/12)
+
 ## 特性
 
 - [x] 可自定义样式
