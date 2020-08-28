@@ -19,15 +19,11 @@
         <% }) %>
         <% if (page.total > 1){ %>
           <nav class="paginator animate__animated  animate__fadeInUp">
-            <% var prev_text =  __('上一页');var next_text = __('下一页') %>
             <%- paginator({
-              prev_text: prev_text,
-              next_text: next_text
+              prev_text: theme.pagination.prev,
+              next_text: theme.pagination.next
             }) %>
           </nav>
         <% } %>
     </section>
 </section>
-  
-
-  
