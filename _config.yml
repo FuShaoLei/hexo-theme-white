@@ -59,7 +59,7 @@ menu:
 search:
   open: false # 是否开启
   page: /search # 页面路径（通常命名为search）
-  
+
 
 
 # 自我介绍
@@ -69,13 +69,13 @@ intro:
   avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像 暂时还没用到
   author: white #所有文章的默认作者
 
-#联系方式  
+#联系方式
 #更多图标：https://remixicon.com/
 contact:
   Github:
     - https://github.com/FuShaoLei/hexo-theme-white
     - ri-github-line
-  Email: 
+  Email:
     - mailto:1563250958@qq.com
     - ri-mail-line
 
@@ -121,9 +121,11 @@ comments:
   livere: # 前往 http://livere.com/ 申请账号
     dataId: city #免费版本city
     dataUid: #安装代码中 data-uid 后面数据
-  
 
 
+pagination:
+  prev: prev
+  next: next
 
 ############## 其他 ##############
 
@@ -135,7 +137,7 @@ menu_categories:
   open: true
   name: 分类
 
-#可自定义归档标签页名字 
+#可自定义归档标签页名字
 archive_tab_name: Blog
 
 
