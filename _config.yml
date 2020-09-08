@@ -49,7 +49,8 @@ archive_img_mode:
 icon:  #标签页图标
 #  header
 site_name: white.
-
+site_description: A minimalist theme for hexo. #The default meta description for all the meta descriptions
+#Add description property to any page to change the meta description
 menu:
   HOME: /
   BLOG: /archives
