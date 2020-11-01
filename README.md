@@ -13,7 +13,6 @@
 ![Github stars](https://img.shields.io/github/stars/FuShaoLei/hexo-theme-white.svg)
 ![Github forks](https://img.shields.io/github/forks/FuShaoLei/hexo-theme-white.svg)
 
-欢迎加入qq群：932539659 和我交流
 
 ## 示例
 
