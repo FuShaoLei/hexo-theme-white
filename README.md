@@ -8,7 +8,7 @@
 
 ![](https://cdn.jsdelivr.net/gh/fushaolei/img2/20200726101450.png)
 
-## [点此查看👉主题配置文档](https://fushaolei.github.io/2020/08/09/doc-white-configration/)
+## [点此查看👉主题配置文档](https://fushaolei.github.io/post/doc-white-configration/)
 
 ![Github stars](https://img.shields.io/github/stars/FuShaoLei/hexo-theme-white.svg)
 ![Github forks](https://img.shields.io/github/forks/FuShaoLei/hexo-theme-white.svg)
