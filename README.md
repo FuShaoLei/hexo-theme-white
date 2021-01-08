@@ -1,4 +1,4 @@
-# 感谢各位的star，我感受到了开源的乐趣，我会一直维护下去的
+# 各位别star了 我不配，现已转到hugo，以后也不再维护这个主题了
 
 # <div align="center">White</div>
 
