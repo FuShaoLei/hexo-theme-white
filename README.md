@@ -24,7 +24,7 @@
 
 - [LiangYin](https://liangyin.net.cn)
 
-### [👉点此申请加入示例](https://github.com/FuShaoLei/hexo-theme-white/issues/12)
+### ~~[👉点此申请加入示例](https://github.com/FuShaoLei/hexo-theme-white/issues/12)~~
 
 ## 特性
 
