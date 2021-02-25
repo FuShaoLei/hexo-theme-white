@@ -1,4 +1,4 @@
-# 各位别star了 我不配，现已转到hugo，以后也不再维护这个主题了
+# 各位别star了 我不配，现已转到hugo，以后也不再维护这个主题了（也不一定）
 
 # <div align="center">White</div>
 
