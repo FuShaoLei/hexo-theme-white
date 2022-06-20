@@ -16,13 +16,7 @@
 
 ## 示例
 
-- [Sorryfu](https://sorryfu.top/)
-
-- [清风徐来](https://www.txca.ga/)
-
-- [大魔头闪电](https://Fyljp.Me)
-
-- [LiangYin](https://liangyin.net.cn)
+- [https://fushaolei.github.io/hexo-theme-white/](https://fushaolei.github.io/hexo-theme-white/)
 
 ### ~~[👉点此申请加入示例](https://github.com/FuShaoLei/hexo-theme-white/issues/12)~~
 
