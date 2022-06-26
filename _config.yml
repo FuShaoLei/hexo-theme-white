@@ -15,11 +15,11 @@ style:
 ########## 关于主页的设置 ##########
 # home页可选类型
 home:
-  type: "img" # 主页的类型，可选 home | img | simple
+  type: "home" # 主页的类型，可选 home | img | simple
 
 # archive页可选类型
 archive:
-  type: "simple" # archive的类型，可选 img | simple
+  type: "img" # archive的类型，可选 img | simple
 
 categories:
   type: "img" # archive的类型，可选 img | simple
