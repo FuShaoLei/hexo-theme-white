@@ -10,17 +10,15 @@
   </div>
 </div>
 
-
-
 <!-- 如果是home模式的话，不在首页就显示footer，如果不是home模式的话 所有都显示footer -->
-<% if(theme.home.type === "home" && is_home() !== true){%>
-  <%- partial('_partial/footer',{cache: true}) %>
+<% if(theme.home.type === "home" && is_home() !== true) {%>
+  <%- partial('_partial/footer', {cache: true}) %>
 <% }else if(theme.home.type !== "home"){%>
-  <%- partial('_partial/footer',{cache: true}) %>
+  <%- partial('_partial/footer', {cache: true}) %>
 <% } %>
 
 
 
-<%- partial('_partial/after-footer',{cache: true}) %>
+<%- partial('_partial/after-footer', {cache: true}) %>
 </body>
 </html>
