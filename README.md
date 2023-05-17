@@ -1,3 +1,4 @@
+> 最新版本开发中....具体查看 [dev](https://github.com/FuShaoLei/hexo-theme-white/tree/dev)
 # <div align="center">White</div>
 
 <p align="center">
