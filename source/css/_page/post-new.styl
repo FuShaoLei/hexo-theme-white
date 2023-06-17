@@ -1,0 +1,62 @@
+//@import "github-markdown.css"
+// post-intro
+.post-intro
+  margin-bottom 30px
+.post-title
+  text-align center
+  font-size 2.15em
+  font-weight bold
+  margin-bottom 20px
+.post-cover
+  margin-top 80px
+.post-cover-img
+  min-width 100%
+  max-width: 100%
+  height 350px
+  object-fit cover
+.meta-intro
+  font-size .8em
+  text-transform : uppercase
+  letter-spacing: 1.5px
+  text-align center
+  color $color-text-secondary
+  line-height: 4
+  position: relative
+  &:after // TODO 这里应该有更好的实现方法
+    content ""
+    position absolute
+    top 0
+    left 48%
+    right 48%
+    bottom 98%
+    transition all .4s
+    background-color $color-theme-main
+
+
+// post-content-inner
+.post-content-inner
+  display flex
+  flex-direction row
+  .post-content-main
+    flex-basis $post-max-width
+    max-width $post-max-width
+  .post-content-inner-space
+    flex-basis $side-toc-width
+
+// detail post style
+.post-content-inner
+  font-size 1.15em
+  ul,ol
+    padding-left 2em
+.post-content-main
+  pre
+    max-width $post-max-width
+    overflow-x auto
+    margin 5px 0
+    padding 20px
+    background #f1f1f1
+  h1, h2, h3, h4, h5, h6
+    margin-top 23px
+    margin-bottom 16px
+  hr
+    margin 24px 0
