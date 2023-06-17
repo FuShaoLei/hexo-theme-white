@@ -49,8 +49,8 @@ archive_img_mode:
 icon:  #标签页图标
 #  header
 site_name: white.
-site_description: A minimalist theme for hexo. #The default meta description for all the meta descriptions
-#Add description property to any page to change the meta description
+site_description: A minimalist theme for hexo. # The default meta description for all the meta descriptions
+# Add description property to any page to change the meta description
 menu:
   HOME: /
   BLOG: /archives
@@ -66,7 +66,7 @@ search:
 # 自我介绍
 intro:
   title: Hi.I'm White.
-  sub: 'A [White](https://github.com/FuShaoLei/hexo-theme-white) theme for [Hexo](http://hexo.io/)' # markdown语法
+  sub: 'A [White](https://github.com/FuShaoLei/hexo-theme-white) theme for [Hexo](http://hexo.io/)' # 支持markdown
   avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像 暂时还没用到
   author: white #所有文章的默认作者
 
@@ -118,7 +118,7 @@ comments:
     admin:  #Github 用户名
     clientID:  #`Github Application clientID`
     clientSecret: #`Github Application clientSecret`
-  #livere
+  # livere
   livere: # 前往 http://livere.com/ 申请账号
     dataId: city #免费版本city
     dataUid: #安装代码中 data-uid 后面数据
@@ -133,15 +133,15 @@ pagination:
 # 页脚
 footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuShaoLei/hexo-theme-white) # markdown语法
 
-#有分类时是否开启menu分类页和自定义名字
+# 有分类时是否开启menu分类页和自定义名字
 menu_categories:
   open: true
   name: 分类
 
-#可自定义归档标签页名字
+# 可自定义归档标签页名字
 archive_tab_name: Blog
 
 
-#图片懒加载
+# 图片懒加载
 lazyload:
   open: true #是否开启
