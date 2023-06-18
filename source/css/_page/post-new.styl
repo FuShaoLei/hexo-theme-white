@@ -43,20 +43,42 @@
   .post-content-inner-space
     flex-basis $side-toc-width
 
+
 // detail post style
 .post-content-inner
   font-size 1.15em
-  ul,ol
+  font-family: "LXGW WenKai Lite", sans-serif;
+  ul, ol
     padding-left 2em
+    font-family: Merriweather
+    margin 20px 0
 .post-content-main
   pre
     max-width $post-max-width
     overflow-x auto
     margin 5px 0
     padding 20px
-    background #f1f1f1
+    background #eee
+    > code
+      font-family 'Noto Serif SC', serif
+      font-size 0.85em
   h1, h2, h3, h4, h5, h6
     margin-top 23px
     margin-bottom 16px
+    color: $color-text-main
+  h1, h2
+    &::after
+      content "#"
+      display inline-block
+      color #e3e3e3
+      margin-left 0.5rem
+      font-weight: 1000
+  p
+    margin 20px 0
+  img
+    max-width 100%
   hr
     margin 24px 0
+    height 3px
+    border none
+    background-color #e3e3e3

@@ -30,10 +30,12 @@ if (is_archive()){
   <% } %>
   <!-- css文件 -->
   <%- css('css/white') %>
-  <!-- 代码高亮 -->
-  <% if (config.highlight.enable != true) { %>
-    <% if (theme.plugins.highlightjs && theme.plugins.highlightjs.css) { %>
-      <%- css(theme.plugins.highlightjs.css) %>
-    <% } %>
-  <% } %>
+
+  <!--各种字体-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
 </head>

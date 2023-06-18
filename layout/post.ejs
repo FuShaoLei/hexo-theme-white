@@ -44,7 +44,7 @@
       <div class="post-content-inner-space">
         <%if(page.toc!==false && theme.toc.open === true && toc(page.content).length!==0 && theme.toc.side === true){%>
           <div class="space-toc-main animate__animated  animate__fadeInUp">
-            <%- toc(page.content,{class:"space-toc",list_number:false,max_depth: theme.toc.max,min_depth: theme.toc.min}) %>
+            <%- toc(page.content, { class:"space-toc", list_number: false, max_depth: theme.toc.max, min_depth: theme.toc.min}) %>
            </div>
         <%}%>
       </div>
