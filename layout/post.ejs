@@ -9,44 +9,14 @@
       <%}%>
     </div>
     <div class="post-content-inner">
-      <div class="post-content-inner-space">
-
-      </div>
-      <div class="post-content-main markdown-body animate__animated  animate__fadeInUp">
+      <div class="post-content-main">
         <!-- top型目录 -->
-        <%if(page.toc!==false && theme.toc.open === true && toc(page.content).length!==0 && theme.toc.side !== true){%>
+        <%if( false && toc(page.content).length !== 0){%>
           <%- toc(page.content,{class:"toc-top",list_number:false,max_depth: theme.toc.max,min_depth: theme.toc.min}) %>
         <%}%>
-        <%-page.content%>
-        <!-- 分类文章 -->
-        <% if(page.categories.data.length>0){ %>
-          <div class="post-categoris-bottom">
-            <div class="post-categoris-name"><%=page.categories.data[0].name%></div>
-            <ul>
-            <% site.posts.sort('date',1).each(pos => {%>
-            <%if(pos.categories.data.length>0){%>
-              <%if(pos.categories.data[0].name===page.categories.data[0].name){%>
-                <li class="<%if(pos.title===page.title){%>me base<%}else{%>base<%}%>">
-                  <a  href="<%=url_for(pos.path)%>" class="post-categoris-bottom-link">
-                  <%=pos.title%>
-                </a>
-                </li>
-              
-              <%}%>
-            <%};%>
-            <% }); %>
-            </ul>
-
-          </div>
-
-        <% } %>
-      </div>
-      <div class="post-content-inner-space">
-        <%if(page.toc!==false && theme.toc.open === true && toc(page.content).length!==0 && theme.toc.side === true){%>
-          <div class="space-toc-main animate__animated  animate__fadeInUp">
-            <%- toc(page.content, { class:"space-toc", list_number: false, max_depth: theme.toc.max, min_depth: theme.toc.min}) %>
-           </div>
-        <%}%>
+        <div class="post-content">
+          <%-page.content%>
+        </div>
       </div>
    </div>
     <!-- 评论 -->

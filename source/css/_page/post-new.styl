@@ -36,32 +36,35 @@
 // post-content-inner
 .post-content-inner
   display flex
-  flex-direction row
+  justify-content center
   .post-content-main
     flex-basis $post-max-width
     max-width $post-max-width
-  .post-content-inner-space
-    flex-basis $side-toc-width
 
 
 // detail post style
 .post-content-inner
-  font-size 1.15em
+  font-size 1.2em
   font-family: "LXGW WenKai Lite", sans-serif;
   ul, ol
     padding-left 2em
     font-family: Merriweather
     margin 20px 0
 .post-content-main
+  code
+    background #eee
+    font-size 0.85em
+    font-family 'Noto Serif SC', serif
   pre
     max-width $post-max-width
-    overflow-x auto
+    overflow auto
     margin 5px 0
-    padding 20px
+    padding 1em
     background #eee
     > code
       font-family 'Noto Serif SC', serif
       font-size 0.85em
+      background none
   h1, h2, h3, h4, h5, h6
     margin-top 23px
     margin-bottom 16px
@@ -72,13 +75,43 @@
       display inline-block
       color #e3e3e3
       margin-left 0.5rem
-      font-weight: 1000
+      font-weight: border
   p
     margin 20px 0
   img
     max-width 100%
+    margin 10px 0
   hr
     margin 24px 0
     height 3px
     border none
     background-color #e3e3e3
+  table
+    border-collapse: collapse
+    margin: 30px 0px
+    width: 100%
+    border-width: 2px
+    border-style: solid
+    border-color: #e3e3e3
+    border-image: initial
+    border-spacing: 0px
+    display: table
+    thead
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 8px 0px
+      display: table-header-group
+      vertical-align: middle
+      border-color: inherit
+    th,td
+      padding: .9rem
+      border-width: 0.5px
+      border-style: solid
+      border-color: rgb(248, 248, 248)
+      border-image: initial
+    tbody
+      display: table-row-group
+      vertical-align: middle
+      border-color: inherit
+      tr
+        display: table-row
+        vertical-align: inherit
+        border-color: inherit
