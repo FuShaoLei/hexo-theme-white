@@ -7,6 +7,7 @@
   font-size 2.15em
   font-weight bold
   margin-bottom 20px
+  font-family 'Noto Serif SC', serif
 .post-cover
   margin-top 80px
 .post-cover-img
@@ -44,13 +45,25 @@
 
 // detail post style
 .post-content-inner
-  font-size 1.2em
+  font-size 1.3em
   font-family: "LXGW WenKai Lite", sans-serif;
   ul, ol
     padding-left 2em
     font-family: Merriweather
     margin 20px 0
 .post-content-main
+  h1, h2, h3, h4, h5, h6
+    margin-top 23px
+    margin-bottom 16px
+    color: $color-text-main
+    font-family 'Noto Serif SC', serif
+  h1, h2
+    &::after
+      content "#"
+      display inline-block
+      color #e3e3e3
+      margin-left 0.5rem
+      font-weight: border
   code
     background #eee
     font-size 0.85em
@@ -65,22 +78,14 @@
       font-family 'Noto Serif SC', serif
       font-size 0.85em
       background none
-  h1, h2, h3, h4, h5, h6
-    margin-top 23px
-    margin-bottom 16px
-    color: $color-text-main
-  h1, h2
-    &::after
-      content "#"
-      display inline-block
-      color #e3e3e3
-      margin-left 0.5rem
-      font-weight: border
   p
     margin 20px 0
   img
     max-width 100%
     margin 10px 0
+  iframe
+    width 100%
+    aspect-ratio 3.1/2
   hr
     margin 24px 0
     height 3px
