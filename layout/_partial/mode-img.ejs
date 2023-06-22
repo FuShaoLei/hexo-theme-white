@@ -1,41 +1,40 @@
-
 <section class="img-show-outer">
     <section class="img-show-inner">
-          <% var nums=0; %>
-          <% page.posts.sort('date', -1).limit(10).each(post => { %>
-          <div class="img-show-post">
+        <% var nums = 0; %>
+        <% page.posts.sort('date', -1).limit(10).each(post => { %>
+        <div class="img-show-post">
             <div class="img-show-post-cover">
               <span class="lazyload-img-span">
-              <a  href="<%=url_for(post.path)%>">
-              <% if(post.cover){ %>
-              <img data-src="<%= post.cover%>" class="img-show-post-cover-class">
-              <% }else { %>
-                <%
-                var coverimg='';
-                var defalutcovers=theme.archive_img_mode.default_cover;
-                coverimg=defalutcovers[nums % defalutcovers.length]
-                %>
-                <img data-src="<%= coverimg%>" class="img-show-post-cover-class">
-              <% } %>
+              <a href="<%= url_for(post.path) %>">
+                  <% if(post.cover){ %>
+                      <img data-src="<%= post.cover %>" class="img-show-post-cover-class">
+                  <% }else { %>
+                      <%
+                          var coverimg = '';
+                          var defalutcovers = theme.archive_img_mode.default_cover;
+                          coverimg = defalutcovers[nums % defalutcovers.length]
+                      %>
+                      <img data-src="<%= coverimg %>" class="img-show-post-cover-class">
+                  <% } %>
               </a>
               </span>
             </div>
             <div class="img-show-post-intro">
-             <a  href="<%=url_for(post.path)%>">
-            <div class="img-show-post-title animate__animated  animate__fadeInUp"><%=post.title%></div>
-            </a>
-            <div class="img-show-post-date animate__animated  animate__fadeInUp"><%=full_date(post.date,'MMM DD YYYY') %> </div>
+                <a href="<%= url_for(post.path) %>">
+                    <div class="img-show-post-title"><%= post.title %></div>
+                </a>
+                <div class="img-show-post-date"><%= full_date(post.date, 'MM/DD') %> </div>
             </div>
-          </div>
-          <% nums=nums+1; %>
-         <% }) %>
+        </div>
+        <% nums = nums + 1; %>
+        <% }) %>
     </section>
     <% if (page.total > 1){ %>
-      <nav class="paginator animate__animated  animate__fadeInUp">
-        <%- paginator({
-          prev_text: theme.pagination.prev,
-          next_text: theme.pagination.next
-        }) %>
-      </nav>
+        <nav class="paginator animate__animated  animate__fadeInUp">
+            <%- paginator({
+                prev_text: theme.pagination.prev,
+                next_text: theme.pagination.next
+            }) %>
+        </nav>
     <% } %>
 </section>
