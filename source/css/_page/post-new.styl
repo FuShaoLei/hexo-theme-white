@@ -45,8 +45,9 @@
 
 // detail post style
 .post-content-inner
-  font-size 1.3em
-  font-family: "LXGW WenKai Lite", sans-serif;
+  font-size 1.22em
+  font-family 'Noto Serif SC', serif
+  color: $color-text-main
   ul, ol
     padding-left 2em
     font-family: Merriweather
@@ -55,27 +56,28 @@
   h1, h2, h3, h4, h5, h6
     margin-top 23px
     margin-bottom 16px
-    color: $color-text-main
     font-family 'Noto Serif SC', serif
   h1, h2
     &::after
       content "#"
       display inline-block
-      color #e3e3e3
+      color rgba($color-text-main, .15)
+      font-family 'Roboto Mono', monospace
       margin-left 0.5rem
       font-weight: border
   code
-    background #eee
+    background $color-embellish
     font-size 0.85em
-    font-family 'Noto Serif SC', serif
+    padding 0 7px
+    font-family 'Roboto Mono', monospace
   pre
     max-width $post-max-width
     overflow auto
     margin 5px 0
     padding 1em
-    background #eee
+    background $color-embellish
     > code
-      font-family 'Noto Serif SC', serif
+      font-family 'Roboto Mono', monospace
       font-size 0.85em
       background none
   p
@@ -91,27 +93,35 @@
     margin 24px 0
     height 3px
     border none
-    background-color #e3e3e3
+    background-color $color-embellish
+  blockquote
+    background $color-embellish
+    padding 1em
+    border-left 7px solid $color-theme-main
+    p
+      display contents
+  a
+    box-shadow 0 1px $color-theme-main
   table
     border-collapse: collapse
     margin: 30px 0px
     width: 100%
     border-width: 2px
     border-style: solid
-    border-color: #e3e3e3
+    border-color: $color-embellish
     border-image: initial
     border-spacing: 0px
     display: table
     thead
-      box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 8px 0px
+      box-shadow: $color-embellish 0px 4px 8px 0px
       display: table-header-group
       vertical-align: middle
       border-color: inherit
     th,td
       padding: .9rem
-      border-width: 0.5px
+      border-width: 1px
       border-style: solid
-      border-color: rgb(248, 248, 248)
+      border-color: $color-embellish
       border-image: initial
     tbody
       display: table-row-group
