@@ -33,28 +33,16 @@ a
 .menu-li 
   float left
   margin-right 30px
-  font-size 0.9em
+  font-size 1.1em
   color $color-text-secondary
   position relative
-  transition all .3s
+  transition all .4s
   &:hover 
     color $color-text-main
-.active-link 
-  li 
-    position relative
+.active-link
+  .menu-li
     color $color-text-main
-    &:after 
-      content ""
-      position absolute
-      top 100%
-      left 0
-      right 0
-      bottom -.2em
-      transition all .3s
-      background-color $color-theme-main
-    &:hover 
-      &:after 
-        right 50%
+
 
 /* sort */
 #sort
@@ -93,7 +81,7 @@ a
 /* home */
 .intro-content 
   margin-top 150px
-  width 80%
+  width 60%
 .intro-title 
   font-family $font-title
   font-size 4.5em
@@ -103,18 +91,16 @@ a
 .intro-sub 
   font-family $font-content
   margin-top 30px
-  font-size 1.2em
+  font-size 1.32em
   line-height 1.8em
   margin-left 5px
-  a
-    box-shadow 0 1px $color-theme-main
 .intro-contact
   margin-top 10px
   font-size 1.5em
   line-height 1.8em
   margin-left 5px
 .intro-content,a 
-  color #2e2e2e
+  color $color-text-main
   text-decoration none
   margin-right 3px
 /* archive */
@@ -154,46 +140,38 @@ a
   background-color $color-theme-secondary
   font-size: 0.8em
   border-radius 5px
-  padding 0px 10px
+  padding 0 10px
   transition all .4s
 .paginator 
-  margin 50px 0px
+  margin 50px 0
+  font-family $font-title
   text-align center
-  .page-number 
+  font-size 1.17em
+  .page-number,.space
     display none
-  .space
-    display none
-  .extend 
-    margin 0 10px
-    background-color $color-embellish
-    color $color-theme-main
-    padding 10px 20px
-    border-radius 5px
-    font-size 0.9em
-    font-weight 1000
-    transition all .25s
+  .extend
+    color $color-text-secondary
+    general-transition()
     &:hover 
-      color #fff
-      background-color $color-theme-main
+      color $color-text-main
 /* footer */
 .footer-outer 
   display flex
   justify-content center
   font-family $font-title
 .footer-inner 
-  padding 40px 0px
+  padding 40px 0
   width $layout-max-width
   display flex
   justify-content space-between
 .footer-text 
   color $color-text-secondary
-  font-size 1em
+  font-size 1.1em
   a 
     color $color-text-secondary
-    font-size 1em
-    transition all .3s
+    general-transition()
     &:hover 
-      color $color-theme-main
+      color $color-text-main
 .footer-contact 
   font-size 1.2em
 .footer-ul 
@@ -205,12 +183,12 @@ a
   i 
     color $color-text-secondary
     font-size 1.2em
-    transition all .3s
+    general-transition()
     padding 5px
     border-radius 100%
   &:hover 
     i 
-      color $color-theme-main
+      color $color-text-main
 /* gitalk-saysay优化 */
 .gitalk-saysay 
   & > #gitalk-container 

@@ -56,7 +56,7 @@ search:
 
 # 自我介绍
 intro:
-  title: Hi.I'm White.
+  title: Greeting! I'm White.
   sub: 'A [White](https://github.com/FuShaoLei/hexo-theme-white) theme for [Hexo](http://hexo.io/)' # 支持markdown
   avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像 暂时还没用到
   author: white #所有文章的默认作者

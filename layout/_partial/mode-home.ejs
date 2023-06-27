@@ -1,11 +1,18 @@
 <section class="intro-section">
     <div class="intro-content">
-        <div class="intro-title"><%=theme.intro.title%></div>
-        <div class="intro-sub"><%- markdown(theme.intro.sub) %></div>
+        <div class="intro-title"><%= theme.intro.title %></div>
+        <% var allPages = site.pages.data %>
+        <% for(var i = 0; i < allPages.length; i++) { %>
+            <% if(allPages[i].path == "index/index.html") { %>
+                <div class="intro-sub">
+                    <%- allPages[i].content %>
+                </div>
+        <% break; }} %>
+
         <p class="intro-contact">
             <% for(var y in theme.contact){ %>
-                <a href="<%=theme.contact[y][0]%>" target="_blank">
-                    <i class="<%=theme.contact[y][1]%>"></i>
+                <a href="<%= theme.contact[y][0] %>" target="_blank">
+                    <i class="<%= theme.contact[y][1] %>"></i>
                 </a>
             <% } %>
         </p>

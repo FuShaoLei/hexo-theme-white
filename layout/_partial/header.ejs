@@ -1,63 +1,62 @@
 <%
-const categoriesList = list_categories({ show_count: false });
+const categoriesList = list_categories({show_count: false});
 %>
 <div class="menu-outer">
     <div class="menu-inner">
-      <div class="menu-site-name  <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>">
-        <a href="<%=url_for()%>">
-          <%=theme.site_name%>
-        </a>
-        
-      </div>
-      <div class="menu-group">
-        <ul class="menu-ul">
-        <% Object.keys(theme.menu).forEach(key => { %>
-          <a href="<%=url_for(theme.menu[key])%>" class="nav-link">
-            <li class="menu-li">
-              <%=key%>
-            </li>
-          </a>
-        <% }); %>
-          <li class="menu-li" id="mobile-menu">
-            <i class="ri-menu-line"></i>
-          </li>
-        
-        </ul>
+        <div class="menu-site-name">
+            <a href="<%= url_for() %>">
+                <%= theme.site_name %>
+            </a>
+        </div>
+        <div class="menu-group">
+            <ul class="menu-ul">
+                <% Object.keys(theme.menu).forEach(key => { %>
+                <a href="<%= url_for(theme.menu[key]) %>" class="nav-link">
+                    <li class="menu-li">
+                        <%= key %>
+                    </li>
+                </a>
+                <% }); %>
+                <li class="menu-li" id="mobile-menu">
+                    <i class="ri-menu-line"></i>
+                </li>
 
-      </div>
+            </ul>
+
+        </div>
 
     </div>
 </div>
 <!--移动端-->
-<div id="mobile-main" class="<%if(theme.style.animation.open==true){%>animate__animated  animate__fadeIn<% } %>">
-  <div class="mobile-menu-inner">
-    <div class="mobile-menu-site-name <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>">
-      <a href="<%=url_for()%>">
-        <%=theme.site_name%>
-      </a>
-    </div>
-    <div class="mobile-menu-group" id="mobile-close">
-      <i class="ri-close-line"></i>
+<div id="mobile-main" class="<% if(theme.style.animation.open == true){ %>animate__animated  animate__fadeIn<% } %>">
+    <div class="mobile-menu-inner">
+        <div class="mobile-menu-site-name <% if(theme.style.animation.open == true){ %>animate__animated  animate__fadeInUp<% } %>">
+            <a href="<%= url_for() %>">
+                <%= theme.site_name %>
+            </a>
+        </div>
+        <div class="mobile-menu-group" id="mobile-close">
+            <i class="ri-close-line"></i>
+        </div>
+
     </div>
 
-  </div>
-
-  <div class="mobile-menu-div">
-  <% Object.keys(theme.menu).forEach(key => { %>
-    <a href="<%=url_for(theme.menu[key])%>" class="mobile-nav-link">
-      <div class="mobile-menu-child <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>">
-        <span><%=key%></span>
-      </div>
-    </a>
-  <% }); %>
-  <% if(theme.search.open===true) { %>
-    <a href="<%= url_for(theme.search.page) %>">  
-      <div class="mobile-menu-child  <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>">
-        <i class="ri-search-line"></i>
-      </div>
-    </a>
-    <% } %>
-  </div>
+    <div class="mobile-menu-div">
+        <% Object.keys(theme.menu).forEach(key => { %>
+        <a href="<%= url_for(theme.menu[key]) %>" class="mobile-nav-link">
+            <div class="mobile-menu-child <% if(theme.style.animation.open == true){ %>animate__animated  animate__fadeInUp<% } %>">
+                <span><%= key %></span>
+            </div>
+        </a>
+        <% }); %>
+        <% if(theme.search.open === true) { %>
+            <a href="<%= url_for(theme.search.page) %>">
+                <div class="mobile-menu-child  <% if(theme.style.animation.open == true){ %>animate__animated  animate__fadeInUp<% } %>">
+                    <i class="ri-search-line"></i>
+                </div>
+            </a>
+        <% } %>
+    </div>
 
 
 </div>

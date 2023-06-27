@@ -7,7 +7,7 @@
   font-size 2.15em
   font-weight bold
   margin-bottom 20px
-  font-family 'Noto Serif SC', serif
+  font-family $font-title
 .post-cover
   margin-top 80px
 .post-cover-img
@@ -45,31 +45,30 @@
 
 // detail post style
 .post-content-inner
-  font-size 1.22em
-  font-family 'Noto Serif SC', serif
+  font-size 1.32em
+  font-family $font-content
   color: $color-text-main
   ul, ol
     padding-left 2em
-    font-family: Merriweather
     margin 20px 0
-.post-content-main
+.post-content-main,.intro-sub
   h1, h2, h3, h4, h5, h6
     margin-top 23px
     margin-bottom 16px
-    font-family 'Noto Serif SC', serif
+    font-family $font-title
   h1, h2
     &::after
       content "#"
       display inline-block
       color rgba($color-text-main, .15)
-      font-family 'Roboto Mono', monospace
+      font-family $font-code
       margin-left 0.5rem
       font-weight: border
   code
     background $color-embellish
     font-size 0.85em
     padding 0 7px
-    font-family 'Roboto Mono', monospace
+    font-family $font-code
   pre
     max-width $post-max-width
     overflow auto
@@ -77,7 +76,7 @@
     padding 1em
     background $color-embellish
     > code
-      font-family 'Roboto Mono', monospace
+      font-family $font-code
       font-size 0.85em
       background none
   p
@@ -94,6 +93,8 @@
     height 3px
     border none
     background-color $color-embellish
+  strong
+    font-family $font-title
   blockquote
     background $color-embellish
     padding 1em
@@ -101,7 +102,9 @@
     p
       display contents
   a
-    box-shadow 0 1px $color-theme-main
+    box-shadow-transition()
+    &:hover
+      box-shadow-transition-hover()
   table
     border-collapse: collapse
     margin: 30px 0px
