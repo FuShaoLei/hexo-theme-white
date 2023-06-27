@@ -106,23 +106,9 @@ a
   font-size 1.2em
   line-height 1.8em
   margin-left 5px
-  a 
-    display inline-block
-    position relative
-    &:after 
-      content ""
-      position absolute
-      top 93%
-      left 0
-      right 0
-      bottom -.04em
-      transition all .3s
-      background-color $color-theme-main
-    &:hover 
-      &:after 
-        right 50%
-/* intro-sub中超链接的样式 */
-.intro-contact 
+  a
+    box-shadow 0 1px $color-theme-main
+.intro-contact
   margin-top 10px
   font-size 1.5em
   line-height 1.8em
@@ -179,13 +165,13 @@ a
     display none
   .extend 
     margin 0 10px
-    background-color $color-theme-secondary
+    background-color $color-embellish
     color $color-theme-main
     padding 10px 20px
     border-radius 5px
     font-size 0.9em
     font-weight 1000
-    transition all .4s
+    transition all .25s
     &:hover 
       color #fff
       background-color $color-theme-main

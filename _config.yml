@@ -44,8 +44,7 @@ site_name: white.
 site_description: A minimalist theme for hexo. # The default meta description for all the meta descriptions
 # Add description property to any page to change the meta description
 menu:
-  HOME: /
-  BLOG: /archives
+  文章: /archives
 
 
 ## 本地搜索
@@ -117,8 +116,8 @@ comments:
 
 
 pagination:
-  prev: prev
-  next: next
+  prev: 上一页
+  next: 下一页
 
 ############## 其他 ##############
 
