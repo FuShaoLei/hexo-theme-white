@@ -1,6 +1,5 @@
-/* logo用的Century Gothic字体 */
 /* 全局样式 */
-* 
+*
   padding 0
   margin 0
 body 
@@ -9,13 +8,11 @@ body
 a 
   text-decoration none
   color $color-text-main
-body,p,div,span 
-  letter-spacing: .7px
 /* 滚动条 */
 
 /* menu */
 .menu-outer
-  font-family Gothic 
+  font-family $font-title
   width 100%
   display flex
   justify-content center
@@ -28,8 +25,9 @@ body,p,div,span
   padding-bottom 30px
   transition all .3s
 .menu-site-name 
-  font-family Gothic
-  font-size 1.6em
+  font-family $font-title
+  font-size 2em
+  font-weight bolder
 .menu-ul 
   list-style none
 .menu-li 
@@ -97,20 +95,19 @@ body,p,div,span
   margin-top 150px
   width 80%
 .intro-title 
-  font-family Gothic
+  font-family $font-title
   font-size 4.5em
   font-weight 1000
   margin 0
   padding 0
 .intro-sub 
-  font-family Gothic
+  font-family $font-content
   margin-top 30px
   font-size 1.2em
   line-height 1.8em
   margin-left 5px
   a 
     display inline-block
-    font-family Gothic
     position relative
     &:after 
       content ""
@@ -162,7 +159,7 @@ body,p,div,span
 .archive-post-title 
   font-size 1.1em
   transition .4s
-  font-family Gothic
+  font-family $font-title
   margin-right auto
 .archive-post-date 
   font-family: Merriweather
@@ -196,7 +193,7 @@ body,p,div,span
 .footer-outer 
   display flex
   justify-content center
-  font-family Gothic
+  font-family $font-title
 .footer-inner 
   padding 40px 0px
   width $layout-max-width
