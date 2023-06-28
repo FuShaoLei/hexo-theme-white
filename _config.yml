@@ -5,6 +5,9 @@ style:
 
 
 ########## 关于主页的设置 ##########
+
+## TODO 待清除
+
 # home页可选类型
 home:
   type: "home" # 主页的类型，可选 home | img | simple
@@ -19,7 +22,7 @@ categories:
 tags:
   type: "img" # archive的类型，可选 img | simple
 
-archive_img_mode:
+archive_img_mode: # TODO 这里需要改，不应该用这种图片，应该改成本地的图片
   default_cover: #默认的cover
     - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/01.jpg
     - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/02.jpg
@@ -40,7 +43,7 @@ archive_img_mode:
 # icon
 icon:  #标签页图标
 #  header
-site_name: white.
+site_name: white
 site_description: A minimalist theme for hexo. # The default meta description for all the meta descriptions
 # Add description property to any page to change the meta description
 menu:
@@ -56,7 +59,7 @@ search:
 
 # 自我介绍
 intro:
-  title: Greeting! I'm White.
+  title: 你好! 我是 White
   sub: 'A [White](https://github.com/FuShaoLei/hexo-theme-white) theme for [Hexo](http://hexo.io/)' # 支持markdown
   avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像 暂时还没用到
   author: white #所有文章的默认作者

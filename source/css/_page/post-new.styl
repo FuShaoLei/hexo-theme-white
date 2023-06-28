@@ -72,12 +72,12 @@
   pre
     max-width $post-max-width
     overflow auto
+    font-size .85em
     margin 22px 0
-    padding 1em
+    padding 1.3em 1.2em
     background $color-embellish
     > code
       font-family $font-code
-      font-size 0.85em
       background none
   p
     margin 20px 0
@@ -96,11 +96,13 @@
   strong
     font-family $font-title
   blockquote
-    font-style italic
     background $color-embellish
+    font-family $font-title
     margin 22px 0
+    font-size .85em
     padding 1em
-    border-left 7px solid $color-theme-main
+    box-shadow 0 1px 1.5px 0 rgba($color-text-main .4)
+    general-transition()
     p
       display contents
   a
