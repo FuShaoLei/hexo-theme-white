@@ -1,10 +1,14 @@
 .bottom-comments-outer
     display flex
     justify-content: center
+    border-top 1px solid $color-embellish
+    margin-top 50px
     margin-bottom: 100px
 
 .bottom-comments-inner
     width: $post-max-width
+    .comment-title
+        margin-bottom 30px
     @media $desktop-m
         width: 730px
     @media $desktop-s

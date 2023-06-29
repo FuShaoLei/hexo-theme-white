@@ -117,6 +117,8 @@ comments:
     dataId: city #免费版本city
     dataUid: #安装代码中 data-uid 后面数据
 
+cusdis:
+  app_id: c5a2c365-def5-4d41-831d-b81b1f43e20b
 
 pagination:
   prev: 上一页
