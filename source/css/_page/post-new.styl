@@ -97,14 +97,18 @@
     font-family $font-title
   blockquote
     background $color-embellish
-    font-family $font-title
     margin 22px 0
-    font-size .85em
     padding 1em
-    box-shadow 0 1px 1.5px 0 rgba($color-text-main .4)
-    general-transition()
+    quotes "\201C""\201D""\2018""\2019";
+    &:before
+      color: #ccc;
+      content: '“';
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.24em;
     p
-      display contents
+      display: inline;
   a
     box-shadow-transition()
     &:hover
