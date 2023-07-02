@@ -37,12 +37,20 @@ mclose.onclick = function () {
 let change = document.getElementById("theme-change-btn")
 let changeList = [
     {
-        text: "默认",
+        text: "白昼",
         code: "day"
     },
     {
         text: "午夜",
         code: "night"
+    },
+    {
+        text: "饼干",
+        code: "cookie"
+    },
+    {
+        text: "森林",
+        code: "forest"
     }
 ]
 var currentIndex = 0
