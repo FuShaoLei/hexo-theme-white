@@ -63,11 +63,12 @@ change.onclick = function (){
     localStorage.setItem('hexo-white-theme-mode', changeList[currentIndex].code);
 }
 
-let beginCode = localStorage.getItem('hexo-white-theme-mode') || "day" // day是默认
+let beginCode = localStorage.getItem('hexo-white-theme-mode') || "cookie" // day是默认
 let tmpElement = changeList.filter(item => item.code === beginCode)[0]
 change.innerHTML = tmpElement.text
 currentIndex = changeList.indexOf(tmpElement)
 document.body.className = tmpElement.code
+localStorage.setItem('hexo-white-theme-mode', tmpElement.code);
 
 ///////////////////////////////////////////////////////////////////////////////////
 
