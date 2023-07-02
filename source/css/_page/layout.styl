@@ -5,9 +5,11 @@
 body 
   height 100%
   width 100%
+  general-transition()
+  background var(--color-bg)
 a 
   text-decoration none
-  color $color-text-main
+  color var(--color-text-main)
 /* 滚动条 */
 
 /* menu */
@@ -29,18 +31,19 @@ a
   font-size 1.9em
 .menu-ul 
   list-style none
-.menu-li 
+.menu-li
+  cursor pointer
   float left
   margin-right 30px
   font-size 1.1em
-  color $color-text-secondary
+  color var(--color-text-secondary)
   position relative
   transition all .4s
   &:hover 
-    color $color-text-main
+    color var(--color-text-main)
 .active-link
   .menu-li
-    color $color-text-main
+    color var(--color-text-main)
 
 
 /* sort */
@@ -53,7 +56,7 @@ a
     background: #fff
     border-radius: 3px
     min-width: 100px
-    border 1px solid $color-theme-main
+    border 1px solid var(--color-theme-main)
     position absolute
     left -30px
     top 30px
@@ -63,9 +66,9 @@ a
       li
         line-height: 2.8
         a
-          color: $color-text-secondary
+          color: var(--color-text-secondary)
           &:hover
-            color $color-text-main
+            color var(--color-text-main)
 
 
 /* body */
@@ -76,7 +79,6 @@ a
   justify-content center
 .body-inner 
   width $layout-max-width
-  background-color #fff
 /* home */
 .intro-content 
   margin-top 100px
@@ -99,7 +101,7 @@ a
   line-height 1.8em
   margin-left 5px
 .intro-content,a 
-  color $color-text-main
+  color var(--color-text-main)
   text-decoration none
   margin-right 3px
 /* archive */
@@ -125,7 +127,7 @@ a
   margin: 7px 0px
   &:hover
     .archive-post-title 
-      color: $color-theme-main
+      color: var(--color-theme-main)
 
 .archive-post-title 
   font-size 1.1em
@@ -134,9 +136,9 @@ a
   margin-right auto
 .archive-post-date 
   font-family: Merriweather
-  color $color-theme-main
+  color var(--color-theme-main)
   font-weight: 1000
-  background-color $color-theme-secondary
+  background-color var(--color-theme-secondary)
   font-size: 0.8em
   border-radius 5px
   padding 0 10px
@@ -149,10 +151,10 @@ a
   .page-number,.space
     display none
   .extend
-    color $color-text-secondary
+    color var(--color-text-secondary)
     general-transition()
     &:hover 
-      color $color-text-main
+      color var(--color-text-main)
 /* footer */
 .footer-outer 
   display flex
@@ -164,13 +166,13 @@ a
   display flex
   justify-content space-between
 .footer-text 
-  color $color-text-secondary
+  color var(--color-text-secondary)
   font-size 1.1em
   a 
-    color $color-text-secondary
+    color var(--color-text-secondary)
     general-transition()
     &:hover 
-      color $color-text-main
+      color var(--color-text-main)
 .footer-contact 
   font-size 1.2em
 .footer-ul 
@@ -180,14 +182,14 @@ a
   margin-right 10px
   transition all .3s
   i 
-    color $color-text-secondary
+    color var(--color-text-secondary)
     font-size 1.2em
     general-transition()
     padding 5px
     border-radius 100%
   &:hover 
     i 
-      color $color-text-main
+      color var(--color-text-main)
 /* gitalk-saysay优化 */
 .gitalk-saysay 
   & > #gitalk-container 

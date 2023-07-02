@@ -32,7 +32,7 @@
   letter-spacing: 1.5px
   text-align center
   font-family Gothic
-  color $color-text-secondary
+  color var(--color-text-secondary)
   line-height: 4
   position: relative
   &:after 
@@ -43,7 +43,7 @@
       right 48%
       bottom 98%
       transition all .3s
-      background-color $color-theme-main
+      background-color var(--color-theme-main)
 .post-content-outer 
   margin-top 50px
   display flex
@@ -55,7 +55,7 @@
   line-height 2
   h2,h3,h4,h5,h6
     margin 15px 0px
-    color: $color-text-main
+    color: var(--color-text-main)
     font-weight normal
     font-family Gothic
   h2 
@@ -81,14 +81,14 @@
   blockquote 
     border-left 4.2px solid #E3E3E3
     padding-left 17px
-    color $color-text-secondary
+    color var(--color-text-secondary)
     font-size 0.9em
     & > p 
       margin-top 10px
       margin-bottom 10px
       line-height 1.65
   a 
-    color $color-theme-main
+    color var(--color-theme-main)
     &:hover 
       text-decoration underline
   img 
@@ -97,7 +97,7 @@
     margin 10px auto
     display block
  strong 
-    color $color-theme-main
+    color var(--color-theme-main)
     display inline-block
   hr 
     margin-top 30px
@@ -136,7 +136,7 @@
       &::before
         content: counter(li)
         font-family: Merriweather
-        color: $color-text-main
+        color: var(--color-text-main)
         margin-right: 0.7em
         text-align: right
 
@@ -150,7 +150,7 @@
         content: "◆"
         font-size: .8em
         font-family: Merriweather
-        color: $color-text-secondary
+        color: var(--color-text-secondary)
         margin-right: 0.7em
         text-align: right
 
@@ -210,7 +210,7 @@ code
   font-size 0.8em
   font-weight 1000
   background-color #F8F8F8
-  color $color-text-main
+  color var(--color-text-main)
   padding 4px 6px
   margin 0px 4px
   font-family hack-regular,hack-italic,hack-bold,hack-bolditalic
@@ -228,13 +228,13 @@ code
     margin: 7px 0px
     counter-increment: li
     a
-      color $color-text-secondary
+      color var(--color-text-secondary)
       font-size: .8em
     &::before
       content: counter(li)
       font-size: .8em
       font-family: Merriweather
-      color: $color-text-secondary
+      color: var(--color-text-secondary)
       margin-right: 0.5em
       text-align: right
       transition: all .3s
@@ -270,33 +270,33 @@ code
 #gitalk-container .gt-header-textarea,.gt-comment-content 
   border-radius 7px
 #gitalk-container .gt-header-controls>.gt-header-controls-tip,.gt-svg 
-  color $color-theme-main
+  color var(--color-theme-main)
 #gitalk-container .gt-header-avatar>img,.gt-comment-avatar>img 
   border-radius 100%!important
 #gitalk-container 
   .gt-btn-preview 
-    border 1px solid $color-theme-main
+    border 1px solid var(--color-theme-main)
     border-radius 20px
     transition all .3s
     &:hover 
-      background-color $color-theme-main
+      background-color var(--color-theme-main)
       color #fff
   .gt-btn-login 
-    border 1px solid $color-theme-main
-    background-color $color-theme-main
+    border 1px solid var(--color-theme-main)
+    background-color var(--color-theme-main)
     border-radius 20px
     transition all .3s
     &:hover 
      background-color #fff
-     color $color-theme-main
+     color var(--color-theme-main)
   .gt-btn-public 
-    border 1px solid $color-theme-main
-    background-color $color-theme-main
+    border 1px solid var(--color-theme-main)
+    background-color var(--color-theme-main)
     border-radius 20px
     transition all .3s
     &:hover 
       background-color #fff
-      color $color-theme-main
+      color var(--color-theme-main)
 
 .post-content-inner
   display flex
@@ -314,7 +314,7 @@ code
       overflow: scroll
       padding-left: 10px
       a 
-        color: $color-text-secondary
+        color: var(--color-text-secondary)
         transition: all .3s
         font-size: .8em
       ol
@@ -328,7 +328,7 @@ code
           content: counter(li)
           font-size: .8em
           font-family: Merriweather
-          color: $color-text-secondary
+          color: var(--color-text-secondary)
           margin-right: 0.5em
           text-align: right
           transition: all .3s
@@ -336,7 +336,7 @@ code
           a
             text-decoration: none
           // &::before
-          //   color: $color-theme-main
+          //   color: var(--color-theme-main)
       
 
 

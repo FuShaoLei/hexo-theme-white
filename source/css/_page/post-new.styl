@@ -20,7 +20,7 @@
   text-transform : uppercase
   letter-spacing: 1.5px
   text-align center
-  color $color-text-secondary
+  color var(--color-text-secondary)
   line-height: 4
   position: relative
   &:after // TODO 这里应该有更好的实现方法
@@ -31,7 +31,7 @@
     right 48%
     bottom 98%
     transition all .4s
-    background-color $color-theme-main
+    background-color var(--color-theme-main)
 
 
 // post-content-inner
@@ -47,7 +47,7 @@
 .post-content-inner,.bottom-comments-inner
   font-size 1.32em
   font-family $font-content
-  color: $color-text-main
+  color: var(--color-text-main)
   ul, ol
     padding-left 2em
     margin 20px 0
@@ -60,12 +60,12 @@
     &::after
       content "#"
       display inline-block
-      color rgba($color-text-main, .15)
+      color var(--color-text-secondary)
       font-family $font-code
       margin-left 0.5rem
       font-weight: border
   code
-    background $color-embellish
+    background var(--color-embellish)
     font-size 0.85em
     padding 0 7px
     font-family $font-code
@@ -75,7 +75,7 @@
     font-size .85em
     margin 22px 0
     padding 1.3em 1.2em
-    background $color-embellish
+    background var(--color-embellish)
     > code
       font-family $font-code
       background none
@@ -92,11 +92,11 @@
     margin 24px 0
     height 3px
     border none
-    background-color $color-embellish
+    background-color var(--color-embellish)
   strong
     font-family $font-title
   blockquote
-    background $color-embellish
+    background var(--color-embellish)
     margin 22px 0
     padding 1em
     quotes "\201C""\201D""\2018""\2019";
@@ -119,12 +119,12 @@
     width: 100%
     border-width: 2px
     border-style: solid
-    border-color: $color-embellish
+    border-color: var(--color-embellish)
     border-image: initial
     border-spacing: 0px
     display: table
     thead
-      box-shadow: $color-embellish 0px 4px 8px 0px
+      box-shadow: var(--color-embellish) 0px 4px 8px 0px
       display: table-header-group
       vertical-align: middle
       border-color: inherit
@@ -132,7 +132,7 @@
       padding: .9rem
       border-width: 1px
       border-style: solid
-      border-color: $color-embellish
+      border-color: var(--color-embellish)
       border-image: initial
     tbody
       display: table-row-group

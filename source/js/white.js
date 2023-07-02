@@ -1,27 +1,18 @@
-
-function isActive(pathname){
-    console.log("9988 pathname = "+pathname)
-
+function isActive(pathname) {
     let rootPath = window.location.pathname
-    console.log("9988 rootPath = "+rootPath)
-
     let path = pathname + "/"
-
-    return pathname===rootPath || path === rootPath;
+    return pathname === rootPath || path === rootPath;
 }
 
-
-
 let links = document.querySelectorAll(".nav-link");
-console.log(links)
 for (let link of links) {
     let linkPath = link.getAttribute("href");
 
     if (isActive(linkPath)) {
         link.className = "active-link nav-link";
     }
-
 }
+
 let mlinks = document.querySelectorAll(".mobile-nav-link");
 for (let mlink of mlinks) {
     let mlinkPath = mlink.getAttribute("href");
@@ -30,8 +21,7 @@ for (let mlink of mlinks) {
     }
 }
 
-
-//设置收起的menu点击的效果
+// 设置收起的menu点击的效果
 var mmenu = document.getElementById("mobile-menu");
 var mmain = document.getElementById("mobile-main");
 var mclose = document.getElementById("mobile-close");
@@ -43,6 +33,38 @@ mclose.onclick = function () {
     mmain.style.display = "none";
 }
 
+// 切换颜色
+let change = document.getElementById("theme-change-btn")
+let changeList = [
+    {
+        text: "默认",
+        code: "day"
+    },
+    {
+        text: "午夜",
+        code: "night"
+    }
+]
+var currentIndex = 0
+
+/**
+ * 改变主题，并把缓存存入浏览器
+ */
+change.onclick = function (){
+    console.log("you click change theme btn and currentIndex = " + currentIndex)
+    currentIndex = (currentIndex + 1) % changeList.length;
+    this.innerHTML = changeList[currentIndex].text;
+    document.body.className = changeList[currentIndex].code;
+
+    // 将状态存入缓存中
+    localStorage.setItem('hexo-white-theme-mode', changeList[currentIndex].code);
+}
+
+let beginCode = localStorage.getItem('hexo-white-theme-mode') || "day" // day是默认
+let tmpElement = changeList.filter(item => item.code === beginCode)[0]
+change.innerHTML = tmpElement.text
+currentIndex = changeList.indexOf(tmpElement)
+document.body.className = tmpElement.code
 
 ///////////////////////////////////////////////////////////////////////////////////
 
