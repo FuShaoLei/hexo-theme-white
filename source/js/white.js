@@ -46,16 +46,11 @@ let changeList = [
     }
 ]
 var currentIndex = 0
-
-/**
- * 改变主题，并把缓存存入浏览器
- */
 change.onclick = function (){
     console.log("you click change theme btn and currentIndex = " + currentIndex)
     currentIndex = (currentIndex + 1) % changeList.length;
     this.innerHTML = changeList[currentIndex].text;
     document.body.className = changeList[currentIndex].code;
-
     // 将状态存入缓存中
     localStorage.setItem('hexo-white-theme-mode', changeList[currentIndex].code);
 }
