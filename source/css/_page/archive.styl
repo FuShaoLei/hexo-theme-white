@@ -16,44 +16,43 @@
 .img-show-post-title
   text-align: center
   font-size: 1.4em
-  font-family 'Noto Serif SC', serif
   margin-top: 30px
-
-
-.img-show-post-date
-  text-align: center
-  font-family Gothic
-  text-transform: uppercase
-  letter-spacing: 1.5px
-  font-size: 0.8em
-  margin-bottom: 45px
-  margin-top: -9px
-  line-height: 3
-  color: var(--color-text-secondary)
-  position relative
-
+  color var(--color-text-main)
+  font-family $font-title
+  position: relative
+  line-height: 2.5
+  transition all .4s
   &:after
     content ""
     position absolute
-    top 0
-    left 45%
-    right 45%
-    bottom 98%
-    transition all .3s
+    width 40px
+    height 1.1px
     background-color var(--color-theme-main)
+    bottom: 0
+    left 50%
+    transform translateX(-50%)
+    transition all .4s
+  &:hover
+    &:after
+      width 60px
+
+.img-show-post-date
+  text-align: center
+  font-family $font-content
+  font-size: 0.9em
+  margin-bottom: 45px
+  margin-top: -9px
+  color: var(--color-text-secondary)
 
 .img-show-post
   display: flex
   flex-direction: column
-
   &:first-child
     flex-basis: 100%
     flex-direction: row
     margin-bottom: 85px
-
     .img-show-post-cover
       flex-basis: 65.5%
-
     .img-show-post-intro
       flex-basis: 34%
       margin: auto
