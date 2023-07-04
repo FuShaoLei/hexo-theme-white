@@ -34,41 +34,41 @@ mclose.onclick = function () {
 }
 
 // 切换颜色
-let change = document.getElementById("theme-change-btn")
-let changeList = [
-    {
-        text: "白昼",
-        code: "day"
-    },
-    {
-        text: "午夜",
-        code: "night"
-    },
-    {
-        text: "饼干",
-        code: "cookie"
-    },
-    {
-        text: "森林",
-        code: "forest"
-    }
-]
-var currentIndex = 0
-change.onclick = function (){
-    console.log("you click change theme btn and currentIndex = " + currentIndex)
-    currentIndex = (currentIndex + 1) % changeList.length;
-    this.innerHTML = changeList[currentIndex].text;
-    document.body.className = changeList[currentIndex].code;
-    // 将状态存入缓存中
-    localStorage.setItem('hexo-white-theme-mode', changeList[currentIndex].code);
-}
-
-let beginCode = localStorage.getItem('hexo-white-theme-mode') || "cookie" // day是默认
-let tmpElement = changeList.filter(item => item.code === beginCode)[0]
-change.innerHTML = tmpElement.text
-currentIndex = changeList.indexOf(tmpElement)
-document.body.className = tmpElement.code
-localStorage.setItem('hexo-white-theme-mode', tmpElement.code);
+// let change = document.getElementById("theme-change-btn")
+// let changeList = [
+//     {
+//         text: "白昼",
+//         code: "day"
+//     },
+//     {
+//         text: "午夜",
+//         code: "night"
+//     },
+//     {
+//         text: "饼干",
+//         code: "cookie"
+//     },
+//     {
+//         text: "森林",
+//         code: "forest"
+//     }
+// ]
+// var currentIndex = 0
+// change.onclick = function (){
+//     console.log("you click change theme btn and currentIndex = " + currentIndex)
+//     currentIndex = (currentIndex + 1) % changeList.length;
+//     this.innerHTML = changeList[currentIndex].text;
+//     document.body.className = changeList[currentIndex].code;
+//     // 将状态存入缓存中
+//     localStorage.setItem('hexo-white-theme-mode', changeList[currentIndex].code);
+// }
+//
+// let beginCode = localStorage.getItem('hexo-white-theme-mode') || "cookie" // day是默认
+// let tmpElement = changeList.filter(item => item.code === beginCode)[0]
+// change.innerHTML = tmpElement.text
+// currentIndex = changeList.indexOf(tmpElement)
+// document.body.className = tmpElement.code
+// localStorage.setItem('hexo-white-theme-mode', tmpElement.code);
 
 ///////////////////////////////////////////////////////////////////////////////////
 
