@@ -7,9 +7,26 @@
   text-align center
   font-size 2.7em
   font-weight bold
-  margin-bottom 20px
+  margin-bottom 15px
   color var(--color-text-main)
   font-family $font-title
+  position: relative
+  line-height: 2.5
+  transition all .4s
+  &:after
+    content ""
+    position absolute
+    width 65px
+    height 1.6px
+    background-color var(--color-theme-main)
+    bottom: 0
+    left 50%
+    transform translateX(-50%)
+    transition all .4s
+  &:hover
+    text-shadow: 1px 1px 2px var(--color-theme-main)
+    &:after
+      width 80px
 .post-cover
   margin-top 80px
 .post-cover-img
@@ -19,21 +36,9 @@
   object-fit cover
 .meta-intro
   font-size .8em
-  text-transform : uppercase
-  letter-spacing: 1.5px
   text-align center
   color var(--color-text-secondary)
-  line-height: 4
-  position: relative
-  &:after // TODO 这里应该有更好的实现方法
-    content ""
-    position absolute
-    top 0
-    left 48%
-    right 48%
-    bottom 98%
-    transition all .4s
-    background-color var(--color-theme-main)
+
 
 
 // post-content-inner
