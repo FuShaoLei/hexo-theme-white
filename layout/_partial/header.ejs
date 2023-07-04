@@ -31,9 +31,9 @@ const categoriesList = list_categories({show_count: false});
     </div>
 </div>
 <!--移动端-->
-<div id="mobile-main" class="<% if(theme.style.animation.open == true){ %>animate__animated  animate__fadeIn<% } %>">
+<div id="mobile-main">
     <div class="mobile-menu-inner">
-        <div class="mobile-menu-site-name <% if(theme.style.animation.open == true){ %>animate__animated  animate__fadeInUp<% } %>">
+        <div class="mobile-menu-site-name">
             <a href="<%= url_for() %>">
                 <%= theme.site_name %>
             </a>
@@ -47,18 +47,11 @@ const categoriesList = list_categories({show_count: false});
     <div class="mobile-menu-div">
         <% Object.keys(theme.menu).forEach(key => { %>
         <a href="<%= url_for(theme.menu[key]) %>" class="mobile-nav-link">
-            <div class="mobile-menu-child <% if(theme.style.animation.open == true){ %>animate__animated  animate__fadeInUp<% } %>">
+            <div class="mobile-menu-child">
                 <span><%= key %></span>
             </div>
         </a>
         <% }); %>
-        <% if(theme.search.open === true) { %>
-            <a href="<%= url_for(theme.search.page) %>">
-                <div class="mobile-menu-child  <% if(theme.style.animation.open == true){ %>animate__animated  animate__fadeInUp<% } %>">
-                    <i class="ri-search-line"></i>
-                </div>
-            </a>
-        <% } %>
     </div>
 
 
