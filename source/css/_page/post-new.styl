@@ -10,19 +10,7 @@
   margin-bottom 15px
   color var(--color-text-main)
   font-family $font-title
-  position: relative
   line-height: 2.5
-  transition all .4s
-  &:after
-    content ""
-    position absolute
-    width 65px
-    height 1.6px
-    background-color var(--color-theme-main)
-    bottom: 0
-    left 50%
-    transform translateX(-50%)
-    transition all .4s
 
 .post-cover
   margin-top 80px
@@ -47,8 +35,14 @@
     flex-basis $post-max-width
     max-width $post-max-width
 
-
 // detail post style
+
+.post-annotated
+  margin-top 50px
+  font-family $font-title
+  color var(--color-text-secondary)
+  font-weight 1000
+
 .post-content-inner,.bottom-comments-inner
   font-size 1.32em
   font-family $font-content
