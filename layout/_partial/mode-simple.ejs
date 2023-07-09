@@ -1,29 +1,26 @@
-<section class="archive-outer">
-    <section class="archive-inner">
+<section class="simple-outer">
+    <section class="simple-inner common-typographic">
         <% var last; %>
-        <% page.posts.sort('date', -1).limit(10).each(function(post, i) { %>
-        <% var year = post.date.year(); %>
-        <% if (last != year){ %>
-            <% if (last != null){ %>
+        <% site.posts.sort('date', -1).each(function(post, i) { %>
+            <% var year = post.date.year(); %>
+            <% if (last != year){ %>
+                <% if (last != null){ %>
+                <% } %>
+                <% last = year; %>
+                    <h2 class="simple-year-title"><%= year %></h2>
             <% } %>
-            <% last = year; %>
-        <div class="archive-name <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>"><%=  year %></div>
-        <% } %>
-          <a  href="<%=url_for(post.path)%>">
-          <div class="archive-post <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>">
-            <div class="archive-post-title"><%=post.title%></div>
-            <div class="archive-post-date"><%=date(post.date,'MM-DD') %></div>
-            <!-- <%=full_date(post.date,'MMM D') %> -->
-          </div>
-          </a>
+                <div class="simple-post-list">
+                    <span class="simple-post-date"><%= date(post.date, 'MM/DD') %></span>
+                    <a href="<%= url_for(post.path) %>">
+                    <span class="simple-post-title">
+                        <% if(post.title === "" || post.title === undefined){ %>
+                            untitle
+                        <% } else { %>
+                            <%= post.title %>
+                        <% } %>
+                    </span>
+                    </a>
+                </div>
         <% }) %>
-        <% if (page.total > 1){ %>
-          <nav class="paginator animate__animated  animate__fadeInUp">
-            <%- paginator({
-              prev_text: theme.pagination.prev,
-              next_text: theme.pagination.next
-            }) %>
-          </nav>
-        <% } %>
     </section>
 </section>

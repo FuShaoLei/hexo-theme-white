@@ -6,7 +6,7 @@
 <!--  TODO 这里的逻辑需要改成，如果有index文件，那么优先index文件，否则就用yml配置里的东西-->
         <% for(var i = 0; i < allPages.length; i++) { %>
             <% if(allPages[i].path === "index/index.html") { %>
-                <div class="intro-sub">
+                <div class="intro-sub common-typographic">
                     <%- allPages[i].content %>
                 </div>
         <% break; }} %>
