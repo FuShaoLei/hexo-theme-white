@@ -1,8 +1,6 @@
 //@import "github-markdown.css"
 .post-inner
   margin-top 80px
-.post-intro
-  margin-bottom 30px
 .post-title
   text-align center
   font-size 2.7em
@@ -26,14 +24,16 @@
   color var(--color-text-secondary)
 
 
-
 // post-content-inner
 .post-content-inner
   display flex
+  width 100vw
   justify-content center
   .post-content-main
     flex-basis $post-max-width
     max-width $post-max-width
+  .post-placeholder
+    flex 1
 
 // detail post style
 
@@ -141,3 +141,65 @@
         display: table-row
         vertical-align: inherit
         border-color: inherit
+
+
+// toc
+.post-toc
+  margin-left 40px
+  position sticky
+  top 50px
+  bottom 30px
+
+.toc
+  overflow-y: auto
+  font-family $font-title
+  > .toc-list
+    overflow: hidden;
+    position: relative
+    li
+      list-style none
+
+.js-toc
+  overflow-y: hidden
+
+
+.toc-list
+  margin: 0;
+  padding-left: 10px
+
+
+a.toc-link
+  color: currentColor;
+  height: 100%
+
+.is-collapsible
+  max-height 1000px
+  overflow hidden
+  transition all .3s ease-in-out
+
+.is-collapsed
+  max-height: 0
+
+
+.is-position-fixed
+  position fixed !important;
+  top: 0
+
+.is-active-link
+  font-weight: 700
+
+.toc-link::before
+  background-color #eee;
+  content: ' ';
+  display: inline-block;
+  height: inherit;
+  left: 0;
+  margin-top: -1px;
+  position: absolute;
+  width: 2px
+
+
+.is-active-link::before
+  background-color: var(--color-theme-main)
+
+
