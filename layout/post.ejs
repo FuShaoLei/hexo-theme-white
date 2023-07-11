@@ -3,7 +3,11 @@
     <div class="post-intro">
       <div class="post-title"><%=page.title%></div>
       <%if(page.cover){%>
-        <div class="post-cover"><span class="lazyload-img-span"><img data-src="<%=page.cover%>" class="post-cover-img"></span></div>
+        <div class="post-cover">
+            <span class="lazyload-img-span">
+                <img data-src="<%=page.cover%>" class="post-cover-img">
+            </span>
+        </div>
       <%}%>
     </div>
     <div class="post-content-inner common-typographic">
@@ -24,18 +28,11 @@
       </div>
    </div>
 
-
-    <div class="bottom-comments-outer">
-      <div class="bottom-comments-inner common-typographic">
-        <h2 class="comment-title">评论</h2>
-        <%- partial('post/comment-cusdis') %>
-      </div>
-    </div>
-
     <!-- 评论 -->
     <% if (page.comments !== false && theme.comments.open === true){ %>
     <div class="bottom-comments-outer">
-      <div class="bottom-comments-inner">
+      <div class="bottom-comments-inner common-typographic">
+        <h2 class="comment-title">评论</h2>
         <!-- valine -->
         <% if ( theme.comments.system ==='valine' && theme.comments.valine && theme.comments.valine.appid && theme.comments.valine.appkey){ %>
           <section id="comments" class="comments" style="margin-top: 150px;">
@@ -57,6 +54,9 @@
         <!-- livere -->
         <% if ( theme.comments.system ==='livere' && theme.comments.livere && theme.comments.livere.dataId && theme.comments.livere.dataUid ){ %>
           <%- partial('post/comment-livere') %>
+        <% } %>
+        <% if ( theme.comments.system ==='cusdis' && theme.comments.cusdis && theme.comments.cusdis.app_id){ %>
+          <%- partial('post/comment-cusdis') %>
         <% } %>
         </div>
       </div>

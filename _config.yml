@@ -22,7 +22,7 @@ home:
 
 # archive页可选类型
 archive:
-  type: "simple" # archive的类型，可选 img | simple
+  type: "img" # archive的类型，可选 img | simple
 
 
 archive_img_mode: # TODO 这里需要改，不应该用这种图片，应该改成本地的图片
@@ -77,29 +77,21 @@ contact:
   Email:
     - mailto:1563250958@qq.com
     - ri-mail-line
+  Music:
+    - https://music.163.com/
+    - ri-netease-cloud-music-line
+  Bilibili:
+    - https://bilibili.com/
+    - ri-bilibili-line
+  Youtube:
+    - https://youtube.com/
+    - ri-youtube-line
 
 
-########## 关于文章的设置 ##########
-
-# 文章toc索引栏设置
-toc:
-  open: true # 是否开启
-  side: true  # 选择toc的位置，填true的话toc将会显示在文章的侧边，填false的话 toc将出现在文章的开头
-  max: 2 #最大深度
-  min: 2 #最小深度
-
-# 插件
-plugins:
-  # 代码高亮，想要使用代码高亮，得先把根目录的_config.yml里的highlight的enable置成false
-  highlightjs:
-    js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js
-    css: https://cdn.jsdelivr.net/npm/highlight.js@10.1.1/styles/github.css
-    # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
-
-# 评论系统设置
+# comment
 comments:
-  open: false # 是否开启评论系统
-  system: gitalk # 选择评论系统 可选 valine gitalk livere
+  open: true # 是否开启评论系统
+  system: cusdis # 选择评论系统 可选 valine,gitalk,livere,cusdis
   # Valine
   valine:
     appid: # Leancloud应用的AppID  这里和下面的要换成你自己的啊QAQ
@@ -120,9 +112,8 @@ comments:
   livere: # 前往 http://livere.com/ 申请账号
     dataId: city #免费版本city
     dataUid: #安装代码中 data-uid 后面数据
-
-cusdis:
-  app_id: c5a2c365-def5-4d41-831d-b81b1f43e20b
+  cusdis:
+    app_id: c5a2c365-def5-4d41-831d-b81b1f43e20b
 
 pagination:
   prev: 上一页
@@ -132,14 +123,6 @@ pagination:
 
 # 页脚
 footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuShaoLei/hexo-theme-white) # markdown语法
-
-# 有分类时是否开启menu分类页和自定义名字
-menu_categories:
-  open: true
-  name: 分类
-
-# 可自定义归档标签页名字
-archive_tab_name: Blog
 
 
 # 图片懒加载
