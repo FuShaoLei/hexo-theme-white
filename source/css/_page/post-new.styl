@@ -1,20 +1,33 @@
 .post-inner
   margin-top 80px
+.post-intro
+  width $post-max-width
+  margin auto
+  box-shadow 0 1.1px var(--color-embellish)
+  padding-bottom 20px
+.post-meta
+  display flex
+  font-family $font-title
+  align-content center
+  margin-bottom 7px
+  img
+    width 25px
+    height 25px
+    display block
+    border-radius 100%
+  .post-meta-name
+    margin-left 6px
+    color var(--color-text-main)
+  .post-meta-date
+    margin-left 5px
+    color var(--color-text-secondary)
 .post-title
-  text-align center
   font-size 2.5em
   font-weight bold
-  margin-bottom 15px
   color var(--color-text-main)
   font-family $font-title
   line-height: 2.5
 
-.post-cover
-  margin-top 25px
-  .lazyload-img-span
-    background #026A39
-    margin auto
-    width $layout-max-width
 .post-cover-img
   min-width 100%
   max-width: 100%

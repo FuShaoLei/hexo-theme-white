@@ -52,7 +52,7 @@ intro:
   title: 你好! 我是 White
   sub: 'A [White](https://github.com/FuShaoLei/hexo-theme-white) theme for [Hexo](http://hexo.io/)' # 支持markdown
   avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像 暂时还没用到
-  author: white #所有文章的默认作者
+  author: fushaolei #所有文章的默认作者
 
 #联系方式
 #更多图标：https://remixicon.com/
@@ -101,7 +101,7 @@ comments:
   cusdis:
     app_id: c5a2c365-def5-4d41-831d-b81b1f43e20b
 
-pagination:
+pagination: # TODO 添加多语言支持
   prev: 上一页
   next: 下一页
 

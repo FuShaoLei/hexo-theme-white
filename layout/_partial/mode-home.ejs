@@ -3,13 +3,19 @@
         <div class="intro-title"><%= theme.intro.title %></div>
         <% var allPages = site.pages.data %>
 
-<!--  TODO 这里的逻辑需要改成，如果有index文件，那么优先index文件，否则就用yml配置里的东西-->
+        <% var hasIndex = false%>
         <% for(var i = 0; i < allPages.length; i++) { %>
             <% if(allPages[i].path === "index/index.html") { %>
+                <% hasIndex = true %>
                 <div class="intro-sub common-typographic">
                     <%- allPages[i].content %>
                 </div>
         <% break; }} %>
+        <% if(hasIndex !== true){ %>
+            <div class="intro-sub common-typographic">
+                <%- markdown(theme.intro.sub) %>
+            </div>
+        <% }%>
 
         <p class="intro-contact">
             <% for(var y in theme.contact){ %>
