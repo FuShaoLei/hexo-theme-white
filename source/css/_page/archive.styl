@@ -69,12 +69,56 @@
 
 // mod-simple
 .simple-inner
+  margin-top 60px
   width $post-max-width
   a
     color var(--color-text-main)
 
-.simple-post-date
-  color var(--color-text-secondary)
+.simple-item-meta
+  display flex
+  font-family $font-title
+  align-content center
+  margin-bottom 7px
+  font-size 0.7em
+  img
+    width 25px
+    height 25px
+    display block
+    border-radius 100%
+  .simple-meta-name
+    margin-left 6px
+    color var(--color-text-main)
+  .simple-meta-date
+    margin-left 5px
+    color var(--color-text-secondary)
+
+.simple-post-item
+  margin-bottom 30px
+  display flex
+  box-shadow 0 1.1px var(--color-embellish)
+  padding-bottom 35px
+  .simple-item-left
+    justify-content center
+  .simple-item-right
+    flex-basis 1200px
+    margin-left 15px
+    img
+      width 100%
+      object-fit cover
+      height 100%
 
 .simple-post-title
+  margin-bottom 2px
   font-family $font-title
+  color var(--color-text-main)
+  font-size 1.3em
+  font-weight 1000
+
+.simple-post-excerpt
+  font-family $font-title
+  font-size .87em
+  color var(--color-text-secondary)
+  p
+    margin 0
+  a
+    color var(--color-text-secondary)

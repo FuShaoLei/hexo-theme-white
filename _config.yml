@@ -8,7 +8,7 @@ home:
 
 # archive页可选类型
 archive:
-  type: "img" # archive的类型，可选 img | simple
+  type: "simple" # archive的类型，可选 img | simple
 
 
 archive_img_mode: # TODO 这里需要改，不应该用这种图片，应该改成本地的图片
