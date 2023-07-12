@@ -1,17 +1,3 @@
-############## style ##############
-style:
-  layout:
-    max-width: 1130px #总体宽度
-    post-max-width: 800px #文章内容宽度
-  color:
-    theme-main: "#1A98FF" # 主色调
-    theme-secondary: "#DDF0FF" # 次色调
-    text-main: "#333333" # 文字主色调
-    text-secondary: "#898FA0" # 文字次色调
-  animation:
-    open: true # 如果开启动画的话会引入animation.css
-
-
 ########## 关于主页的设置 ##########
 
 ## TODO 待清除

@@ -44,7 +44,10 @@ a
     color var(--color-text-main)
 .active-link
   .menu-li
-    color var(--color-text-main)
+    &:before
+      content "*"
+      font-weight 1000
+      color var(--color-theme-main)
 
 /* body */
 .body-outer 
