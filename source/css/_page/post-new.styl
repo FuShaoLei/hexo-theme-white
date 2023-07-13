@@ -26,8 +26,9 @@
   font-weight bold
   color var(--color-text-main)
   font-family $font-title
-  line-height: 2.5
-
+  margin-bottom 10px
+.post-cover
+  margin-bottom 15px
 .post-cover-img
   min-width 100%
   max-width: 100%
@@ -71,6 +72,11 @@
   ul, ol
     padding-left 1em
     margin 0
+  a
+    color var(--color-text-secondary)
+    &:hover
+      box-shadow none
+      color var(--color-text-main)
 
 .toc
   overflow-y: auto
@@ -86,10 +92,10 @@
 
 .toc-list
   margin: 0;
-  padding-left: 10px
+  padding-left 10px
 
-a.toc-link
-  color: currentColor;
+.toc-link
+  color: var(--color-text-secondary);
   height: 100%
 
 .is-collapsible
@@ -105,9 +111,6 @@ a.toc-link
   position fixed !important;
   top: 0
 
-.is-active-link
-  font-weight: 700
-
 .toc-link::before
   background-color var(--color-embellish);
   content: ' ';
@@ -116,10 +119,12 @@ a.toc-link
   left: 0;
   margin-top: -1px;
   position: absolute;
-  width: 2px
+  width: 1.1px
 
-
-.is-active-link::before
-  background-color: var(--color-theme-main)
+a.is-active-link
+  color #333
+  &:after
+    content " *"
+    color var(--color-theme-main)
 
 

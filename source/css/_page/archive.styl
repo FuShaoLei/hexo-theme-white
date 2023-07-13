@@ -78,7 +78,7 @@
   display flex
   font-family $font-title
   align-content center
-  margin-bottom 7px
+  margin-bottom 2px
   font-size 0.7em
   img
     width 25px
@@ -92,11 +92,13 @@
     margin-left 5px
     color var(--color-text-secondary)
 
+.simple-post-list .simple-post-item:not(:first-child)
+  box-shadow 0 -1.1px var(--color-embellish)
+
 .simple-post-item
-  margin-bottom 30px
   display flex
-  box-shadow 0 1.1px var(--color-embellish)
-  padding-bottom 35px
+  margin-bottom 30px
+  padding-top 35px
   .simple-item-left
     justify-content center
   .simple-item-right
