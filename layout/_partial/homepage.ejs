@@ -1,0 +1,23 @@
+<div class="homepage-title"><%= theme.intro.title %></div>
+<% var allPages = site.pages.data %>
+<% var hasIndex = false%>
+<% for(var i = 0; i < allPages.length; i++) { %>
+    <% if(allPages[i].path === "index/index.html") { %>
+        <% hasIndex = true %>
+        <div class="homepage-content">
+            <%- allPages[i].content %>
+        </div>
+<% break; }} %>
+<% if(hasIndex !== true){ %>
+    <div class="homepage-content">
+        <%- markdown(theme.intro.sub) %>
+    </div>
+<% }%>
+
+<p class="homepage-contact">
+    <% for(var y in theme.contact){ %>
+        <a href="<%= theme.contact[y][0] %>" target="_blank">
+            <i class="<%= theme.contact[y][1] %>"></i>
+        </a>
+    <% } %>
+</p>

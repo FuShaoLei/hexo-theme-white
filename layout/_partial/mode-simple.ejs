@@ -1,8 +1,13 @@
 <section class="simple-outer">
     <section class="simple-inner common-typographic">
         <div class="simple-post-list">
+            <% if(is_home_first_page() === true) {%>
+            <div class="item-divider item-homepage">
+                <%- partial('_partial/homepage') %>
+            </div>
+            <% }%>
             <% page.posts.sort('date', -1).each(function(post, i) { %>
-                <div class="simple-post-item">
+                <div class="simple-post-item item-divider">
                     <div class="simple-item-left">
                         <div class="simple-item-meta">
                             <img src="<%= theme.intro.avator %>">

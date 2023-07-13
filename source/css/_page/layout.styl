@@ -34,7 +34,8 @@ a
 .menu-li
   cursor pointer
   float left
-  margin-right 30px
+  margin-right 20px
+  padding 0 10px
   font-size 1.1em
   color var(--color-text-secondary)
   position relative
@@ -43,10 +44,17 @@ a
     color var(--color-text-main)
 .active-link
   .menu-li
-    &:before
-      content "*"
-      font-weight 1000
-      color var(--color-theme-main)
+    position: relative;
+    &:after
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 5px;
+      height: 5px;
+      background-color: var(--color-theme-main)
+      border-radius: 50%;
+      z-index: -1
 
 /* body */
 .body-outer 
@@ -57,35 +65,35 @@ a
 /* home */
 .intro-section
   width $layout-max-width
-.intro-content 
-  margin-top 100px
-  width 60%
-.intro-title 
-  font-family $font-title
-  font-size 4.5em
-  font-weight 1000
-  margin 0
-  padding 0
-.intro-sub 
-  font-family $font-content
-  margin-top 30px
-  font-size 1.32em
-  line-height 1.8em
-  margin-left 5px
-.intro-contact
-  margin-top 10px
-  font-size 1.5em
-  line-height 1.8em
-  margin-left 5px
-  a
-    color var(--color-text-secondary)
-    general-transition()
-    &:hover
-      color var(--color-text-main)
-.intro-content,a 
-  color var(--color-text-main)
-  text-decoration none
-  margin-right 3px
+  .intro-content
+    margin-top 100px
+    width 60%
+  .intro-title
+    font-family $font-title
+    font-size 4.5em
+    font-weight 1000
+    margin 0
+    padding 0
+  .intro-sub
+    font-family $font-content
+    margin-top 30px
+    font-size 1.32em
+    line-height 1.8em
+    margin-left 5px
+  .intro-contact
+    margin-top 10px
+    font-size 1.5em
+    line-height 1.8em
+    margin-left 5px
+    a
+      color var(--color-text-secondary)
+      general-transition()
+      &:hover
+        color var(--color-text-main)
+  .intro-content,a
+    color var(--color-text-main)
+    text-decoration none
+    margin-right 3px
 .paginator 
   margin 50px 0
   font-family $font-title
@@ -133,8 +141,3 @@ a
   &:hover 
     i 
       color var(--color-text-main)
-/* gitalk-saysay优化 */
-.gitalk-saysay 
-  & > #gitalk-container 
-    .gt-counts 
-      display none

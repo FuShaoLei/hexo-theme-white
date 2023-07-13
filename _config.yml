@@ -4,7 +4,7 @@
 
 # home页可选类型
 home:
-  type: "home" # 主页的类型，可选 home | img | simple
+  type: "simple" # 主页的类型，可选 home | img | simple
 
 # archive页可选类型
 archive:
@@ -37,7 +37,7 @@ site_description: A minimalist theme for hexo. # The default meta description fo
 # Add description property to any page to change the meta description
 menu:
   首页: /
-  文章: /archives
+  关于: /about
 
 
 ## 本地搜索
@@ -49,7 +49,7 @@ search:
 
 # 自我介绍
 intro:
-  title: 你好! 我是 White
+  title: 你好! 有缘人
   sub: 'A [White](https://github.com/FuShaoLei/hexo-theme-white) theme for [Hexo](http://hexo.io/)' # 支持markdown
   avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像 暂时还没用到
   author: fushaolei #所有文章的默认作者
