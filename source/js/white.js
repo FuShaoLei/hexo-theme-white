@@ -91,7 +91,7 @@ if (document.getElementById("sort")) {
 }
 
 // 图片懒加载
-var imgs = document.querySelectorAll('img');
+var imgs = document.querySelectorAll('img.lazyload-img');
 var imgdivs = document.querySelectorAll('.lazyload-img-span');
 
 
@@ -102,8 +102,10 @@ function isIn(el) {
     return bound.top <= clientHeight;
 }
 
-//检查图片是否在可视区内，如果在，则加载
+// 检查图片是否在可视区内，如果在，则加载
 function check() {
+
+    console.log(imgs)
     for (let p = 0; p < imgs.length; p++) {
         if (isIn(imgs[p])) {
             loadImg(imgs[p]);
@@ -116,17 +118,19 @@ function check() {
 }
 
 function changeClass(num) {
+    console.log("changeClass(num) num = "+num)
     let tempse = Number(num);
     imgdivs[tempse].className = "lazyload-img-span img-masks";
 }
 
 function loadImg(el) {
+    console.log("loadImg el.dataset.src = "+el.dataset.src)
     if (!el.src) {
-        var source = el.dataset.src;
-        el.src = source;
+        el.src = el.dataset.src;
     }
 }
 
-window.onload = window.onscroll = function () { //onscroll()在滚动条滚动的时候触发
+// onscroll()在滚动条滚动的时候触发
+window.onload = window.onscroll = function () {
     check();
 }

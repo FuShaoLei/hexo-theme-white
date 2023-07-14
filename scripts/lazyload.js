@@ -18,7 +18,7 @@ hexo.extend.filter.register(
         return `
         <span class="lazyload-img-span">
         <img ${attrBegin} 
-           data-src="${src}" >
+           data-src="${src}" class="lazyload-img">
         </sapn>
       `
       }
