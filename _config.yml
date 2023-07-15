@@ -30,7 +30,7 @@ archive_img_mode: # TODO 这里需要改，不应该用这种图片，应该改�
     - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/15.jpg
 
 # icon
-icon:  #标签页图标
+icon: favicon.ico #标签页图标
 #  header
 site_name: white
 site_description: A minimalist theme for hexo. # The default meta description for all the meta descriptions

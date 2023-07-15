@@ -104,8 +104,6 @@ function isIn(el) {
 
 // 检查图片是否在可视区内，如果在，则加载
 function check() {
-
-    console.log(imgs)
     for (let p = 0; p < imgs.length; p++) {
         if (isIn(imgs[p])) {
             loadImg(imgs[p]);

@@ -99,26 +99,28 @@
   margin-bottom 30px
   padding-top 35px
   .homepage-title
-    font-family 'Noto Sans SC', sans-serif;
+    font-family $font-title
     margin-bottom 10px
     color var(--color-text-main)
-    font-size 2em
+    font-size 1.3em
     font-weight 1000
   .homepage-content
-    font-family $font-content
-    font-size 1em
-    line-height 1.5
-    font-weight 400
+    font-family $font-title
+    font-size .9em
+    line-height 1.55
+    font-weight 200
     p
       margin 0
     a
       color var(--color-theme-main)
+      padding 0 3px
   .homepage-contact
     margin-top 9px
-    font-size 1.15em
+    font-size 1em
     a
       color var(--color-text-secondary)
       general-transition()
+      margin-right 7px
       &:hover
         color var(--color-theme-main)
         box-shadow none
@@ -136,6 +138,9 @@
       width 100%
       object-fit cover
       height 100%
+    a
+      &:hover
+        box-shadow none
 
 .simple-post-title
   margin-bottom 2px
