@@ -1,21 +1,30 @@
-一款在极简和个性之间徘徊的Hexo主题
-
-[点此查看👉主题配置文档](https://fushaolei.github.io/hexo-theme-white/doc-white-configration-v02/)
-
-![Github stars](https://img.shields.io/github/stars/FuShaoLei/hexo-theme-white.svg)
-![Github forks](https://img.shields.io/github/forks/FuShaoLei/hexo-theme-white.svg)
 
 
-## live demo
+## Live Demo
 
-- [https://fushaolei.github.io/hexo-theme-white/](https://fushaolei.github.io/hexo-theme-white/)
+[👉Click here to visit  Live Demo](https://fushaolei.github.io/hexo-theme-white/)
 
-## 特性
+## How to use
 
-- 内置`valine` , `gitalk`,`livere` ，`cusdis`评论系统
-- 文章索引
-- 图片懒加载
+1. clone the repo to your`/theme/`folder
 
+   ```
+   git cloen https://github.com/FuShaoLei/hexo-theme-white
+   ```
+
+2. change the root `_config.yml`
+
+   ```
+   theme: hexo-theme-white
+   ```
+   
+3. done
+
+   ```
+   hexo s
+   ```
+
+   
 
 ## Stargazers over time
 
