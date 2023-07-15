@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  white主题配置（v0.1） -    white</title>
+  <meta name="description" content="A minimalist theme for hexo.">
+  <!-- 标签页图标 -->
+  
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+
+  <!-- 图标库 -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- css文件 -->
+  
+<link rel="stylesheet" href="/hexo-theme-white/css/white.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;700;900&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+
+<div class="menu-outer">
+    <div class="menu-inner">
+        <div class="menu-site-name">
+            <a href="/hexo-theme-white/">
+                white
+            </a>
+        </div>
+        <div class="menu-group">
+            <ul class="menu-ul">
+                
+                <a href="/hexo-theme-white/" class="nav-link">
+                    <li class="menu-li">
+                        首页
+                    </li>
+                </a>
+                
+                <a href="/hexo-theme-white/about" class="nav-link">
+                    <li class="menu-li">
+                        关于
+                    </li>
+                </a>
+                
+                <li class="menu-li" id="mobile-menu">
+                    <i class="ri-menu-line"></i>
+                </li>
+<!--                <li class="menu-li" id="theme-change-btn">-->
+<!--                    默认-->
+<!--                </li>-->
+
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<!--移动端-->
+<div id="mobile-main">
+    <div class="mobile-menu-inner">
+        <div class="mobile-menu-site-name">
+            <a href="/hexo-theme-white/">
+                white
+            </a>
+        </div>
+        <div class="mobile-menu-group" id="mobile-close">
+            <i class="ri-close-line"></i>
+        </div>
+
+    </div>
+
+    <div class="mobile-menu-div">
+        
+        <a href="/hexo-theme-white/" class="mobile-nav-link">
+            <div class="mobile-menu-child">
+                <span>首页</span>
+            </div>
+        </a>
+        
+        <a href="/hexo-theme-white/about" class="mobile-nav-link">
+            <div class="mobile-menu-child">
+                <span>关于</span>
+            </div>
+        </a>
+        
+    </div>
+
+
+</div>
+
+<div class="body-outer">
+  <div class="body-inner">
+    <article class="post-inner">
+  <div class="post-content-outer">
+    <div class="post-intro">
+      
+      <div class="post-title">
+        white主题配置（v0.1）
+      </div>
+      <div class="post-meta">
+        <img src="https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg">
+        <div class="post-meta-name">fushaolei</div>
+        <div class="post-meta-date">发布于 2023/06/28</div>
+      </div>
+    </div>
+    <div class="post-content-inner common-typographic">
+      <div class="post-placeholder"></div>
+      <div class="post-content-main">
+        <div class="post-content">
+          <blockquote>
+<p><strong>注：此文档仅适用于<a target="_blank" rel="noopener" href="https://github.com/FuShaoLei/hexo-theme-white/tree/v0.1">v0.1</a>版本的主题</strong></p>
+</blockquote>
+<h2 id="👋Hi-there"><a href="#👋Hi-there" class="headerlink" title="👋Hi there"></a>👋Hi there</h2><p>欢迎使用本主题 ，<strong>White</strong> 是一个在个性和极简之间徘徊的主题，（因为作者本身性格就是这样的人，而且搞不好心态爆炸会删库跑路（<del>现已跑路</del>，回来继续维护了），还请喜欢的各位及时fork🤣</p>
+<p>如果你喜欢这款主题的话，不妨给我一个star 感激不尽！</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote>
+<p>方便备份和更新</p>
+</blockquote>
+<ol>
+<li>fork 本项目</li>
+<li><code>git clone https://github.com/&lt;你的用户名&gt;/hexo-theme-white.git themes/white</code></li>
+<li>修改根目录下的<code>_config.yml</code> 为<code>theme: white</code></li>
+</ol>
+<h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><blockquote>
+<p>其实config文件里写的很明白了，现在就重新列一下，添加一些不必要的说明</p>
+</blockquote>
+<h3 id="可自定义style"><a href="#可自定义style" class="headerlink" title="可自定义style"></a>可自定义style</h3><pre class="language-none"><code class="language-none">############## style ##############
+style:
+  layout:
+    max-width: 1130px #总体宽度
+    post-max-width: 800px #文章内容宽度
+  color:
+    theme-main: &quot;#1A98FF&quot; # 主色调
+    theme-secondary: &quot;#DDF0FF&quot; # 次色调
+    text-main: &quot;#333333&quot; # 文字主色调
+    text-secondary: &quot;#898FA0&quot; # 文字次色调
+  animation:
+    open: true # 如果开启动画的话会引入animation.css</code></pre>
+
+<h3 id="主页配置"><a href="#主页配置" class="headerlink" title="主页配置"></a>主页配置</h3><h4 id="home页和archive可选配置"><a href="#home页和archive可选配置" class="headerlink" title="home页和archive可选配置"></a>home页和archive可选配置</h4><pre class="language-none"><code class="language-none"># home页可选类型
+home:
+  type: &quot;img&quot; # 主页的类型，可选 home | img | simple
+
+# archive页可选类型
+archive:
+  type: &quot;simple&quot; # archive的类型，可选 img | simple</code></pre>
+
+<p>type为home就是一个封面，为img就是图片加标题的形式，simple就是极简模式</p>
+<h3 id="随机cover"><a href="#随机cover" class="headerlink" title="随机cover"></a>随机cover</h3><p>当你懒的找封面而又想用img模式的时候，我为你准备了些随机封面</p>
+<pre class="language-none"><code class="language-none">archive_img_mode:
+  default_cover: #默认的cover
+    - https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;fushaolei&#x2F;cdn-white@1.0&#x2F;cover&#x2F;01.jpg
+    - https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;fushaolei&#x2F;cdn-white@1.0&#x2F;cover&#x2F;02.jpg
+    - https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;fushaolei&#x2F;cdn-white@1.0&#x2F;cover&#x2F;03.jpg
+    - https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;fushaolei&#x2F;cdn-white@1.0&#x2F;cover&#x2F;04.jpg
+    - https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;fushaolei&#x2F;cdn-white@1.0&#x2F;cover&#x2F;05.jpg
+    - https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;fushaolei&#x2F;cdn-white@1.0&#x2F;cover&#x2F;06.jpg</code></pre>
+
+<blockquote>
+<p>图片均来自于bing的每日图片，版权归图片原作者所有，我只是搬到了自己的仓库方便使用，如果有侵犯到你的权益，请和我联系 ( •̀ ω •́ )y</p>
+</blockquote>
+<h3 id="浏览器标签页配置"><a href="#浏览器标签页配置" class="headerlink" title="浏览器标签页配置"></a>浏览器标签页配置</h3><pre class="language-none"><code class="language-none"># icon
+icon:  #标签页图标，这里可填链接
+#  header
+site_name: white.</code></pre>
+
+<h3 id="menu"><a href="#menu" class="headerlink" title="menu"></a>menu</h3><pre class="language-none"><code class="language-none">menu:
+  HOME: &#x2F;
+  BLOG: &#x2F;archives</code></pre>
+
+<h3 id="全局搜索"><a href="#全局搜索" class="headerlink" title="全局搜索"></a>全局搜索</h3><pre class="language-none"><code class="language-none">## 本地搜索
+search:
+  open: false # 是否开启
+  page: &#x2F;search # 页面路径（通常命名为search）</code></pre>
+
+<p>如果你想使用的话，请先到根目录执行</p>
+<pre class="language-none"><code class="language-none">npm install hexo-generator-search --save</code></pre>
+
+<p>然后新建一个名为search的page</p>
+<pre class="language-none"><code class="language-none">hexo new page &quot;search&quot;</code></pre>
+
+<p>进入这个文件夹，更改它的<code>index.md</code>文件，示例如下</p>
+<pre class="language-none"><code class="language-none">---
+layout: search
+cover: #你还可以自定义cover
+---</code></pre>
+
+<p>然后将open设置为true即可开启</p>
+<h3 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h3><blockquote>
+<p>当你的home页有用到type home模式的话 请配置此项</p>
+</blockquote>
+<pre class="language-none"><code class="language-none"># 自我介绍
+intro:
+  title: Hi.I&#39;m White.
+  sub: &#39;A [White](https:&#x2F;&#x2F;github.com&#x2F;FuShaoLei&#x2F;hexo-theme-white) theme for [Hexo](http:&#x2F;&#x2F;hexo.io&#x2F;)&#39; # markdown语法
+  avator: https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;fushaolei&#x2F;img&#x2F;20200524104925.jpg #头像 暂时还没用到
+  author: white #所有文章的默认作者</code></pre>
+
+<h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><pre class="language-none"><code class="language-none">#联系方式  
+#更多图标：https:&#x2F;&#x2F;remixicon.com&#x2F;
+contact:
+  Github:
+    - https:&#x2F;&#x2F;github.com&#x2F;FuShaoLei&#x2F;hexo-theme-white
+    - ri-github-line
+  Email: 
+    - mailto:1563250958@qq.com
+    - ri-mail-line</code></pre>
+
+<p>格式就是</p>
+<pre class="language-none"><code class="language-none">名字:
+  - 链接
+  - 图标 </code></pre>
+
+<p>更多图标请到 <a target="_blank" rel="noopener" href="https://remixicon.com/">https://remixicon.com/</a> 搜寻，感谢此图标项目的开源作者<a target="_blank" rel="noopener" href="https://github.com/xiaochunjimmy">xiaochunjimmy</a></p>
+<h3 id="文章toc设置"><a href="#文章toc设置" class="headerlink" title="文章toc设置"></a>文章toc设置</h3><pre class="language-none"><code class="language-none"># 文章toc索引栏设置
+toc:
+  open: true # 是否开启
+  side: true  # 选择toc的位置，填true的话toc将会显示在文章的侧边，填false的话 toc将出现在文章的开头
+  max: 2 #最大深度
+  min: 2 #最小深度</code></pre>
+
+<p>其中side如果设置为false的话，将会出现在文章的top部分，如果设置为true的话，将会出现在侧边<br>min设置的是最小深度，max设置的是最大深度，<del>如上面配置所示，min为2，说明h2索引是至少要出现的，不会出现h1索引 （ 突然不知道怎么表达，</del> 如果不理解的话建议你试试 😂</p>
+<h3 id="highlight"><a href="#highlight" class="headerlink" title="highlight"></a>highlight</h3><p>代码高亮，想要使用代码高亮，得先把根目录的<code>_config.yml</code>里的highlight的enable置成false</p>
+<pre class="language-none"><code class="language-none"># 插件
+plugins:
+  highlightjs:
+    js: https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;highlightjs&#x2F;cdn-release@9.18.1&#x2F;build&#x2F;highlight.min.js
+    css: https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;highlight.js@10.1.1&#x2F;styles&#x2F;github.css
+    # more: https:&#x2F;&#x2F;www.jsdelivr.com&#x2F;package&#x2F;npm&#x2F;highlight.js?path&#x3D;styles</code></pre>
+
+<p><strong>注</strong>： hexo 5.0版本此处有bug（2020年8月10日写），就是渲染不出来大括号（<code>&#123;</code>和<code>&#125;</code>）</p>
+<p>这里博主有点懒了，最近事多心烦，就等着hexo官方更新吧 QAQ</p>
+<h3 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h3><pre class="language-none"><code class="language-none"># 评论系统设置
+comments:
+  open: false #是否开启评论系统
+  system: gitalk #选择评论系统 可选 valine gitalk livere
+  # Valine
+  valine:
+    appid: #Leancloud应用的AppID  这里和下面的要换成你自己的啊QAQ
+    appkey: #Leancloud应用的AppKey
+    verify: false #验证码
+    notify: true #评论回复提醒
+    avatar: robohash #评论列表头像样式：&#39;&#39;&#x2F;mm&#x2F;identicon&#x2F;monsterid&#x2F;wavatar&#x2F;retro&#x2F;hide
+    #头像类型可见： https:&#x2F;&#x2F;valine.js.org&#x2F;avatar.html
+    placeholder: 留下你来过的痕迹~ #评论框占位符
+  # Gitalk
+  gitalk:
+    owner:  #Github 用户名,
+    repo:  #储存评论issue的github仓库名
+    admin:  #Github 用户名
+    clientID:  #&#96;Github Application clientID&#96;
+    clientSecret: #&#96;Github Application clientSecret&#96;
+  #livere
+  livere: # 前往 http:&#x2F;&#x2F;livere.com&#x2F; 申请账号
+    dataId: city #免费版本city
+    dataUid: #安装代码中 data-uid 后面数据</code></pre>
+
+<p>这里的话相关教程大家网上搜就好了。这里就不赘诉了</p>
+<blockquote>
+<p>还是写一些gitalk的坑吧，一个是repo这里 写的应该是<strong>仓库名</strong>，而不是仓库链接或者其他的东西，然后gitalk要上线部署一次才可以，md文件名字最好用英文来命名，如果用中文的话，超出50个字符将会初始化失败</p>
+</blockquote>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><pre class="language-none"><code class="language-none"># 页脚
+footer: Power by [Hexo](http:&#x2F;&#x2F;hexo.io&#x2F;) Theme by [White](https:&#x2F;&#x2F;github.com&#x2F;FuShaoLei&#x2F;hexo-theme-white) # markdown语法
+
+#有分类时是否开启menu分类页和自定义名字
+menu_categories:
+  open: true
+  name: 分类
+
+#可自定义归档标签页名字 
+archive_tab_name: Blog
+
+#图片懒加载
+lazyload:
+  open: true #是否开启</code></pre>
+
+<p>这里就不bb了 大家应该看的懂</p>
+<h2 id="进阶使用"><a href="#进阶使用" class="headerlink" title="进阶使用"></a>进阶使用</h2><h3 id="平滑升级"><a href="#平滑升级" class="headerlink" title="平滑升级"></a>平滑升级</h3><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>因为主题的更新比较频繁，所以如果你想舒服用到最新的版本的话，就请使用平滑升级</p>
+<ol>
+<li>在你<strong>根目录</strong>下的<code>source</code>文件夹下新建一个名为<code>_data</code>的<strong>文件夹</strong></li>
+<li>复制<strong>主题文件夹</strong>下的<code>_config.yml</code>到<code>_data</code>文件夹下，重命名为<code>white.yml</code></li>
+</ol>
+<p>好了，到这里差不多完成了，以后你需要改动什么，只需要在这个<code>white.yml</code>中进行修改(在编译时，会自动将此替换<code>_config.yml</code>)</p>
+<h4 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h4><p>当你看到我的主题有<a target="_blank" rel="noopener" href="https://github.com/FuShaoLei/hexo-theme-white/issues/3">变更</a>时，在主题文件中执行<code>git pull</code>拉取最新代码<br>然后，对比最新主题文件夹下的<code>_config.yml</code> 看看有无新增什么东西，添加到你的<code>white.yml</code>中即可</p>
+
+        </div>
+      </div>
+      <div class="post-placeholder post-toc-container">
+        <!-- toc -->
+        
+          <!-- tocbot -->
+<nav class="post-toc toc"></nav>
+
+        
+      </div>
+   </div>
+
+    <!-- 评论 -->
+    
+    <div class="bottom-comments-outer">
+      <div class="bottom-comments-inner common-typographic">
+        <h2 class="comment-title">评论</h2>
+        <!-- valine -->
+        
+        <!-- Gitalk -->
+        
+        <!-- livere -->
+        
+        
+          <div id="cusdis_thread"
+     data-host="https://cusdis.com"
+     data-app-id="c5a2c365-def5-4d41-831d-b81b1f43e20b"
+     data-page-id="/doc-white-configration/"
+     data-page-url="https://fushaolei.github.io/hexo-theme-white/doc-white-configration/"
+     data-page-title="white主题配置（v0.1）"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+        
+        </div>
+      </div>
+    
+  </div>
+</article>
+<!-- tocbot begin -->
+
+<script src="/hexo-theme-white/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.post-toc',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.post-content',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    });
+
+</script>
+<!-- tocbot end -->
+
+  </div>
+</div>
+
+<!-- 如果是home模式的话，不在首页就显示footer，如果不是home模式的话 所有都显示footer -->
+
+  <div class="footer-outer animate__animated  animate__fadeInUp">
+    <div class="footer-inner">
+        <div class="footer-text">
+            <p>Power by <a target="_blank" rel="noopener" href="http://hexo.io/">Hexo</a> Theme by <a target="_blank" rel="noopener" href="https://github.com/FuShaoLei/hexo-theme-white">White</a></p>
+
+        </div>
+        <div class="footer-contact">
+            <ul class="footer-ul">
+                
+                <li class="footer-li">
+                    <a href="https://github.com/FuShaoLei/hexo-theme-white" target="_blank">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </li>
+                
+                <li class="footer-li">
+                    <a href="mailto:1563250958@qq.com" target="_blank">
+                        <i class="ri-mail-line"></i>
+                    </a>
+                </li>
+                
+                <li class="footer-li">
+                    <a href="https://music.163.com/" target="_blank">
+                        <i class="ri-netease-cloud-music-line"></i>
+                    </a>
+                </li>
+                
+                <li class="footer-li">
+                    <a href="https://bilibili.com/" target="_blank">
+                        <i class="ri-bilibili-line"></i>
+                    </a>
+                </li>
+                
+                <li class="footer-li">
+                    <a href="https://youtube.com/" target="_blank">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="/hexo-theme-white/js/white.js"></script>
+
+
+
+</body>
+</html>
