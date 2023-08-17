@@ -13,7 +13,7 @@ The document is being written....
 1. clone the repo to your`/theme/`folder
 
    ```
-   git cloen https://github.com/FuShaoLei/hexo-theme-white
+   git clone https://github.com/FuShaoLei/hexo-theme-white
    ```
 
 2. change the root `_config.yml`
