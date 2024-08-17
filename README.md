@@ -1,14 +1,11 @@
 
-
-文档正在书写中....
-
 The document is being written....
 
 ## Live Demo
 
 [👉Click here to visit  Live Demo](https://fushaolei.github.io/hexo-theme-white/)
 
-## How to use
+## Quickly Start
 
 1. clone the repo to your`/theme/`folder
 
@@ -27,6 +24,7 @@ The document is being written....
    ```
    hexo s
    ```
+
 
    
 
