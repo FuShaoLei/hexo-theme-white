@@ -132,15 +132,13 @@
   .simple-item-left
     justify-content center
   .simple-item-right
-    flex-basis 1200px
+    flex-basis 700px
     margin-left 15px
     img
       width 100%
       object-fit cover
-      height 100%
-    a
-      &:hover
-        box-shadow none
+      aspect-ratio 16/9
+      border-radius 1.5px
 
 .simple-post-title
   margin-bottom 2px
@@ -148,12 +146,14 @@
   color var(--color-text-main)
   font-size 1.3em
   font-weight 1000
+  general-transition()
+  &:hover
+    color $color-theme-main
 
 .simple-post-excerpt
   font-family $font-title
   font-size .87em
   color var(--color-text-secondary)
-  p
-    margin 0
-  a
-    color var(--color-text-secondary)
+  general-transition()
+  &:hover
+    color $color-text-main

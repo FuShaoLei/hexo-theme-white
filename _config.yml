@@ -74,7 +74,7 @@ contact:
 
 # comment
 comments:
-  open: true # 是否开启评论系统
+  open: false # 是否开启评论系统
   system: cusdis # 选择评论系统 可选 valine,gitalk,livere,cusdis
   # Valine
   valine:

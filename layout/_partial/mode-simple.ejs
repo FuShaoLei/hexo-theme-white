@@ -12,7 +12,7 @@
                         <div class="simple-item-meta">
                             <img src="<%= theme.intro.avator %>">
                             <div class="simple-meta-name"><%= theme.intro.author %></div>
-                            <div class="simple-meta-date">发布于<%= date(post.date, 'YYYY/MM/DD') %></div>
+                            <div class="simple-meta-date">发布于 <%= date(post.date, 'YYYY/MM/DD') %></div>
                         </div>
                         <a href="<%= url_for(post.path) %>">
                             <div class="simple-post-title">
@@ -32,11 +32,8 @@
                         </a>
                     </div>
                     <% if(post.cover) { %>
-
                         <div class="simple-item-right">
-                            <a href="<%= url_for(post.path) %>">
                             <img src="<%= post.cover %>">
-                            </a>
                         </div>
                     <% } %>
                 </div>
