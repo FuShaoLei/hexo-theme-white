@@ -2,20 +2,23 @@
 <%- partial('_partial/head',{cache: true}) %>
 
 <body>
-<%- partial('_partial/header',{cache: true}) %>
 
-<div class="body-outer">
-  <div class="body-inner">
-    <%- body %>
+<div class="universal-outer">
+  <%- partial('_partial/header',{cache: true}) %>
+
+  <div class="body-outer">
+    <div class="body-inner">
+      <%- body %>
+    </div>
   </div>
-</div>
 
-<!-- 如果是home模式的话，不在首页就显示footer，如果不是home模式的话 所有都显示footer -->
-<% if(theme.home.type === "home" && is_home() !== true) {%>
-  <%- partial('_partial/footer', {cache: true}) %>
-<% }else if(theme.home.type !== "home"){%>
-  <%- partial('_partial/footer', {cache: true}) %>
-<% } %>
+  <!-- 如果是home模式的话，不在首页就显示footer，如果不是home模式的话 所有都显示footer -->
+  <% if(theme.home.type === "home" && is_home() !== true) {%>
+    <%- partial('_partial/footer', {cache: true}) %>
+  <% }else if(theme.home.type !== "home"){%>
+    <%- partial('_partial/footer', {cache: true}) %>
+  <% } %>
+</div>
 
 
 

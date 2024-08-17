@@ -6,12 +6,26 @@ body
   height 100%
   width 100%
   general-transition()
-  background var(--color-bg)
   overflow-x hidden
 a 
   text-decoration none
   color var(--color-text-main)
-/* 滚动条 */
+
+/* 整体布局 */
+
+.universal-outer
+  display flex
+  flex-direction column
+  min-height 100vh
+  .menu-outer
+    flex-basis 100px
+    background $color-embellish
+  .footer-outer
+    flex-basis 100px
+    background $color-embellish
+  .body-outer
+    flex-grow 1
+    flex-shrink 1
 
 /* menu */
 .menu-outer
@@ -64,8 +78,7 @@ a
       z-index: -1
 
 /* body */
-.body-outer 
-  height 100%
+.body-outer
   width 100%
   display flex
   justify-content center
