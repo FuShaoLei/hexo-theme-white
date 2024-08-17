@@ -10,9 +10,7 @@
                 <div class="simple-post-item item-divider">
                     <div class="simple-item-left">
                         <div class="simple-item-meta">
-                            <img src="<%= theme.intro.avator %>">
-                            <div class="simple-meta-name"><%= theme.intro.author %></div>
-                            <div class="simple-meta-date">发布于 <%= date(post.date, 'YYYY/MM/DD') %></div>
+                            <div class="simple-meta-date"><%= date(post.date, 'YYYY年MM月DD日') %></div>
                         </div>
                         <a href="<%= url_for(post.path) %>">
                             <div class="simple-post-title">
@@ -24,7 +22,7 @@
                             </div>
                         <div class="simple-post-excerpt">
                             <% if (post.excerpt) { %>
-                                <%- post.excerpt %>
+                                <%- truncate(strip_html(post.excerpt), {length: 128}) %>
                             <% } else { %>
                                 <%- truncate(strip_html(post.content), {length: 128}) %>
                             <% } %>
