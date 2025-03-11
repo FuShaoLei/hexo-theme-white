@@ -2,12 +2,16 @@
 *
   padding 0
   margin 0
-body 
+body
   height 100%
   width 100%
   general-transition()
   overflow-x hidden
-a 
+  line-height 1.5
+  font-size $normal-font-size
+  font-family $font-content
+  color: var(--color-text-main)
+a
   text-decoration none
   color var(--color-text-main)
 
@@ -18,10 +22,10 @@ a
   flex-direction column
   min-height 100vh
   .menu-outer
-    flex-basis 100px
+    flex-basis 75px
     background $color-embellish
   .footer-outer
-    flex-basis 100px
+    flex-basis 75px
     background $color-embellish
   .body-outer
     flex-grow 1
@@ -33,16 +37,15 @@ a
   width 100%
   display flex
   justify-content center
-.menu-inner 
+.menu-inner
   width $layout-max-width
   display flex
   justify-content space-between
   align-items center
-  padding 25px 0
   transition all .3s
 .menu-site-name,.mobile-menu-site-name
   font-family $font-title
-  font-size 1.9em
+  font-size 1.7rem
 .menu-site-name
   a
     color var(--color-text-secondary)
@@ -50,18 +53,18 @@ a
     position relative
     &:hover
       color var(--color-text-main)
-.menu-ul 
+.menu-ul
   list-style none
 .menu-li
   cursor pointer
   float left
   margin-right 20px
   padding 0 10px
-  font-size 1.1em
+  font-size 1.1rem
   color var(--color-text-secondary)
   position relative
   transition all .4s
-  &:hover 
+  &:hover
     color var(--color-text-main)
 .active-link
   .menu-li
@@ -114,7 +117,7 @@ a
     color var(--color-text-main)
     text-decoration none
     margin-right 3px
-.paginator 
+.paginator
   margin 50px 0
   font-family $font-title
   text-align center
@@ -124,40 +127,41 @@ a
   .extend
     color var(--color-text-secondary)
     general-transition()
-    &:hover 
+    &:hover
       color var(--color-text-main)
 /* footer */
-.footer-outer 
+.footer-outer
   display flex
   justify-content center
   font-family $font-title
-.footer-inner 
-  padding 40px 0
+  background #333
+.footer-inner
   width $layout-max-width
   display flex
   justify-content space-between
-.footer-text 
+  align-items center
+.footer-text
   color var(--color-text-secondary)
-  font-size 1.1em
-  a 
+  font-size 1.1rem
+  a
     color var(--color-text-secondary)
     general-transition()
-    &:hover 
+    &:hover
       color var(--color-text-main)
-.footer-contact 
+.footer-contact
   font-size 1.2em
-.footer-ul 
+.footer-ul
   list-style none
-.footer-li 
+.footer-li
   float left
   margin-right 10px
   transition all .3s
-  i 
+  i
     color var(--color-text-secondary)
     font-size 1.2em
     general-transition()
     padding 5px
     border-radius 100%
-  &:hover 
-    i 
+  &:hover
+    i
       color var(--color-text-main)

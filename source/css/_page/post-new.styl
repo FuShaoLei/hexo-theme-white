@@ -22,7 +22,7 @@
     margin-left 5px
     color var(--color-text-secondary)
 .post-title
-  font-size 2.5em
+  font-size 2.2rem
   font-weight bold
   color var(--color-text-main)
   font-family $font-title
@@ -35,7 +35,7 @@
   height 350px
   object-fit cover
 .meta-intro
-  font-size .9em
+  font-size .9rem
   font-family $font-content
   text-align center
   color var(--color-text-secondary)
@@ -52,6 +52,11 @@
     max-width $post-max-width
   .post-placeholder
     flex 1
+  a
+    text-decoration underline
+    &:hover
+      box-shadow none
+
 
 // detail post style
 
@@ -74,6 +79,7 @@
     margin 0
   a
     color var(--color-text-secondary)
+    text-decoration none
     &:hover
       box-shadow none
       color var(--color-text-main)

@@ -5,6 +5,8 @@ $color-text-main = #24292F
 $color-text-secondary = #898FA0
 $color-embellish = #f3f4f5
 
+$normal-font-size = 18px
+
 
 // 说明
 //--color-bg 背景颜色
@@ -94,12 +96,8 @@ $mobile-s = "screen and (max-width:450px)"
 // 通用的排版样式
 
 .common-typographic
-  font-size 1.3em
-  font-family $font-content
-  font-weight 300
-  color: var(--color-text-main)
   ul, ol
-    padding-left 2em
+    padding-left 2rem
     margin 20px 0
 .common-typographic
   h1, h2, h3, h4, h5, h6
@@ -111,20 +109,19 @@ $mobile-s = "screen and (max-width:450px)"
       content "#"
       display inline-block
       color $color-theme-main
-      font-family $font-code
+      font-family $font-content
       margin-left 0.5rem
       font-weight: border
   code
     background var(--color-embellish)
-    font-size 0.85em
+    font-size 0.95rem
     padding 0 7px
     font-family $font-code
   pre
     max-width $post-max-width
     overflow auto
-    font-size .85em
     margin 22px 0
-    padding 1.3em 1.2em
+    padding 1.3rem 1.2rem
     background var(--color-embellish)
     > code
       font-family $font-code
