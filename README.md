@@ -1,9 +1,18 @@
 
+
+
 The document is being written....
 
 ## Live Demo
 
 [👉Click here to visit  Live Demo](https://fushaolei.github.io/hexo-theme-white/)
+
+
+## environment
+
+```
+"hexo": "^7.3.0"
+```
 
 ## Quickly Start
 

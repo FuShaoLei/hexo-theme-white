@@ -4,10 +4,11 @@
   width $post-max-width
   margin auto
   box-shadow 0 1.1px var(--color-embellish)
-  padding-bottom 20px
+  padding-bottom 10px
 .post-meta
   display flex
   font-family $font-title
+  font-size .96rem
   align-content center
   margin-bottom 7px
   img
@@ -22,7 +23,7 @@
     margin-left 5px
     color var(--color-text-secondary)
 .post-title
-  font-size 2.5em
+  font-size 2.2rem
   font-weight bold
   color var(--color-text-main)
   font-family $font-title
@@ -35,15 +36,20 @@
   height 350px
   object-fit cover
 .meta-intro
-  font-size .9em
+  font-size .9rem
   font-family $font-content
   text-align center
   color var(--color-text-secondary)
 
+.post-cover
+  img
+    width 100%
+    height 350px
+    object-fit cover
 
 // post-content-inner
 .post-content-inner
-  margin-top 50px
+  margin-top 30px
   display flex
   width 100vw
   justify-content center
@@ -52,6 +58,14 @@
     max-width $post-max-width
   .post-placeholder
     flex 1
+  a
+    text-decoration underline
+    &:hover
+      box-shadow none
+  figure
+    text-align center
+    figcaption
+      font-size .96rem
 
 // detail post style
 
@@ -74,6 +88,7 @@
     margin 0
   a
     color var(--color-text-secondary)
+    text-decoration none
     &:hover
       box-shadow none
       color var(--color-text-main)

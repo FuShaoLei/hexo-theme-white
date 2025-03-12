@@ -30,11 +30,11 @@ archive_img_mode: # TODO 这里需要改，不应该用这种图片，应该改�
     - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/15.jpg
 
 # icon
-icon: favicon.ico #标签页图标
+icon: favicon.ico
 # header
 site_name: white
-site_description: A minimalist theme for hexo. # The default meta description for all the meta descriptions
-# Add description property to any page to change the meta description
+site_description: A minimalist theme for hexo.
+
 menu:
   首页: /
   页面: /page
@@ -52,8 +52,8 @@ intro:
   avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像
   author: fushaolei # 所有文章的默认作者
 
-#联系方式
-#更多图标：https://remixicon.com/
+# contact
+# more icon: https://remixicon.com/
 contact:
   Github:
     - https://github.com/FuShaoLei/hexo-theme-white
@@ -74,7 +74,7 @@ contact:
 
 # comment
 comments:
-  open: false # 是否开启评论系统
+  open: false
   system: cusdis # 选择评论系统 可选 valine,gitalk,livere,cusdis
   # Valine
   valine:
@@ -103,12 +103,10 @@ pagination: # TODO 添加多语言支持
   prev: 上一页
   next: 下一页
 
-############## 其他 ##############
 
-# 页脚
 footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuShaoLei/hexo-theme-white) # markdown语法
 
 
-# 图片懒加载
+
 lazyload:
-  open: true #是否开启
+  open: true
