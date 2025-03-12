@@ -21,17 +21,13 @@
                                 <% } %>
                             </div>
                         <div class="simple-post-excerpt">
-                            <% if (post.excerpt) { %>
-                                <%- truncate(strip_html(post.excerpt), {length: 128}) %>
-                            <% } else { %>
-                                <%- truncate(strip_html(post.content), {length: 128}) %>
-                            <% } %>
+                            <%- truncate(strip_html(post.content), {length: 112}) %>
                         </div>
                         </a>
                     </div>
                     <% if(post.cover) { %>
                         <div class="simple-item-right">
-                            <img src="<%= post.cover %>">
+                             <img src="<%= post.cover %>">
                         </div>
                     <% } %>
                 </div>
