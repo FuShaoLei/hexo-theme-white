@@ -11,11 +11,12 @@ body
   font-size $normal-font-size
   font-family $font-content
   color: var(--color-text-main)
+  background var(--color-bg)
 a
   text-decoration none
   color var(--color-text-main)
 ::selection
-  background-color $color-theme-main
+  background-color var(--color-theme-main)
   color #fff
 
 ::-webkit-scrollbar
@@ -29,11 +30,11 @@ a
   flex-direction column
   min-height 100vh
   .menu-outer
-    flex-basis 75px
-    background $color-embellish
+    flex-basis 70px
+    background var(--color-embellish)
   .footer-outer
-    flex-basis 75px
-    background $color-embellish
+    flex-basis 70px
+    background var(--color-embellish)
   .body-outer
     flex-grow 1
     flex-shrink 1
@@ -100,19 +101,19 @@ a
     width 60%
   .intro-title
     font-family $font-title
-    font-size 4.5em
+    font-size 4.5rem
     font-weight 1000
     margin 0
     padding 0
   .intro-sub
     font-family $font-content
     margin-top 30px
-    font-size 1.32em
+    font-size 1.32rem
     line-height 1.8em
     margin-left 5px
   .intro-contact
     margin-top 10px
-    font-size 1.5em
+    font-size 1.5rem
     line-height 1.8em
     margin-left 5px
     a
@@ -128,7 +129,7 @@ a
   margin 50px 0
   font-family $font-title
   text-align center
-  font-size 1.17em
+  font-size 1.17rem
   .page-number,.space
     display none
   .extend
@@ -149,7 +150,7 @@ a
   align-items center
 .footer-text
   color var(--color-text-secondary)
-  font-size 1.1rem
+  font-size 1rem
   a
     color var(--color-text-secondary)
     general-transition()

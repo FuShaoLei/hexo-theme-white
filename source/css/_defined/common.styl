@@ -17,7 +17,7 @@ $normal-font-size = 18px
 //--color-embellish 修饰颜色
 
 
-:root
+[data-theme='light']
   --color-bg #F6F8FA
   --color-theme-main #B54047
   --color-text-main #24292F
@@ -26,15 +26,15 @@ $normal-font-size = 18px
   --color-embellish #ecedee
 
 
-.night
-  --color-bg #3b3a3a
-  --color-theme-main #1f3fb0
-  --color-text-main #e1e1e1
+[data-theme='dark']
+  --color-bg #333
+  --color-theme-main #B54047
+  --color-text-main #D1D5DB
   --color-text-secondary rgba(225, 225, 225, 0.4)
   --color-dress rgba(225, 225, 225, 0.2)
   --color-embellish #444444
 
-.cookie
+[data-theme='cookie']
   --color-bg #C1C2C5
   --color-theme-main #B54047
   --color-text-main #292E4B
@@ -42,13 +42,16 @@ $normal-font-size = 18px
   --color-dress rgba(41, 46, 75, 0.2)
   --color-embellish #cfd0d3
 
-.forest
+[data-theme='forest']
   --color-bg #026A39
   --color-theme-main #F7BD08
   --color-text-main #F0F2E5
   --color-text-secondary rgba(240, 242, 229, 0.6)
   --color-dress rgba(240, 242, 229 0.2)
   --color-embellish #03502b
+
+
+
 
 
 // 字体
@@ -108,7 +111,7 @@ $mobile-s = "screen and (max-width:450px)"
     &::after
       content "#"
       display inline-block
-      color $color-theme-main
+      color var(--color-theme-main)
       font-family $font-content
       margin-left 0.5rem
       font-weight: border

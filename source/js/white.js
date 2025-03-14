@@ -36,6 +36,34 @@ mclose.onclick = function () {
     mmain.style.display = "none";
 }
 
+// 页面加载时检查并应用主题
+document.addEventListener("DOMContentLoaded", function () {
+    const savedTheme = localStorage.getItem("theme") || "light";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+
+    updateIcon(savedTheme);
+});
+
+// 切换主题
+document.getElementById("theme-change-btn").addEventListener("click", function () {
+    const html = document.documentElement;
+    const newTheme = html.getAttribute("data-theme") === "light" ? "dark" : "light";
+    html.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme); // 存储主题状态
+
+    updateIcon(newTheme);
+});
+
+function updateIcon(theme) {
+    const themeIcon = document.getElementById("themeIcon");
+    if (theme === "light") {
+        themeIcon.className = "ri-sun-fill";  // 太阳图标
+    } else {
+        themeIcon.className = "ri-moon-fill"; // 月亮图标
+    }
+}
+
+
 // 切换颜色
 // let change = document.getElementById("theme-change-btn")
 // let changeList = [
