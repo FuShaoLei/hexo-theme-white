@@ -1,56 +1,19 @@
-########## 关于主页的设置 ##########
-
-## TODO 待清除
-
-# home页可选类型
-home:
-  type: "simple" # 主页的类型，可选 home | img | simple
-
-# archive页可选类型
-archive:
-  type: "simple" # archive的类型，可选 img | simple
-
-
-archive_img_mode: # TODO 这里需要改，不应该用这种图片，应该改成本地的图片
-  default_cover: #默认的cover
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/01.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/02.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/03.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/04.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/05.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/06.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/07.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/08.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/09.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/10.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/11.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/12.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/13.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/14.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/15.jpg
-
 # icon
 icon: favicon.ico
-# header
+# site basic info
 site_name: white
 site_description: A minimalist theme for hexo.
 
+# top nav menu
 menu:
   首页: /
   页面: /page
 
-
-## 本地搜索 TODO 待处理
-search:
-  open: false # 是否开启
-  page: /search # 页面路径（通常命名为search）
-
-# 自我介绍
 intro:
-  title: 👋 Hello
-  sub: 'A [White](https://github.com/FuShaoLei/hexo-theme-white) theme for [Hexo](http://hexo.io/)' # 支持markdown
-  avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像
-  author: fushaolei # 所有文章的默认作者
+  title: 你好，有缘人
+  sub: 'A [White](https://github.com/FuShaoLei/hexo-theme-white) theme for [Hexo](http://hexo.io/)'
+  avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg
+  author: fushaolei
 
 # contact
 # more icon: https://remixicon.com/
@@ -99,14 +62,8 @@ comments:
   cusdis:
     app_id:
 
-pagination: # TODO 添加多语言支持
+pagination:
   prev: 上一页
   next: 下一页
 
-
-footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuShaoLei/hexo-theme-white) # markdown语法
-
-
-
-lazyload:
-  open: true
+footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuShaoLei/hexo-theme-white)
