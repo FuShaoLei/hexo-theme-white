@@ -3,16 +3,14 @@
     <div class="post-intro">
       <%if(page.cover){%>
       <div class="post-cover">
-            <span class="lazyload-img-span">
-                <img data-src="<%=page.cover%>" class="post-cover-img lazyload-img">
-            </span>
+           <img src="<%=page.cover%>">
       </div>
       <%}%>
       <div class="post-title">
         <%=page.title%>
       </div>
       <div class="post-meta">
-        <img src="<%= theme.intro.avator %>">
+        <img src="<%= theme.intro.avatar %>">
         <div class="post-meta-name"><%= theme.intro.author %></div>
         <div class="post-meta-date">发布于 <%= date(page.date, 'YYYY/MM/DD') %></div>
       </div>

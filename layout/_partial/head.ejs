@@ -3,12 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><% if (page.title){ %>  <%= page.title %> - <% } %>   <%= theme.site_name%></title>
-  <meta name="description" content="<% if(page.description ) { %><%=page.description%><% } else {%><%=theme.site_description%><%}%>">
+  <title><% if (page.title){ %>  <%= page.title %> - <% } %>   <%= theme.site.name%></title>
+  <meta name="description" content="<% if(page.description ) { %><%=page.description%><% } else {%><%=theme.site.desc%><%}%>">
   <!-- 标签页图标 -->
-  <%if(theme.icon!=undefined){%>
-    <link rel="shortcut icon" href="<%-theme.icon%>" type="image/x-icon">
+  <%if(theme.site.icon!=undefined){%>
+    <link rel="shortcut icon" href="<%-theme.site.icon%>" type="image/x-icon">
   <%}%>
+
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem("theme") || "light";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+
+      const themeIcon = document.getElementById("themeIcon");
+      if (savedTheme === "light") {
+        themeIcon.className = "ri-sun-line";  // 太阳图标
+      } else {
+        themeIcon.className = "ri-moon-line"; // 月亮图标
+      }
+    })();
+  </script>
 
   <!-- 图标库 -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">

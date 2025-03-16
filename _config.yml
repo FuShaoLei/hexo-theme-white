@@ -1,59 +1,28 @@
-########## 关于主页的设置 ##########
-
-## TODO 待清除
-
-# home页可选类型
-home:
-  type: "simple" # 主页的类型，可选 home | img | simple
-
-# archive页可选类型
-archive:
-  type: "simple" # archive的类型，可选 img | simple
+# 网站设置
+site:
+  icon: favicon.ico # 图标
+  name: white demo site # 网站名称
+  desc: A Pure Theme For Hexo # 网站描述
+  footer: Made by [FuShaoLei](https://github.com/FuShaoLei) # 页脚
+  pagination: # 翻页text
+    prev: 上一页
+    next: 下一页
 
 
-archive_img_mode: # TODO 这里需要改，不应该用这种图片，应该改成本地的图片
-  default_cover: #默认的cover
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/01.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/02.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/03.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/04.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/05.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/06.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/07.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/08.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/09.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/10.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/11.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/12.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/13.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/14.jpg
-    - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/15.jpg
-
-# icon
-icon: favicon.ico #标签页图标
-# header
-site_name: white
-site_description: A minimalist theme for hexo. # The default meta description for all the meta descriptions
-# Add description property to any page to change the meta description
+# 导航栏 top nav menu
 menu:
   首页: /
   页面: /page
 
-
-## 本地搜索 TODO 待处理
-search:
-  open: false # 是否开启
-  page: /search # 页面路径（通常命名为search）
-
-# 自我介绍
 intro:
-  title: 👋 Hello
-  sub: 'A [White](https://github.com/FuShaoLei/hexo-theme-white) theme for [Hexo](http://hexo.io/)' # 支持markdown
-  avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg #头像
-  author: fushaolei # 所有文章的默认作者
+  enable: true # 是否开启 true | false
+  title: 你好，有缘人 # 标题 title
+  sub: A Pure theme for Hexo # 小标题 subtitle，或者在 /source/homepage.md 中填写信息
+  avatar: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg # 默认头像 default avatar
+  author: fushaolei # 默认作者 default author
 
-#联系方式
-#更多图标：https://remixicon.com/
+
+# 社交链接 more icon: https://remixicon.com/
 contact:
   Github:
     - https://github.com/FuShaoLei/hexo-theme-white
@@ -72,10 +41,10 @@ contact:
     - ri-youtube-line
 
 
-# comment
+# 评论
 comments:
-  open: false # 是否开启评论系统
-  system: cusdis # 选择评论系统 可选 valine,gitalk,livere,cusdis
+  open: false # 是否开启
+  system: cusdis # 评论系统 可选 valine ｜ gitalk ｜ livere ｜ cusdis
   # Valine
   valine:
     appid: # Leancloud应用的AppID  这里和下面的要换成你自己的啊QAQ
@@ -98,17 +67,3 @@ comments:
     dataUid: #安装代码中 data-uid 后面数据
   cusdis:
     app_id:
-
-pagination: # TODO 添加多语言支持
-  prev: 上一页
-  next: 下一页
-
-############## 其他 ##############
-
-# 页脚
-footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuShaoLei/hexo-theme-white) # markdown语法
-
-
-# 图片懒加载
-lazyload:
-  open: true #是否开启

@@ -1,7 +1,7 @@
 <section class="simple-outer">
     <section class="simple-inner common-typographic">
         <div class="simple-post-list">
-            <% if(is_home_first_page() === true) { %>
+            <% if(theme.intro.enable === true && is_home_first_page() === true) { %>
                 <div class="item-divider item-homepage">
                     <%- partial('_partial/homepage') %>
                 </div>
@@ -21,17 +21,13 @@
                                 <% } %>
                             </div>
                         <div class="simple-post-excerpt">
-                            <% if (post.excerpt) { %>
-                                <%- truncate(strip_html(post.excerpt), {length: 128}) %>
-                            <% } else { %>
-                                <%- truncate(strip_html(post.content), {length: 128}) %>
-                            <% } %>
+                            <%- truncate(strip_html(post.content), {length: 112}) %>
                         </div>
                         </a>
                     </div>
                     <% if(post.cover) { %>
                         <div class="simple-item-right">
-                            <img src="<%= post.cover %>">
+                             <img src="<%= post.cover %>">
                         </div>
                     <% } %>
                 </div>

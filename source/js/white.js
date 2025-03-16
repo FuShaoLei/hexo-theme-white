@@ -1,3 +1,6 @@
+/**
+ * Determine whether it is the current path
+ */
 function isActive(pathname) {
     let rootPath = window.location.pathname
     let path = pathname + "/"
@@ -32,6 +35,34 @@ mmenu.onclick = function () {
 mclose.onclick = function () {
     mmain.style.display = "none";
 }
+
+// 页面加载时检查并应用主题
+document.addEventListener("DOMContentLoaded", function () {
+    const savedTheme = localStorage.getItem("theme") || "light";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+
+    updateIcon(savedTheme);
+});
+
+// 切换主题
+document.getElementById("theme-change-btn").addEventListener("click", function () {
+    const html = document.documentElement;
+    const newTheme = html.getAttribute("data-theme") === "light" ? "dark" : "light";
+    html.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme); // 存储主题状态
+
+    updateIcon(newTheme);
+});
+
+function updateIcon(theme) {
+    const themeIcon = document.getElementById("themeIcon");
+    if (theme === "light") {
+        themeIcon.className = "ri-sun-fill";  // 太阳图标
+    } else {
+        themeIcon.className = "ri-moon-fill"; // 月亮图标
+    }
+}
+
 
 // 切换颜色
 // let change = document.getElementById("theme-change-btn")
@@ -90,45 +121,44 @@ if (document.getElementById("sort")) {
     }
 }
 
-// 图片懒加载
-var imgs = document.querySelectorAll('img.lazyload-img');
-var imgdivs = document.querySelectorAll('.lazyload-img-span');
-
-
-// 用来判断bound.top<=clientHeight的函数，返回一个bool值
-function isIn(el) {
-    var bound = el.getBoundingClientRect();
-    var clientHeight = window.innerHeight;
-    return bound.top <= clientHeight;
-}
-
-// 检查图片是否在可视区内，如果在，则加载
-function check() {
-    for (let p = 0; p < imgs.length; p++) {
-        if (isIn(imgs[p])) {
-            loadImg(imgs[p]);
-            imgs[p].onload = function () {
-                let y = Number(p);
-                changeClass(y);
-            }
-        }
-    }
-}
-
-function changeClass(num) {
-    console.log("changeClass(num) num = "+num)
-    let tempse = Number(num);
-    imgdivs[tempse].className = "lazyload-img-span img-masks";
-}
-
-function loadImg(el) {
-    console.log("loadImg el.dataset.src = "+el.dataset.src)
-    if (!el.src) {
-        el.src = el.dataset.src;
-    }
-}
-
-// onscroll()在滚动条滚动的时候触发
-window.onload = window.onscroll = function () {
-    check();
-}
+// var imgs = document.querySelectorAll('img.lazyload-img');
+// var imgdivs = document.querySelectorAll('.lazyload-img-span');
+//
+//
+// // 用来判断bound.top<=clientHeight的函数，返回一个bool值
+// function isIn(el) {
+//     var bound = el.getBoundingClientRect();
+//     var clientHeight = window.innerHeight;
+//     return bound.top <= clientHeight;
+// }
+//
+// // 检查图片是否在可视区内，如果在，则加载
+// function check() {
+//     for (let p = 0; p < imgs.length; p++) {
+//         if (isIn(imgs[p])) {
+//             loadImg(imgs[p]);
+//             imgs[p].onload = function () {
+//                 let y = Number(p);
+//                 changeClass(y);
+//             }
+//         }
+//     }
+// }
+//
+// function changeClass(num) {
+//     console.log("changeClass(num) num = "+num)
+//     let tempse = Number(num);
+//     imgdivs[tempse].className = "lazyload-img-span img-masks";
+// }
+//
+// function loadImg(el) {
+//     console.log("loadImg el.dataset.src = "+el.dataset.src)
+//     if (!el.src) {
+//         el.src = el.dataset.src;
+//     }
+// }
+//
+// // onscroll()在滚动条滚动的时候触发
+// window.onload = window.onscroll = function () {
+//     check();
+// }

@@ -5,6 +5,8 @@ $color-text-main = #24292F
 $color-text-secondary = #898FA0
 $color-embellish = #f3f4f5
 
+$normal-font-size = 18px
+
 
 // 说明
 //--color-bg 背景颜色
@@ -15,7 +17,7 @@ $color-embellish = #f3f4f5
 //--color-embellish 修饰颜色
 
 
-:root
+[data-theme='light']
   --color-bg #F6F8FA
   --color-theme-main #B54047
   --color-text-main #24292F
@@ -24,15 +26,15 @@ $color-embellish = #f3f4f5
   --color-embellish #ecedee
 
 
-.night
-  --color-bg #3b3a3a
-  --color-theme-main #1f3fb0
-  --color-text-main #e1e1e1
+[data-theme='dark']
+  --color-bg #333
+  --color-theme-main #B54047
+  --color-text-main #D1D5DB
   --color-text-secondary rgba(225, 225, 225, 0.4)
   --color-dress rgba(225, 225, 225, 0.2)
   --color-embellish #444444
 
-.cookie
+[data-theme='cookie']
   --color-bg #C1C2C5
   --color-theme-main #B54047
   --color-text-main #292E4B
@@ -40,13 +42,16 @@ $color-embellish = #f3f4f5
   --color-dress rgba(41, 46, 75, 0.2)
   --color-embellish #cfd0d3
 
-.forest
+[data-theme='forest']
   --color-bg #026A39
   --color-theme-main #F7BD08
   --color-text-main #F0F2E5
   --color-text-secondary rgba(240, 242, 229, 0.6)
   --color-dress rgba(240, 242, 229 0.2)
   --color-embellish #03502b
+
+
+
 
 
 // 字体
@@ -94,13 +99,9 @@ $mobile-s = "screen and (max-width:450px)"
 // 通用的排版样式
 
 .common-typographic
-  font-size 1.3em
-  font-family $font-content
-  font-weight 300
-  color: var(--color-text-main)
   ul, ol
-    padding-left 2em
-    margin 20px 0
+    padding-left 2rem
+    margin-bottom 10px
 .common-typographic
   h1, h2, h3, h4, h5, h6
     margin-top 23px
@@ -110,28 +111,27 @@ $mobile-s = "screen and (max-width:450px)"
     &::after
       content "#"
       display inline-block
-      color $color-theme-main
-      font-family $font-code
+      color var(--color-theme-main)
+      font-family $font-content
       margin-left 0.5rem
       font-weight: border
   code
     background var(--color-embellish)
-    font-size 0.85em
+    font-size 0.95rem
     padding 0 7px
     font-family $font-code
   pre
     max-width $post-max-width
     overflow auto
-    font-size .85em
     margin 22px 0
-    padding 1.3em 1.2em
+    padding 1.3rem 1.2rem
     background var(--color-embellish)
     > code
       font-family $font-code
       background none
       padding 0
   p
-    margin 20px 0
+    margin-bottom 10px
   img
     max-width 100%
   .lazyload-img-span

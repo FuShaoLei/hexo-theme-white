@@ -18,7 +18,7 @@
 
 .img-show-post-title
   text-align: center
-  font-size: 1.4em
+  font-size: 1.4rem
   margin-top: 30px
   color var(--color-text-main)
   font-family $font-title
@@ -78,8 +78,7 @@
   display flex
   font-family $font-title
   align-content center
-  margin-bottom 2px
-  font-size 0.7em
+  font-size 0.92rem
   img
     width 25px
     height 25px
@@ -96,17 +95,23 @@
 .item-divider
   margin-bottom 30px
   padding-top 35px
+  .homepage-content-wrapper
+    padding-bottom  10px
+    img
+      width 80px
+      aspect-ratio 1/1
+      display block
+      border-radius 100%
+      margin-right 10px
+      float left
   .homepage-title
     font-family $font-title
-    margin-bottom 10px
+    margin-bottom 3px
     color var(--color-text-main)
-    font-size 1.3em
+    font-size 1.5rem
     font-weight 1000
   .homepage-content
     font-family $font-title
-    font-size .9em
-    line-height 1.55
-    font-weight 200
     p
       margin 0
     a
@@ -114,7 +119,6 @@
       padding 0 3px
   .homepage-contact
     margin-top 9px
-    font-size 1em
     a
       color var(--color-text-secondary)
       general-transition()
@@ -127,13 +131,14 @@
 
 .simple-post-item
   display flex
-  .simple-item-left
-    justify-content center
   .simple-item-right
-    flex-basis 700px
+    display flex
+    justify-content center
+    align-items center
     margin-left 15px
     img
-      width 100%
+      min-width 300px
+      max-width 300px
       object-fit cover
       aspect-ratio 16/9
       border-radius 1.5px
@@ -142,18 +147,18 @@
   margin-bottom 2px
   font-family $font-title
   color var(--color-text-main)
-  font-size 1.3em
+  font-size 1.5rem
   font-weight 1000
   general-transition()
   &:hover
-    color $color-theme-main
+    color var(--color-theme-main)
 
 .simple-post-excerpt
   font-family $font-title
-  font-size .87em
+  font-size .96rem
   color var(--color-text-secondary)
   general-transition()
   a
     color var(--color-text-secondary)
   &:hover
-    color $color-text-main
+    color var(--color-text-main)
