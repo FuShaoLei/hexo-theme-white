@@ -1,20 +1,17 @@
 
+# White
 
+- [示例网站](https://fushaolei.github.io/hexo-theme-white/)
+- [文档请参考config文件](https://github.com/FuShaoLei/hexo-theme-white/blob/master/_config.yml)
+- 持续开发中～
 
-The document is being written....
-
-## Live Demo
-
-[👉Click here to visit  Live Demo](https://fushaolei.github.io/hexo-theme-white/)
-
-
-## environment
+## 环境
 
 ```
 "hexo": "^7.3.0"
 ```
 
-## Quickly Start
+## 快速开始
 
 1. clone the repo to your`/theme/`folder
 
