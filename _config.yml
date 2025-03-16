@@ -15,10 +15,10 @@ menu:
 
 intro:
   enable: true # true | false
-  title: 你好，有缘人
-  sub: A Pure theme for Hexo
-  avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg
-  author: fushaolei
+  title: 你好，有缘人 # big title
+  sub: A Pure theme for Hexo # subtitle
+  avatar: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg # default avatar
+  author: fushaolei # default author
 
 # more icon: https://remixicon.com/
 contact:
