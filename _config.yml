@@ -17,7 +17,7 @@ menu:
 intro:
   enable: true # 是否开启 true | false
   title: 你好，有缘人 # 标题 title
-  sub: A Pure theme for Hexo # 小标题 subtitle
+  sub: A Pure theme for Hexo # 小标题 subtitle，或者在 /source/homepage.md 中填写信息
   avatar: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg # 默认头像 default avatar
   author: fushaolei # 默认作者 default author
 
