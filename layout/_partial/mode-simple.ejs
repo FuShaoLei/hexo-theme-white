@@ -1,7 +1,7 @@
 <section class="simple-outer">
     <section class="simple-inner common-typographic">
         <div class="simple-post-list">
-            <% if(is_home_first_page() === true) { %>
+            <% if(theme.intro.enable === true && is_home_first_page() === true) { %>
                 <div class="item-divider item-homepage">
                     <%- partial('_partial/homepage') %>
                 </div>
