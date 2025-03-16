@@ -1,26 +1,28 @@
+# 网站设置
 site:
-  icon: favicon.ico
-  name: white demo site
-  desc: A Pure Theme For Hexo
-  footer: Made by [FuShaoLei](https://github.com/FuShaoLei)
-  pagination:
+  icon: favicon.ico # 图标
+  name: white demo site # 网站名称
+  desc: A Pure Theme For Hexo # 网站描述
+  footer: Made by [FuShaoLei](https://github.com/FuShaoLei) # 页脚
+  pagination: # 翻页text
     prev: 上一页
     next: 下一页
 
 
-# top nav menu
+# 导航栏 top nav menu
 menu:
   首页: /
   页面: /page
 
 intro:
-  enable: true # true | false
-  title: 你好，有缘人 # big title
-  sub: A Pure theme for Hexo # subtitle
-  avatar: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg # default avatar
-  author: fushaolei # default author
+  enable: true # 是否开启 true | false
+  title: 你好，有缘人 # 标题 title
+  sub: A Pure theme for Hexo # 小标题 subtitle
+  avatar: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg # 默认头像 default avatar
+  author: fushaolei # 默认作者 default author
 
-# more icon: https://remixicon.com/
+
+# 社交链接 more icon: https://remixicon.com/
 contact:
   Github:
     - https://github.com/FuShaoLei/hexo-theme-white
@@ -39,10 +41,10 @@ contact:
     - ri-youtube-line
 
 
-# comment
+# 评论
 comments:
-  open: false
-  system: cusdis # 选择评论系统 可选 valine,gitalk,livere,cusdis
+  open: false # 是否开启
+  system: cusdis # 评论系统 可选 valine ｜ gitalk ｜ livere ｜ cusdis
   # Valine
   valine:
     appid: # Leancloud应用的AppID  这里和下面的要换成你自己的啊QAQ
