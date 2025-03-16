@@ -1,8 +1,12 @@
-# icon
-icon: favicon.ico
-# site basic info
-site_name: white
-site_description: A minimalist theme for hexo.
+site:
+  icon: favicon.ico
+  name: white demo site
+  desc: A Pure Theme For Hexo
+  footer: Made by [FuShaoLei](https://github.com/FuShaoLei)
+  pagination:
+    prev: 上一页
+    next: 下一页
+
 
 # top nav menu
 menu:
@@ -10,12 +14,12 @@ menu:
   页面: /page
 
 intro:
+  enable: true # true | false
   title: 你好，有缘人
-  sub: 'A [White](https://github.com/FuShaoLei/hexo-theme-white) theme for [Hexo](http://hexo.io/)'
+  sub: A Pure theme for Hexo
   avator: https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg
   author: fushaolei
 
-# contact
 # more icon: https://remixicon.com/
 contact:
   Github:
@@ -61,9 +65,3 @@ comments:
     dataUid: #安装代码中 data-uid 后面数据
   cusdis:
     app_id:
-
-pagination:
-  prev: 上一页
-  next: 下一页
-
-footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuShaoLei/hexo-theme-white)

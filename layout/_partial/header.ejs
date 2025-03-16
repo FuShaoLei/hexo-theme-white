@@ -5,7 +5,7 @@ const categoriesList = list_categories({show_count: false});
     <div class="menu-inner">
         <div class="menu-site-name">
             <a href="<%= url_for() %>">
-                <%= theme.site_name %>
+                <%= theme.site.name %>
             </a>
         </div>
         <div class="menu-group">
@@ -35,7 +35,7 @@ const categoriesList = list_categories({show_count: false});
     <div class="mobile-menu-inner">
         <div class="mobile-menu-site-name">
             <a href="<%= url_for() %>">
-                <%= theme.site_name %>
+                <%= theme.site.name %>
             </a>
         </div>
         <div class="mobile-menu-group" id="mobile-close">
