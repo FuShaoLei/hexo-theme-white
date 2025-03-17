@@ -126,17 +126,29 @@ a
     text-decoration none
     margin-right 3px
 .paginator
-  margin 50px 0
+  margin 60px 0 40px 0
   font-family $font-title
   text-align center
-  font-size 1.17rem
-  .page-number,.space
-    display none
+  font-size 1.1rem
+  color var(--color-text-secondary)
+  .page-number.current
+    border 2px solid var(--color-theme-main)
+  .page-number
   .extend
-    color var(--color-text-secondary)
+    border 2px solid transparent
+    background var(--color-embellish)
+    padding 3px 9px
+    text-align center
     general-transition()
     &:hover
-      color var(--color-text-main)
+      border 2px solid var(--color-theme-main)
+  .page-number
+  .space
+  .extend
+    margin 0 3px
+  a
+    color var(--color-text-secondary)
+
 /* footer */
 .footer-outer
   display flex
