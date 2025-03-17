@@ -20,6 +20,31 @@
       <div class="post-content-main">
         <div class="post-content">
           <%-page.content%>
+
+
+          <div class="post-nav-wrapper">
+            <div class="divider"></div>
+            <nav class="post-nav">
+              <div>
+                <% if (page.prev) { %>
+                  <a href="<%= url_for(page.prev.path) %>" class="prev">
+                    上一篇：<%= page.prev.title %>
+                  </a>
+                <% } %>
+              </div>
+
+              <div>
+                <% if (page.next) { %>
+                  <a href="<%= url_for(page.next.path) %>" class="next">
+                    下一篇：<%= page.next.title %>
+                  </a>
+                <% } %>
+              </div>
+            </nav>
+            <div class="divider"></div>
+          </div>
+
+
         </div>
       </div>
       <div class="post-placeholder post-toc-container">
