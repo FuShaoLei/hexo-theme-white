@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>   white demo site</title>
+  <meta name="description" content="A Pure Theme For Hexo">
+  <!-- 标签页图标 -->
+  
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem("theme") || "light";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+
+      const themeIcon = document.getElementById("themeIcon");
+      if (savedTheme === "light") {
+        themeIcon.className = "ri-sun-line";  // 太阳图标
+      } else {
+        themeIcon.className = "ri-moon-line"; // 月亮图标
+      }
+    })();
+  </script>
+
+  <!-- 图标库 -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- css文件 -->
+  
+<link rel="stylesheet" href="/hexo-theme-white/css/white.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;700;900&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.css">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+
+<div class="universal-outer">
+  
+<div class="menu-outer">
+    <div class="menu-inner">
+        <div class="menu-site-name">
+            <a href="/hexo-theme-white/">
+                white demo site
+            </a>
+        </div>
+        <div class="menu-group">
+            <ul class="menu-ul">
+                
+                <a href="/hexo-theme-white/" class="nav-link">
+                    <li class="menu-li">
+                        首页
+                    </li>
+                </a>
+                
+                <a href="/hexo-theme-white/page" class="nav-link">
+                    <li class="menu-li">
+                        页面
+                    </li>
+                </a>
+                
+                <li class="menu-li" id="mobile-menu">
+                    <i class="ri-menu-line"></i>
+                </li>
+                <li class="menu-li" id="theme-change-btn">
+                    <i class="ri-sun-line" id="themeIcon" ></i>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<!--移动端-->
+<div id="mobile-main">
+    <div class="mobile-menu-inner">
+        <div class="mobile-menu-site-name">
+            <a href="/hexo-theme-white/">
+                white demo site
+            </a>
+        </div>
+        <div class="mobile-menu-group" id="mobile-close">
+            <i class="ri-close-line"></i>
+        </div>
+
+    </div>
+
+    <div class="mobile-menu-div">
+        
+        <a href="/hexo-theme-white/" class="mobile-nav-link">
+            <div class="mobile-menu-child">
+                <span>首页</span>
+            </div>
+        </a>
+        
+        <a href="/hexo-theme-white/page" class="mobile-nav-link">
+            <div class="mobile-menu-child">
+                <span>页面</span>
+            </div>
+        </a>
+        
+    </div>
+
+
+</div>
+
+
+  <div class="body-outer">
+    <div class="body-inner">
+      <section class="simple-outer">
+    <section class="simple-inner common-typographic">
+        <div class="simple-post-list">
+            
+                <div class="item-divider item-homepage">
+                    <div class="homepage-content-wrapper">
+    <img src="https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg" class="homepage-avatar">
+    <div>
+        <div class="homepage-title">你好，有缘人</div>
+        
+        
+        
+            
+                
+                <div class="homepage-content">
+                    <p>这里是<a target="_blank" rel="noopener" href="https://github.com/FuShaoLei/hexo-theme-white">hexo-theme-white</a>示例网站，欢迎参观～。如果你喜欢这个项目，请给我一个star⭐️，你有什么好的意见或建议，欢迎<a target="_blank" rel="noopener" href="https://github.com/FuShaoLei/hexo-theme-white/issues">在此</a>填写issue</p>
+
+                </div>
+        
+        
+    </div>
+</div>
+                </div>
+            
+            
+                <div class="simple-post-item item-divider">
+                    <div class="simple-item-left">
+                        <div class="simple-item-meta">
+                            <div class="simple-meta-date">2018年07月24日</div>
+                        </div>
+                        <a href="/hexo-theme-white/2018/07/24/test-1%20-%20%E5%89%AF%E6%9C%AC%20(2)%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC/">
+                            <div class="simple-post-title">
+                                
+                                    Markdown样式测试
+                                
+                            </div>
+                        <div class="simple-post-excerpt">
+                            乌申斯基曾经提到过，学习是劳动，是充满思想的劳动。我希望诸位也能好好地体会这句话。 我认为， 所谓科学和人文谁更有意义，关键是科学和人文谁更有意义需要如何写。 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要...
+                        </div>
+                        </a>
+                    </div>
+                    
+                        <div class="simple-item-right">
+                             <img src="https://cdn.jsdelivr.net/gh/FuShaoLei/img5@master/202403301631153.jpg">
+                        </div>
+                    
+                </div>
+            
+                <div class="simple-post-item item-divider">
+                    <div class="simple-item-left">
+                        <div class="simple-item-meta">
+                            <div class="simple-meta-date">2018年07月24日</div>
+                        </div>
+                        <a href="/hexo-theme-white/2018/07/24/test-1%20-%20%E5%89%AF%E6%9C%AC%20(2)%20-%20%E5%89%AF%E6%9C%AC/">
+                            <div class="simple-post-title">
+                                
+                                    Markdown样式测试
+                                
+                            </div>
+                        <div class="simple-post-excerpt">
+                            乌申斯基曾经提到过，学习是劳动，是充满思想的劳动。我希望诸位也能好好地体会这句话。 我认为， 所谓科学和人文谁更有意义，关键是科学和人文谁更有意义需要如何写。 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要...
+                        </div>
+                        </a>
+                    </div>
+                    
+                        <div class="simple-item-right">
+                             <img src="https://cdn.jsdelivr.net/gh/FuShaoLei/img5@master/202403301631153.jpg">
+                        </div>
+                    
+                </div>
+            
+                <div class="simple-post-item item-divider">
+                    <div class="simple-item-left">
+                        <div class="simple-item-meta">
+                            <div class="simple-meta-date">2018年07月24日</div>
+                        </div>
+                        <a href="/hexo-theme-white/2018/07/24/test-1%20-%20%E5%89%AF%E6%9C%AC%20(3)%20-%20%E5%89%AF%E6%9C%AC/">
+                            <div class="simple-post-title">
+                                
+                                    Markdown样式测试
+                                
+                            </div>
+                        <div class="simple-post-excerpt">
+                            乌申斯基曾经提到过，学习是劳动，是充满思想的劳动。我希望诸位也能好好地体会这句话。 我认为， 所谓科学和人文谁更有意义，关键是科学和人文谁更有意义需要如何写。 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要...
+                        </div>
+                        </a>
+                    </div>
+                    
+                        <div class="simple-item-right">
+                             <img src="https://cdn.jsdelivr.net/gh/FuShaoLei/img5@master/202403301631153.jpg">
+                        </div>
+                    
+                </div>
+            
+                <div class="simple-post-item item-divider">
+                    <div class="simple-item-left">
+                        <div class="simple-item-meta">
+                            <div class="simple-meta-date">2018年07月24日</div>
+                        </div>
+                        <a href="/hexo-theme-white/2018/07/24/test-1%20-%20%E5%89%AF%E6%9C%AC%20(4)/">
+                            <div class="simple-post-title">
+                                
+                                    Markdown样式测试
+                                
+                            </div>
+                        <div class="simple-post-excerpt">
+                            乌申斯基曾经提到过，学习是劳动，是充满思想的劳动。我希望诸位也能好好地体会这句话。 我认为， 所谓科学和人文谁更有意义，关键是科学和人文谁更有意义需要如何写。 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要...
+                        </div>
+                        </a>
+                    </div>
+                    
+                        <div class="simple-item-right">
+                             <img src="https://cdn.jsdelivr.net/gh/FuShaoLei/img5@master/202403301631153.jpg">
+                        </div>
+                    
+                </div>
+            
+                <div class="simple-post-item item-divider">
+                    <div class="simple-item-left">
+                        <div class="simple-item-meta">
+                            <div class="simple-meta-date">2018年07月24日</div>
+                        </div>
+                        <a href="/hexo-theme-white/2018/07/24/test-1%20-%20%E5%89%AF%E6%9C%AC%20(2)/">
+                            <div class="simple-post-title">
+                                
+                                    Markdown样式测试
+                                
+                            </div>
+                        <div class="simple-post-excerpt">
+                            乌申斯基曾经提到过，学习是劳动，是充满思想的劳动。我希望诸位也能好好地体会这句话。 我认为， 所谓科学和人文谁更有意义，关键是科学和人文谁更有意义需要如何写。 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要...
+                        </div>
+                        </a>
+                    </div>
+                    
+                        <div class="simple-item-right">
+                             <img src="https://cdn.jsdelivr.net/gh/FuShaoLei/img5@master/202403301631153.jpg">
+                        </div>
+                    
+                </div>
+            
+                <div class="simple-post-item item-divider">
+                    <div class="simple-item-left">
+                        <div class="simple-item-meta">
+                            <div class="simple-meta-date">2018年07月24日</div>
+                        </div>
+                        <a href="/hexo-theme-white/2018/07/24/test-1%20-%20%E5%89%AF%E6%9C%AC%20(4)%20-%20%E5%89%AF%E6%9C%AC/">
+                            <div class="simple-post-title">
+                                
+                                    Markdown样式测试
+                                
+                            </div>
+                        <div class="simple-post-excerpt">
+                            乌申斯基曾经提到过，学习是劳动，是充满思想的劳动。我希望诸位也能好好地体会这句话。 我认为， 所谓科学和人文谁更有意义，关键是科学和人文谁更有意义需要如何写。 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要...
+                        </div>
+                        </a>
+                    </div>
+                    
+                        <div class="simple-item-right">
+                             <img src="https://cdn.jsdelivr.net/gh/FuShaoLei/img5@master/202403301631153.jpg">
+                        </div>
+                    
+                </div>
+            
+                <div class="simple-post-item item-divider">
+                    <div class="simple-item-left">
+                        <div class="simple-item-meta">
+                            <div class="simple-meta-date">2018年07月24日</div>
+                        </div>
+                        <a href="/hexo-theme-white/2018/07/24/test-1%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC%20(2)/">
+                            <div class="simple-post-title">
+                                
+                                    Markdown样式测试
+                                
+                            </div>
+                        <div class="simple-post-excerpt">
+                            乌申斯基曾经提到过，学习是劳动，是充满思想的劳动。我希望诸位也能好好地体会这句话。 我认为， 所谓科学和人文谁更有意义，关键是科学和人文谁更有意义需要如何写。 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要...
+                        </div>
+                        </a>
+                    </div>
+                    
+                        <div class="simple-item-right">
+                             <img src="https://cdn.jsdelivr.net/gh/FuShaoLei/img5@master/202403301631153.jpg">
+                        </div>
+                    
+                </div>
+            
+                <div class="simple-post-item item-divider">
+                    <div class="simple-item-left">
+                        <div class="simple-item-meta">
+                            <div class="simple-meta-date">2018年07月24日</div>
+                        </div>
+                        <a href="/hexo-theme-white/2018/07/24/test-1%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC/">
+                            <div class="simple-post-title">
+                                
+                                    Markdown样式测试
+                                
+                            </div>
+                        <div class="simple-post-excerpt">
+                            乌申斯基曾经提到过，学习是劳动，是充满思想的劳动。我希望诸位也能好好地体会这句话。 我认为， 所谓科学和人文谁更有意义，关键是科学和人文谁更有意义需要如何写。 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要...
+                        </div>
+                        </a>
+                    </div>
+                    
+                        <div class="simple-item-right">
+                             <img src="https://cdn.jsdelivr.net/gh/FuShaoLei/img5@master/202403301631153.jpg">
+                        </div>
+                    
+                </div>
+            
+                <div class="simple-post-item item-divider">
+                    <div class="simple-item-left">
+                        <div class="simple-item-meta">
+                            <div class="simple-meta-date">2018年07月24日</div>
+                        </div>
+                        <a href="/hexo-theme-white/2018/07/24/test-1%20-%20%E5%89%AF%E6%9C%AC%20(3)/">
+                            <div class="simple-post-title">
+                                
+                                    Markdown样式测试
+                                
+                            </div>
+                        <div class="simple-post-excerpt">
+                            乌申斯基曾经提到过，学习是劳动，是充满思想的劳动。我希望诸位也能好好地体会这句话。 我认为， 所谓科学和人文谁更有意义，关键是科学和人文谁更有意义需要如何写。 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要...
+                        </div>
+                        </a>
+                    </div>
+                    
+                        <div class="simple-item-right">
+                             <img src="https://cdn.jsdelivr.net/gh/FuShaoLei/img5@master/202403301631153.jpg">
+                        </div>
+                    
+                </div>
+            
+                <div class="simple-post-item item-divider">
+                    <div class="simple-item-left">
+                        <div class="simple-item-meta">
+                            <div class="simple-meta-date">2018年07月24日</div>
+                        </div>
+                        <a href="/hexo-theme-white/2018/07/24/test-1%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC/">
+                            <div class="simple-post-title">
+                                
+                                    Markdown样式测试
+                                
+                            </div>
+                        <div class="simple-post-excerpt">
+                            乌申斯基曾经提到过，学习是劳动，是充满思想的劳动。我希望诸位也能好好地体会这句话。 我认为， 所谓科学和人文谁更有意义，关键是科学和人文谁更有意义需要如何写。 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要...
+                        </div>
+                        </a>
+                    </div>
+                    
+                        <div class="simple-item-right">
+                             <img src="https://cdn.jsdelivr.net/gh/FuShaoLei/img5@master/202403301631153.jpg">
+                        </div>
+                    
+                </div>
+            
+        </div>
+    </section>
+    
+        <nav class="paginator">
+            <span class="page-number current">1</span><a class="page-number" href="/hexo-theme-white/page/2/">2</a><a class="page-number" href="/hexo-theme-white/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/hexo-theme-white/page/5/">5</a><a class="extend next" rel="next" href="/hexo-theme-white/page/2/">下一页</a>
+        </nav>
+    
+</section>
+
+    </div>
+  </div>
+
+
+  <div class="footer-outer">
+    <div class="footer-inner">
+        <div class="footer-text">
+            <p>Made by <a target="_blank" rel="noopener" href="https://github.com/FuShaoLei">FuShaoLei</a></p>
+
+        </div>
+        <div class="footer-contact">
+            <ul class="footer-ul">
+                
+                <li class="footer-li">
+                    <a href="https://github.com/FuShaoLei/hexo-theme-white" target="_blank">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </li>
+                
+                <li class="footer-li">
+                    <a href="mailto:1563250958@qq.com" target="_blank">
+                        <i class="ri-mail-line"></i>
+                    </a>
+                </li>
+                
+                <li class="footer-li">
+                    <a href="https://music.163.com/" target="_blank">
+                        <i class="ri-netease-cloud-music-line"></i>
+                    </a>
+                </li>
+                
+                <li class="footer-li">
+                    <a href="https://bilibili.com/" target="_blank">
+                        <i class="ri-bilibili-line"></i>
+                    </a>
+                </li>
+                
+                <li class="footer-li">
+                    <a href="https://youtube.com/" target="_blank">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+<script src="/hexo-theme-white/js/white.js"></script>
+
+<script>
+    hljs.highlightAll();
+</script>
+
+
+</body>
+</html>
